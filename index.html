@@ -245,15 +245,31 @@
                 <div class="space-y-4">
                     <div class="grid grid-cols-2 gap-2">
                         <div><label class="text-[9px] font-bold text-gray-400 uppercase">Nombre Tienda</label><input type="text" id="edit-store-name" class="w-full p-2 border rounded outline-none text-xs"></div>
-                        <div><label class="text-[9px] font-bold text-gray-400 uppercase">Teléfono WA</label><input type="text" id="edit-store-wa" class="w-full p-2 border rounded outline-none text-xs"></div>
+                        <div><label class="text-[9px] font-bold text-gray-400 uppercase">WhatsApp (Ej: 595...)</label><input type="text" id="edit-store-wa" class="w-full p-2 border rounded outline-none text-xs"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-2 border-t pt-2">
+                        <div>
+                            <label class="text-[9px] font-bold text-blue-600 uppercase">URL Base de Datos Predeterminada (JSON)</label>
+                            <input type="text" id="edit-store-json-url" placeholder="https://adonaiimport.github.io/demo/adonai_import_db.json" class="w-full p-2 border rounded outline-none text-[10px] bg-blue-50">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="text-[9px] font-bold text-gray-400 uppercase">Artículos por Página</label>
+                                <input type="number" id="edit-items-per-page" class="w-full p-2 border rounded outline-none text-xs">
+                            </div>
+                            <div>
+                                <label class="text-[9px] font-bold text-gray-400 uppercase">PIN de Acceso</label>
+                                <input type="password" id="edit-store-pin" class="w-full p-2 border rounded outline-none text-xs">
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="border-t pt-4">
                         <h3 id="form-title" class="text-[10px] font-black text-gray-400 uppercase mb-3 italic">Agregar nuevo artículo</h3>
                         <div class="space-y-3">
                             <div><label class="text-[9px] font-bold text-gray-400 uppercase">Nombre</label><input type="text" id="new-p-name" class="w-full p-2 border rounded outline-none uppercase text-xs"></div>
-                            
-                            <div><label class="text-[9px] font-bold text-gray-400 uppercase">Descripción detallada</label><textarea id="new-p-desc" rows="3" class="w-full p-2 border rounded outline-none text-xs" placeholder="Características, materiales, uso..."></textarea></div>
+                            <div><label class="text-[9px] font-bold text-gray-400 uppercase">Descripción detallada</label><textarea id="new-p-desc" rows="3" class="w-full p-2 border rounded outline-none text-xs" placeholder="Características..."></textarea></div>
 
                             <div class="grid grid-cols-3 gap-2">
                                 <div><label class="text-[9px] font-bold text-gray-400 uppercase">Precio Gs.</label><input type="number" id="new-p-price" class="w-full p-2 border rounded outline-none text-xs"></div>
@@ -264,10 +280,8 @@
                             <div class="bg-blue-50 p-2 rounded border border-blue-100">
                                 <label class="text-[9px] font-bold text-blue-800 uppercase">Imágenes (URLs por comas)</label>
                                 <textarea id="new-p-imgs" rows="2" oninput="updatePhotoCount()" class="w-full p-2 border rounded mt-1 text-[10px] outline-none"></textarea>
-                                
-                                <label class="text-[9px] font-bold text-blue-800 uppercase mt-2 block">O subir foto (Celular/PC):</label>
+                                <label class="text-[9px] font-bold text-blue-800 uppercase mt-2 block">O subir foto:</label>
                                 <input type="file" id="new-p-file" accept="image/*" class="w-full text-[10px] bg-white border rounded p-1 mt-1">
-
                                 <p id="photo-count" class="text-[8px] text-blue-600 font-bold mt-1 uppercase">0 fotos URL</p>
                             </div>
                             <div class="grid grid-cols-2 gap-2">
@@ -276,7 +290,7 @@
                                     <select id="new-p-cat" class="w-full p-2 border rounded uppercase outline-none text-xs"></select>
                                 </div>
                                 <div class="flex items-center gap-2 mt-4">
-                                    <input type="checkbox" id="new-p-stock-alert" class="w-4 h-4" checked="">
+                                    <input type="checkbox" id="new-p-stock-alert" class="w-4 h-4" checked>
                                     <label class="text-[9px] font-bold text-orange-600 uppercase">Aviso Stock</label>
                                 </div>
                             </div>
@@ -294,6 +308,149 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Variables globales para la paginación
+    let currentPage = 1;
+
+    // Configuración inicial de la tienda extendida
+    const defaultStore = {
+        config: { 
+            nombre: "ADONAI IMPORT", 
+            whatsapp: "595992275487", 
+            logo: "https://i.postimg.cc/s2gcb3bg/LOGO-ADONAIIMPORT-2is84v2is84v2is8-removebg-preview.png", 
+            pin: "1234", 
+            announcement: "¡ENVÍOS GRATIS A TODO EL PAÍS!",
+            defaultJsonUrl: "https://adonaiimport.github.io/demo/adonai_import_db.json",
+            itemsPerPage: 50
+        },
+        productos: []
+    };
+
+    // Cargar datos (prioriza LocalStorage, si no existe usa defaultStore)
+    let tiendaData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || defaultStore;
+
+    // Función para intentar cargar desde la URL predeterminada al iniciar
+    async function initExternalLoad() {
+        const url = tiendaData.config.defaultJsonUrl;
+        if (!url) return;
+
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const externalData = await response.json();
+                if (externalData && externalData.productos) {
+                    console.log("Cargando base de datos remota...");
+                    tiendaData = externalData;
+                    updatePublicStore();
+                }
+            }
+        } catch (error) {
+            console.warn("Usando base de datos local (la remota no está disponible).");
+        }
+    }
+
+    // Lógica para filtrar y paginar productos
+    function runFilters() {
+        const search = document.getElementById('user-search').value.toLowerCase().trim();
+        const min = parseInt(document.getElementById('filter-min').value) || 0;
+        const max = parseInt(document.getElementById('filter-max').value) || Infinity;
+        
+        // 1. Filtrar
+        let filtered = tiendaData.productos.filter(p => 
+            (currentCategory === 'TODOS' || p.cat === currentCategory) &&
+            p.nombre.toLowerCase().includes(search) &&
+            p.precio >= min && p.precio <= max
+        );
+
+        // 2. Paginar
+        const limit = parseInt(tiendaData.config.itemsPerPage) || 50;
+        const totalItems = filtered.length;
+        const totalPages = Math.ceil(totalItems / limit);
+        
+        if (currentPage > totalPages) currentPage = 1;
+
+        const start = (currentPage - 1) * limit;
+        const end = start + limit;
+        const itemsToDisplay = filtered.slice(start, end);
+
+        // 3. Renderizar
+        const gridTitle = document.getElementById('grid-title');
+        gridTitle.innerText = currentCategory === 'TODOS' ? "Catálogo General" : `Categoría: ${currentCategory}`;
+
+        if (itemsToDisplay.length === 0) {
+            showEmptyMessage();
+            renderPagination(0);
+        } else {
+            renderGrid(itemsToDisplay);
+            renderPagination(totalPages);
+        }
+    }
+
+    // Renderizado de botones de página
+    function renderPagination(totalPages) {
+        let container = document.getElementById('pagination-controls');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'pagination-controls';
+            container.className = 'flex justify-center items-center gap-4 mt-8 py-4 border-t w-full';
+            document.getElementById('product-grid').parentNode.appendChild(container);
+        }
+
+        if (totalPages <= 1) {
+            container.innerHTML = '';
+            return;
+        }
+
+        container.innerHTML = `
+            <button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''} 
+                class="px-4 py-2 bg-white border rounded shadow-sm text-[10px] font-bold uppercase disabled:opacity-30">
+                <i class="fa fa-chevron-left mr-2"></i> Anterior
+            </button>
+            <span class="text-[10px] font-black text-gray-500 uppercase">Pág. ${currentPage} / ${totalPages}</span>
+            <button onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''} 
+                class="px-4 py-2 bg-white border rounded shadow-sm text-[10px] font-bold uppercase disabled:opacity-30">
+                Siguiente <i class="fa fa-chevron-right ml-2"></i>
+            </button>
+        `;
+    }
+
+    function changePage(page) {
+        currentPage = page;
+        window.scrollTo({ top: document.getElementById('category-nav').offsetTop, behavior: 'smooth' });
+        runFilters();
+    }
+
+    // Funciones del Panel Admin
+    function loadAdmin() {
+        document.getElementById('edit-store-name').value = tiendaData.config.nombre;
+        document.getElementById('edit-store-wa').value = tiendaData.config.whatsapp;
+        document.getElementById('edit-store-pin').value = tiendaData.config.pin;
+        document.getElementById('edit-store-json-url').value = tiendaData.config.defaultJsonUrl || "";
+        document.getElementById('edit-items-per-page').value = tiendaData.config.itemsPerPage || 50;
+        renderAdminList();
+        updateDashboard();
+    }
+
+    function closeAdmin() {
+        // Guardar cambios de configuración al cerrar
+        tiendaData.config.nombre = document.getElementById('edit-store-name').value;
+        tiendaData.config.whatsapp = document.getElementById('edit-store-wa').value;
+        tiendaData.config.pin = document.getElementById('edit-store-pin').value;
+        tiendaData.config.defaultJsonUrl = document.getElementById('edit-store-json-url').value;
+        tiendaData.config.itemsPerPage = document.getElementById('edit-items-per-page').value;
+        
+        save();
+        document.getElementById('admin-panel').style.display = 'none';
+        updatePublicStore();
+    }
+
+    // Ejecución inicial
+    window.onload = async () => {
+        await initExternalLoad();
+        updatePublicStore();
+    };
+</script>
 
 <header class="amazon-header text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
