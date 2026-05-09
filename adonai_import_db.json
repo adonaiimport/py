@@ -4,7 +4,8 @@
     "whatsapp": "595981000000",
     "logo": "https://i.postimg.cc/s2gcb3bg/LOGO-ADONAIIMPORT-2is84v2is84v2is8-removebg-preview.png",
     "pin": "1234",
-    "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!"
+    "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
+    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json"
   },
   "productos": [
     {
@@ -16,7 +17,8 @@
         "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"
       ],
       "cat": "PESCA",
-      "stockAlert": true
+      "stockAlert": true,
+      "destacado": true
     },
     {
       "id": 102,
@@ -27,7 +29,8 @@
         "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=400"
       ],
       "cat": "CAMPING",
-      "stockAlert": true
+      "stockAlert": true,
+      "destacado": true
     }
   ]
 }
