@@ -31,6 +31,20 @@
       "cat": "CAMPING",
       "stockAlert": true,
       "destacado": true
+    },
+    {
+      "id": 1778332605564,
+      "nombre": "Amplificador wifi",
+      "desc": "Amplificador Wifi Potente de 4 antenas",
+      "precio": 200000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/demo/84827eaece8e34638e3b1c41098746b40eb14222/1%20(1).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": true
     }
   ]
 }
