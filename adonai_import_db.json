@@ -2,17 +2,20 @@
   "config": {
     "nombre": "ADONAI IMPORT",
     "whatsapp": "595981000000",
-    "logo": "https://i.postimg.cc/s2gcb3bg/LOGO-ADONAIIMPORT-2is84v2is84v2is8-removebg-preview.png",
+    "logo": "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true",
     "pin": "1234",
     "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json"
+    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json",
+    "configUrl": "https://raw.githubusercontent.com/adonaiimport/py/refs/heads/img/adonai_import_config.json"
   },
   "productos": [
     {
       "id": 101,
       "nombre": "Reel Profesional Pesca",
+      "desc": "Reel de alta gama, fabricado en aluminio. Perfecto para variada pesada.",
       "precio": 250000,
       "precioAnterior": 320000,
+      "stock": 15,
       "imgs": [
         "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"
       ],
@@ -23,40 +26,14 @@
     {
       "id": 102,
       "nombre": "Carpa Térmica 4P",
+      "desc": "Carpa para 4 personas con protección UV y resistente al agua.",
       "precio": 680000,
       "precioAnterior": null,
+      "stock": 8,
       "imgs": [
         "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=400"
       ],
       "cat": "CAMPING",
-      "stockAlert": true,
-      "destacado": true
-    },
-    {
-      "id": 1778332605564,
-      "nombre": "Amplificador wifi",
-      "desc": "Amplificador Wifi Potente de 4 antenas",
-      "precio": 200000,
-      "precioAnterior": null,
-      "stock": 10,
-      "imgs": [
-        "https://raw.githubusercontent.com/adonaiimport/demo/84827eaece8e34638e3b1c41098746b40eb14222/1%20(1).jpg"
-      ],
-      "cat": "TECNOLOGÍA",
-      "stockAlert": true,
-      "destacado": true
-    },
-    {
-      "id": 1779152524350,
-      "nombre": "Camara 360",
-      "desc": "Camara 360 resistente al agua",
-      "precio": 150000,
-      "precioAnterior": null,
-      "stock": 10,
-      "imgs": [
-        "https://raw.githubusercontent.com/adonaiimport/demo/84827eaece8e34638e3b1c41098746b40eb14222/1%20(58).jpg"
-      ],
-      "cat": "TECNOLOGÍA",
       "stockAlert": true,
       "destacado": true
     }
