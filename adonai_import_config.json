@@ -1,11 +1,12 @@
 {
   "config": {
     "nombre": "ADONAI IMPORT",
-    "whatsapp": "",
+    "whatsapp": "595981000000",
     "logo": "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true",
     "pin": "1234",
     "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-    "jsonUrl": ""
+    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json",
+    "configUrl": ""
   },
   "banners": [
     {
@@ -49,5 +50,5 @@
     "GENERAL"
   ],
   "version": "1.0",
-  "fecha": "2026-05-19T02:56:39.773Z"
+  "fecha": "2026-05-19T03:58:05.573Z"
 }
