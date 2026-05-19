@@ -45,6 +45,20 @@
       "cat": "TECNOLOGÍA",
       "stockAlert": true,
       "destacado": true
+    },
+    {
+      "id": 1779152524350,
+      "nombre": "Camara 360",
+      "desc": "Camara 360 resistente al agua",
+      "precio": 150000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/demo/84827eaece8e34638e3b1c41098746b40eb14222/1%20(58).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": true
     }
   ]
 }
