@@ -315,7 +315,7 @@
 <header class="amazon-header text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
         <div class="flex items-center space-x-4 shrink-0">
-            <img id="store-logo" src="https://i.postimg.cc/s2gcb3bg/LOGO-ADONAIIMPORT-2is84v2is84v2is8-removebg-preview.png" alt="Logo" class="h-12 cursor-pointer hover:opacity-80" ondblclick="accessAdmin()" onerror="this.src='https://via.placeholder.com/150x40?text=LOGO'">
+            <img id="store-logo" src="https://github.com/adonaiimport/py/blob/img/logo.png?raw=true" alt="Logo" class="h-12 cursor-pointer hover:opacity-80" ondblclick="accessAdmin()" onerror="this.src='https://via.placeholder.com/150x40?text=LOGO'">
             <span class="font-bold text-lg hidden md:block uppercase tracking-tighter" id="store-name"></span>
         </div>
         <div class="flex-grow max-w-2xl relative">
@@ -441,11 +441,11 @@
         config: { 
             nombre: "ADONAI IMPORT", 
             whatsapp: "595981000000", 
-            logo: "https://i.postimg.cc/s2gcb3bg/LOGO-ADONAIIMPORT-2is84v2is84v2is8-removebg-preview.png", 
+            logo: "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true", 
             pin: "1234",
             announcement: "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
             jsonUrl: "https://adonaiimport.github.io/py/adonai_import_db.json",
-            configUrl: ""
+            configUrl: "https://raw.githubusercontent.com/adonaiimport/py/refs/heads/img/adonai_import_config.json"
         },
         productos: [
             { id: 101, nombre: "Reel Profesional Pesca", desc: "Reel de alta gama, fabricado en aluminio. Perfecto para variada pesada.", precio: 250000, precioAnterior: 320000, stock: 15, imgs: ["https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"], cat: "PESCA", stockAlert: true, destacado: true },
@@ -457,7 +457,7 @@
 
     // Asegurar que configUrl existe en config
     if (!tiendaData.config.configUrl) {
-        tiendaData.config.configUrl = "";
+        tiendaData.config.configUrl = "https://raw.githubusercontent.com/adonaiimport/py/refs/heads/img/adonai_import_config.json";
     }
 
     function save() { 
