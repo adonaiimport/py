@@ -36,6 +36,342 @@
       "cat": "CAMPING",
       "stockAlert": true,
       "destacado": true
+    },
+    {
+      "id": 1779227228399,
+      "nombre": "COCINA INFRARROJO BRISA",
+      "desc": "⚡ Alta tecnología de calentamiento infrarrojo\n⚡ Panel de control con botones físicos\n⚡ Multi-funcional\n⚡ Indicador LED de 4 dígitos\n⚡ Potencia: 2000w\n⚡ Compatible para todo tipo de ollas planas\n⚡ Temporizador de 24hs",
+      "precio": 150000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": false,
+      "destacado": true
+    },
+    {
+      "id": 1779227439359,
+      "nombre": " Escurridor de Platos de 2 Niveles",
+      "desc": "🥈 2 Niveles: Máximo espacio de secado.\n 💪 Acero Duradero: Alta calidad y acabado cromado.\n 💧 Bandeja de Goteo: Mantiene tu encimera seca.\n🥢 Incluye Soportes: Para cubiertos y vasos.\n",
+      "precio": 89999,
+      "precioAnterior": null,
+      "stock": 0,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(10).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": false,
+      "destacado": true
+    },
+    {
+      "id": 1779227708819,
+      "nombre": "Juego de cubiertos de acero inoxidable en elegante estuche",
+      "desc": "Ideal para el hogar o para regalo 🎁\nCalidad, diseño y durabilidad en un solo set.\n24PCS",
+      "precio": 90000,
+      "precioAnterior": 150000,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(11).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1779227849158,
+      "nombre": "SECA PELO DALING PROFESIONAL",
+      "desc": "SECAPELO DALING 2200W\nCOLOR LILA",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(13).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1779242313556,
+      "nombre": "Sandwichera Doble RAF",
+      "desc": "Sandwichera Doble RAF\n💫 Cod.: R. 264S\nCaracterísticas:\n⚡️Potencia: 850w\n⚡️Antiadherente\n⚡️Base antideslizante",
+      "precio": 900000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(14).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1779242459375,
+      "nombre": "AMOLADORA INDUSTRIAL",
+      "desc": "AMOLADORA INDUSTRIAL\nTAMAÑO 115MM\n900W\n220VOL\nCON REPUESTO DE CARBON\n",
+      "precio": 245000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(15).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779242591674,
+      "nombre": " Aspiradora / Soplete 3 en 1",
+      "desc": "⚡ Marca: Sunlight\n⚡ Código: AS-228\n⚡ Función: Aspiradora / Soplete\n⚡ Modalidad: Recargable (USB)\n⚡ Uso: Casa y automóvil",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(16).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779242712258,
+      "nombre": "PEINE SECADOR Características",
+      "desc": "⚡Cod. RN: 6025\n⚡ Potencia: 1200w\n⚡ Cerdas mixtas\n⚡ Ajuste de temperatura\n⚡ Diseño ergonómico y compacto",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(17).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779242821822,
+      "nombre": "Máquina para Costura",
+      "desc": "⚡ Marca: Handy Stitch\n⚡ Modelo: CS - 101B\n⚡ Pre enhebrada y lista para usar\n⚡ Rebobinado automático de hilo\n⚡ Una velocidad\n⚡ Cortador de hilo",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(18).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779242914338,
+      "nombre": "VENTILADOR DE PIE 5 ALETA DE 18\"",
+      "desc": "⭐ Marca: *DIGITRON*\n📌 *5 aspas de metal*\n📌 Opción de 3 velocidades\n📌 Base fuerte y resistente para mejor estabilidad\n📌 Altura ajustable",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(19).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779242990641,
+      "nombre": " HIDROLAVADORA INALÁMBRICA PORTÁTIL",
+      "desc": "📦 Incluye:\n• Pistola lavadora\n• Batería recargable\n• Manguera con filtro\n• Boquillas intercambiables\n• Botella para espuma",
+      "precio": 150000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(2).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243091875,
+      "nombre": "ASPIRADORA RAF 2 EN 1",
+      "desc": "💫 Cod.: R. 8673B\n📌 Tipo: Aspiradora de mano y de varilla (2 en 1).\n📌 Potencia: 600W.\n📌 Características principales: Fuerte succión, filtro lavable tipo ciclón, y depósito de polvo ajustable.",
+      "precio": 200000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(20).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": false,
+      "destacado": true
+    },
+    {
+      "id": 1779243185192,
+      "nombre": "TALADRO ELÉCTRICO BOMAO",
+      "desc": "💫 Cod.: BM - 3031\nCaracterísticas:\n📌 28 Pcs\n📌 Bivolt\n📌 Incluye 2 baterías de 21V",
+      "precio": 185000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(21).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1779243246398,
+      "nombre": "VASO CAFETERO CON BATIDOR AUTOMÁTICO ",
+      "desc": "✔️ Acero inoxidable SUS 304\n✔️ Recargable USB-C\n✔️ Capacidad 380 ml\nIdeal para casa u oficina",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(22).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243505573,
+      "nombre": "CARPA DE CAMPING CAMUFLADA  3, 4 y 6 personas",
+      "desc": "✅ Modelos para 3, 4 y 6 personas\n✅ Fácil de armar\n✅ Material resistente\n✅ A prueba de rocío\n✅ Ideal para exterior\n✅3 PERSONAS,120,000GS\n✅4 PERSONAS,140,000GS\n✅6 PERSONAS,160,000GS",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(23).jpg"
+      ],
+      "cat": "CAMPING",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243579957,
+      "nombre": " PARRILLA ELÉCTRICA RAF – BARBACOA",
+      "desc": "✔️ Potencia 2000W\n✔️ Fácil de usar y limpiar\n✔️ Rejilla desmontable con altura regulable\n✔️ Cocción rápida y pareja\n✔️ Diseño compacto y moderno",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(24).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243634082,
+      "nombre": "LICUADORA 3 EN 1 RAF",
+      "desc": "💫 Cod.: R. 2843\nCaracterística:\n⚡ Potencia: 350w\n⚡ Jarra METAL\n⚡ Capacidad de 1.50 LT ,1 LT y 800ml\n⚡ 2 velocidades + pulso\n⚡ Cuchillas de aceros inox\n⚡️ Base antideslizante",
+      "precio": 170000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(25).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243722474,
+      "nombre": "Aire enfriador portátil ",
+      "desc": "✔️ Silencioso\n✔️ Bajo consumo\n✔️ Portátil\n✔️ Funciona por USB",
+      "precio": 80000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(27).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1779243784374,
+      "nombre": "TALADRO ELÉCTRICO MOX",
+      "desc": "💫 Cod.: MO - TE80\nCaracterísticas:\n📌 Potencia: 550W\n📌 Hora de trabajo: 60min.\n📌 Bivolt\n📌 Incluye 2 baterías de 21V\n",
+      "precio": 190000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(28).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779243939059,
+      "nombre": "ASPIRADORAS MULTI-FUNCIONAL",
+      "desc": "💫 Cod.: MP - 251\n⚡Marca: MAXTOP\n⚡Inalámbrica y portátil\n⚡Batería recargable de 24v\n⚡️Potencia: 150w",
+      "precio": 110000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(29).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779244024260,
+      "nombre": "ARO DE LUZ LED RGB 26CM – LU-R261",
+      "desc": "🔹 16 colores y efectos RGB\n🔹 Trípode regulable hasta 2 metros\n🔹 Soporte para celular incluido\n🔹 Ideal para Redes sociales, maquillaje y streaming\n",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(3).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779244126218,
+      "nombre": "LICUADORA ELÉCTRICA RAF 1000W",
+      "desc": "✔️ Motor de 1000W de potencia\n✔️ Hasta 45.000 RPM (licúa rápido y parejo)\n✔️ 6 cuchillas de alto rendimiento\n✔️ Fácil de limpiar\n✔️ Ideal para jugos, licuados, salsas y más",
+      "precio": 135000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(5).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779244188414,
+      "nombre": "Grillera RAF R.240 – Parrilla Eléctrica 1000W",
+      "desc": "✅ Potencia: 1000W\n✅ Apertura 180°\n✅ Calor uniforme\n✅ Revestimiento antiadherente\n✅ Fácil de limpiar",
+      "precio": 150000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779244234050,
+      "nombre": "Exprimidor de Cítricos",
+      "desc": "💫 Cod.: RAF R. 612\n⚡️Capacidad 1000ml\n⚡️Potencia 25W\n⚡️Doble Cono: Para todo tamaño de cítrico.\n⚡️Base de Acero Inoxidable",
+      "precio": 145000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
     }
   ]
 }
