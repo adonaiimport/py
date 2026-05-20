@@ -5,7 +5,7 @@
     "logo": "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true",
     "pin": "1234",
     "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json",
+    "jsonUrl": "https://adonaiimport.github.io/py/adonai_import_db.json",
     "configUrl": "https://raw.githubusercontent.com/adonaiimport/py/refs/heads/img/adonai_import_config.json"
   },
   "productos": [
