@@ -10,7 +10,8 @@
         :root { --amazon-blue: #131921; --amazon-orange: #febd69; --amazon-light: #232f3e; }
         body { background-color: #f3f3f3; font-family: 'Segoe UI', Arial, sans-serif; overflow-x: hidden; margin: 0; }
         .amazon-header { background-color: var(--amazon-blue); }
-        .category-nav { background-color: var(--amazon-light); }
+        .category-nav { background-color: var(--amazon-light); transition: transform 0.3s ease, opacity 0.3s ease; }
+        .category-nav.hidden-nav { transform: translateY(-100%); opacity: 0; pointer-events: none; position: absolute; }
         .btn-amazon { background-color: var(--amazon-orange); border: 1px solid #a88734; transition: 0.2s; cursor: pointer; }
         .btn-amazon:hover { background-color: #f7a01b; }
         #top-announcement-bar { background: linear-gradient(90deg, #cc0c39, #880626); color: white; text-align: center; padding: 8px; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; position: sticky; top: 0; z-index: 60; display: flex; align-items: center; justify-content: center; gap: 10px; border-bottom: 1px solid rgba(0,0,0,0.1); }
@@ -26,8 +27,6 @@
         .badge-oferta { background-color: #cc0c39; color: white; padding: 2px 8px; border-radius: 2px; font-size: 11px; font-weight: bold; position: absolute; top: 10px; left: 10px; z-index: 10; }
         .badge-destacado { background-color: #f7a01b; color: #131921; padding: 2px 8px; border-radius: 2px; font-size: 10px; font-weight: bold; position: absolute; top: 10px; right: 10px; z-index: 10; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        
-        /* ESTILOS PARA CATEGORÍAS Y SUBCATEGORÍAS */
         .category-chip { white-space: nowrap; cursor: pointer; transition: 0.2s; border-bottom: 2px solid transparent; padding: 8px 12px; position: relative; }
         .category-chip.active { color: var(--amazon-orange); border-bottom-color: var(--amazon-orange); font-weight: bold; }
         .category-dropdown { position: relative; display: inline-block; }
@@ -36,12 +35,9 @@
         .subcategory-item { display: block; padding: 8px 16px; color: #ddd; font-size: 12px; cursor: pointer; transition: 0.2s; white-space: nowrap; }
         .subcategory-item:hover { background: #374151; color: var(--amazon-orange); }
         .subcategory-item.active { color: var(--amazon-orange); font-weight: bold; background: #1f2937; }
-        
-        /* ADMIN: GESTIÓN DE CATEGORÍAS */
         .cat-tree-item { background: white; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px; margin-bottom: 6px; }
         .subcat-tag { display: inline-flex; align-items: center; gap: 4px; background: #eff6ff; color: #1e40af; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: bold; margin: 2px; }
         .subcat-tag button { color: #ef4444; cursor: pointer; font-size: 12px; margin-left: 2px; }
-        
         .quick-input-text { width: 100%; border: 1px solid #ddd; padding: 2px 4px; border-radius: 2px; font-size: 10px; outline-color: #febd69; }
         .quick-input-price { width: 75px; font-weight: bold; color: #c2410c; border: 1px solid #ddd; padding: 2px 4px; border-radius: 2px; font-size: 10px; background: #fff7ed; }
         #main-banner { position: relative; overflow: hidden; }
@@ -289,9 +285,7 @@
             <div class="bg-white p-5 rounded border shadow-sm">
                 <h2 class="font-bold mb-4 text-indigo-700 border-b pb-2 uppercase text-xs"><i class="fa fa-sitemap"></i> Gestión de Categorías y Subcategorías</h2>
                 <p class="text-[10px] text-gray-500 mb-4">Administra las categorías principales y sus subcategorías. Los cambios se reflejarán en el menú principal.</p>
-                
                 <div id="categorias-admin-container" class="space-y-4"></div>
-                
                 <div class="mt-6 pt-4 border-t">
                     <button onclick="addNewCategory()" class="bg-indigo-600 text-white px-4 py-2 rounded font-bold hover:bg-indigo-700 uppercase text-[10px]">
                         <i class="fa fa-plus"></i> Añadir Nueva Categoría
@@ -356,7 +350,7 @@
             </div>
         </div>
     </div>
-    <nav class="category-nav text-white px-4 py-1 text-sm flex flex-wrap items-center gap-1">
+    <nav id="category-nav" class="category-nav text-white px-4 py-1 text-sm flex flex-wrap items-center gap-1">
         <span class="category-chip ${currentCategory === 'TODOS' && !currentSubcategory ? 'active' : ''}" onclick="setCategory('TODOS')">TODOS</span>
         <div id="category-list" class="flex items-center gap-1 flex-wrap"></div>
         <div class="hidden md:flex items-center space-x-3 border-l border-gray-600 pl-4 py-1 flex-wrap ml-auto">
@@ -441,11 +435,16 @@
 </div>
 
 <script>
-    const STORAGE_KEY = 'retail_py_final_data_v19';
-    const CATS_KEY = 'retail_py_cats_v19';
-    const DESTACADOS_KEY = 'retail_py_destacados_v19';
-    const BANNERS_KEY = 'retail_py_banners_v19';
-    const SUBCATS_KEY = 'retail_py_subcats_v19';
+    const STORAGE_KEY = 'retail_py_final_data_v20';
+    const CATS_KEY = 'retail_py_cats_v20';
+    const DESTACADOS_KEY = 'retail_py_destacados_v20';
+    const BANNERS_KEY = 'retail_py_banners_v20';
+    const SUBCATS_KEY = 'retail_py_subcats_v20';
+    
+    // URLs por defecto
+    const DEFAULT_LOGO_URL = "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true";
+    const DEFAULT_DB_URL = "https://adonaiimport.github.io/py/adonai_import_db.json";
+    const DEFAULT_CONFIG_URL = "https://adonaiimport.github.io/py/adonai_import_config.json";
     
     let currentCategory = 'TODOS';
     let currentSubcategory = '';
@@ -453,10 +452,10 @@
     let currentViewMode = 'grid-md';
     let currentPage = 1;
     let totalPages = 1;
+    let lastScrollY = 0;
     const ITEMS_PER_PAGE = 50;
     const MAX_DESTACADOS = 10;
 
-    // Estructura de categorías: { nombre: "CATEGORIA", subcategorias: ["Sub1", "Sub2"] }
     let categoriasData = JSON.parse(localStorage.getItem(SUBCATS_KEY)) || {
         "PESCA": ["Cañas", "Reels", "Señuelos", "Accesorios"],
         "CAMPING": ["Carpas", "Mochilas", "Cocina", "Iluminación"],
@@ -481,11 +480,11 @@
         config: { 
             nombre: "ADONAI IMPORT", 
             whatsapp: "595981000000", 
-            logo: "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true", 
+            logo: DEFAULT_LOGO_URL, 
             pin: "1234",
             announcement: "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-            jsonUrl: "https://adonaiimport.github.io/py/adonai_import_db.json",
-            configUrl: ""
+            jsonUrl: DEFAULT_DB_URL,
+            configUrl: DEFAULT_CONFIG_URL
         },
         productos: [
             { id: 101, nombre: "Reel Profesional Pesca", desc: "Reel de alta gama, fabricado en aluminio.", precio: 250000, precioAnterior: 320000, stock: 15, imgs: ["https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"], cat: "PESCA", subcat: "Reels", stockAlert: true, destacado: true },
@@ -494,7 +493,11 @@
     };
 
     let tiendaData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || defaultStore;
-    if (!tiendaData.config.configUrl) tiendaData.config.configUrl = "";
+    
+    // Asegurar que las URLs por defecto se apliquen si no existen
+    if (!tiendaData.config.logo) tiendaData.config.logo = DEFAULT_LOGO_URL;
+    if (!tiendaData.config.jsonUrl) tiendaData.config.jsonUrl = DEFAULT_DB_URL;
+    if (!tiendaData.config.configUrl) tiendaData.config.configUrl = DEFAULT_CONFIG_URL;
 
     function save() { 
         localStorage.setItem(STORAGE_KEY, JSON.stringify(tiendaData)); 
@@ -511,6 +514,28 @@
     function getAllCategories() {
         return Object.keys(categoriasData);
     }
+
+    // ====== SCROLL PARA OCULTAR BANNER DE CATEGORÍAS ======
+    function handleCategoryNavScroll() {
+        const categoryNav = document.getElementById('category-nav');
+        const mainBanner = document.getElementById('main-banner');
+        const currentScrollY = window.scrollY;
+        
+        // Si el banner principal ya no es visible, ocultar la barra de categorías al hacer scroll hacia abajo
+        const bannerBottom = mainBanner.offsetTop + mainBanner.offsetHeight;
+        
+        if (currentScrollY > bannerBottom && currentScrollY > lastScrollY) {
+            // Scrolling hacia abajo después del banner
+            categoryNav.classList.add('hidden-nav');
+        } else if (currentScrollY < lastScrollY || currentScrollY <= bannerBottom) {
+            // Scrolling hacia arriba o antes del banner
+            categoryNav.classList.remove('hidden-nav');
+        }
+        
+        lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener('scroll', handleCategoryNavScroll, { passive: true });
 
     // ====== FUNCIONES DE PESTAÑAS DEL ADMIN ======
     function switchAdminTab(tab) {
@@ -533,7 +558,6 @@
     function renderCategoriasAdmin() {
         const container = document.getElementById('categorias-admin-container');
         const cats = getAllCategories();
-        
         container.innerHTML = cats.map(cat => {
             const subs = getCategorySubcategories(cat);
             return `
@@ -550,22 +574,14 @@
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-1 mb-2">
-                        ${subs.map(sub => `
-                            <span class="subcat-tag">
-                                ${sub}
-                                <button onclick="removeSubcategory('${cat}', '${sub}')" title="Eliminar subcategoría">×</button>
-                            </span>
-                        `).join('')}
+                        ${subs.map(sub => `<span class="subcat-tag">${sub}<button onclick="removeSubcategory('${cat}', '${sub}')" title="Eliminar">×</button></span>`).join('')}
                         ${subs.length === 0 ? '<span class="text-[9px] text-gray-400 italic">Sin subcategorías</span>' : ''}
                     </div>
                     <div class="flex gap-2 mt-2">
                         <input type="text" id="subcat-input-${cat}" class="flex-grow p-1 border rounded text-[10px] outline-none" placeholder="Nueva subcategoría...">
-                        <button onclick="addSubcategory('${cat}')" class="bg-green-500 text-white px-2 py-1 rounded text-[9px] font-bold hover:bg-green-600 uppercase">
-                            <i class="fa fa-plus"></i> Añadir
-                        </button>
+                        <button onclick="addSubcategory('${cat}')" class="bg-green-500 text-white px-2 py-1 rounded text-[9px] font-bold hover:bg-green-600 uppercase"><i class="fa fa-plus"></i> Añadir</button>
                     </div>
-                </div>
-            `;
+                </div>`;
         }).join('');
     }
 
@@ -588,12 +604,7 @@
             categoriasData[newName] = categoriasData[oldName];
             delete categoriasData[oldName];
             savedCats = Object.keys(categoriasData);
-            
-            // Actualizar productos que usaban la categoría anterior
-            tiendaData.productos.forEach(p => {
-                if (p.cat === oldName) p.cat = newName;
-            });
-            
+            tiendaData.productos.forEach(p => { if (p.cat === oldName) p.cat = newName; });
             save();
             renderCategoriasAdmin();
             updatePublicStore();
@@ -604,18 +615,9 @@
     }
 
     function deleteCategoryConfirm(cat) {
-        if (confirm(`¿Eliminar la categoría "${cat}" y todas sus subcategorías? Los productos en esta categoría pasarán a "GENERAL".`)) {
-            // Mover productos a GENERAL
-            tiendaData.productos.forEach(p => {
-                if (p.cat === cat) {
-                    p.cat = "GENERAL";
-                    p.subcat = "";
-                }
-            });
-            
-            // Si no existe GENERAL, crearla
+        if (confirm(`¿Eliminar la categoría "${cat}" y todas sus subcategorías? Los productos pasarán a "GENERAL".`)) {
+            tiendaData.productos.forEach(p => { if (p.cat === cat) { p.cat = "GENERAL"; p.subcat = ""; } });
             if (!categoriasData["GENERAL"]) categoriasData["GENERAL"] = [];
-            
             delete categoriasData[cat];
             savedCats = Object.keys(categoriasData);
             destacadosIds = tiendaData.productos.filter(p => p.destacado).map(p => p.id);
@@ -642,12 +644,9 @@
     }
 
     function removeSubcategory(cat, sub) {
-        if (confirm(`¿Eliminar subcategoría "${sub}" de ${cat}? Los productos asignados quedarán sin subcategoría.`)) {
+        if (confirm(`¿Eliminar subcategoría "${sub}" de ${cat}?`)) {
             categoriasData[cat] = categoriasData[cat].filter(s => s !== sub);
-            // Actualizar productos
-            tiendaData.productos.forEach(p => {
-                if (p.cat === cat && p.subcat === sub) p.subcat = "";
-            });
+            tiendaData.productos.forEach(p => { if (p.cat === cat && p.subcat === sub) p.subcat = ""; });
             save();
             renderCategoriasAdmin();
             updatePublicStore();
@@ -659,9 +658,7 @@
         const subcatSelect = document.getElementById('new-p-subcat');
         const selectedCat = catSelect.value;
         const subs = getCategorySubcategories(selectedCat);
-        
-        subcatSelect.innerHTML = '<option value="">Sin subcategoría</option>' + 
-            subs.map(s => `<option value="${s}">${s}</option>`).join('');
+        subcatSelect.innerHTML = '<option value="">Sin subcategoría</option>' + subs.map(s => `<option value="${s}">${s}</option>`).join('');
     }
 
     // ====== FUNCIONES DE LOGO Y NOMBRE ======
@@ -722,10 +719,7 @@
                 if (configData.config.jsonUrl) tiendaData.config.jsonUrl = configData.config.jsonUrl;
                 if (configData.config.configUrl) tiendaData.config.configUrl = configData.config.configUrl;
                 if (configData.banners && Array.isArray(configData.banners)) bannerData = configData.banners;
-                if (configData.categorias) {
-                    categoriasData = configData.categorias;
-                    savedCats = Object.keys(categoriasData);
-                }
+                if (configData.categorias) { categoriasData = configData.categorias; savedCats = Object.keys(categoriasData); }
                 tiendaData.config.configUrl = url;
                 save();
                 updatePublicStore();
@@ -753,8 +747,7 @@
                     <div class="flex gap-2 overflow-x-auto no-scrollbar">${banner.images.map((img, i) => `<img src="${img}" class="banner-thumb" onclick="setBannerPreview(${index}, ${i})" onerror="this.src='https://via.placeholder.com/50x40'">`).join('')}</div>
                     <img src="${banner.images[0]}" class="banner-preview-img" id="banner-preview-${index}" onerror="this.src='https://via.placeholder.com/400x60'">
                 </div>
-            </div>
-        `).join('');
+            </div>`).join('');
     }
 
     function updateBannerField(index, field, value) {
@@ -834,7 +827,8 @@
                 const importedData = JSON.parse(e.target.result);
                 if (importedData && importedData.config && importedData.productos) {
                     tiendaData = importedData;
-                    if (!tiendaData.config.configUrl) tiendaData.config.configUrl = "";
+                    if (!tiendaData.config.configUrl) tiendaData.config.configUrl = DEFAULT_CONFIG_URL;
+                    if (!tiendaData.config.logo) tiendaData.config.logo = DEFAULT_LOGO_URL;
                     tiendaData.productos.forEach(p => { if (!p.subcat) p.subcat = ""; });
                     destacadosIds = tiendaData.productos.filter(p => p.destacado).map(p => p.id);
                     const newCats = [...new Set(tiendaData.productos.map(p => p.cat))];
@@ -895,7 +889,6 @@
         document.getElementById('stat-total-count').innerText = totalItems;
         document.getElementById('stat-total-value').innerText = totalValue.toLocaleString() + ' Gs.';
         document.getElementById('stat-destacados-count').innerText = totalDestacados + '/' + MAX_DESTACADOS;
-        
         const catCounts = {};
         tiendaData.productos.forEach(p => { catCounts[p.cat] = (catCounts[p.cat] || 0) + 1; });
         const barContainer = document.getElementById('stat-category-bars');
@@ -904,14 +897,12 @@
             const pct = (count / totalItems) * 100;
             barContainer.innerHTML += `<div><div class="flex justify-between text-[9px] font-bold uppercase text-gray-600 mb-1"><span>${cat}</span><span>${count} items</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width: ${pct}%"></div></div></div>`;
         });
-        
         document.getElementById('edit-announcement').value = tiendaData.config.announcement || "";
-        document.getElementById('edit-json-url').value = tiendaData.config.jsonUrl || "";
-        document.getElementById('edit-logo-url').value = tiendaData.config.logo || "";
+        document.getElementById('edit-json-url').value = tiendaData.config.jsonUrl || DEFAULT_DB_URL;
+        document.getElementById('edit-logo-url').value = tiendaData.config.logo || DEFAULT_LOGO_URL;
         document.getElementById('edit-store-name-display').value = tiendaData.config.nombre || "";
-        document.getElementById('config-url-input').value = tiendaData.config.configUrl || "";
-        document.getElementById('logo-preview').src = tiendaData.config.logo || "https://via.placeholder.com/150x40?text=LOGO";
-        
+        document.getElementById('config-url-input').value = tiendaData.config.configUrl || DEFAULT_CONFIG_URL;
+        document.getElementById('logo-preview').src = tiendaData.config.logo || DEFAULT_LOGO_URL;
         const catSelect = document.getElementById('new-p-cat');
         if (catSelect) {
             catSelect.innerHTML = getAllCategories().map(c => `<option value="${c}">${c}</option>`).join('');
@@ -941,23 +932,19 @@
         const isDestacado = document.getElementById('new-p-destacado').checked;
         const cat = document.getElementById('new-p-cat').value;
         const subcat = document.getElementById('new-p-subcat').value;
-        
         if (isDestacado && tiendaData.productos.filter(p => p.destacado).length >= MAX_DESTACADOS) {
             alert(`⚠️ Máximo ${MAX_DESTACADOS} destacados.`);
             return;
         }
-        
         const fileInput = document.getElementById('new-p-file');
         let imgsArray = document.getElementById('new-p-imgs').value.split(',').map(i => i.trim()).filter(i => i);
         if (fileInput.files && fileInput.files[0]) {
             try { const base64 = await getBase64(fileInput.files[0]); imgsArray.unshift(base64); } catch(e) {}
         }
-
         if (name && price && imgsArray.length > 0) {
             const newId = Date.now();
             tiendaData.productos.push({ id: newId, nombre: name, desc, precio: price, precioAnterior: parseInt(document.getElementById('new-p-old-price').value) || null, stock, imgs: imgsArray, cat, subcat, stockAlert: document.getElementById('new-p-stock-alert').checked, destacado: isDestacado });
             if (isDestacado) destacadosIds.push(newId);
-            // Asegurar que la categoría existe
             if (!categoriasData[cat]) categoriasData[cat] = [];
             savedCats = Object.keys(categoriasData);
             save(); resetPForm(); renderAdminList(); updateDashboard(); updatePublicStore();
@@ -980,7 +967,6 @@
         document.getElementById('new-p-stock-alert').checked = p.stockAlert;
         document.getElementById('new-p-imgs').value = p.imgs.filter(i => !i.startsWith('data:image')).join(', ');
         updatePhotoCount();
-        
         document.getElementById('btn-submit-product').onclick = async () => {
             const name = document.getElementById('new-p-name').value;
             const price = parseInt(document.getElementById('new-p-price').value);
@@ -989,12 +975,10 @@
             const isDestacado = document.getElementById('new-p-destacado').checked;
             const cat = document.getElementById('new-p-cat').value;
             const subcat = document.getElementById('new-p-subcat').value;
-            
             if (isDestacado && !p.destacado && tiendaData.productos.filter(pr => pr.destacado && pr.id !== id).length >= MAX_DESTACADOS) {
                 alert(`⚠️ Máximo ${MAX_DESTACADOS} destacados.`);
                 return;
             }
-            
             const fileInput = document.getElementById('new-p-file');
             let imgsArray = document.getElementById('new-p-imgs').value.split(',').map(i => i.trim()).filter(i => i);
             const existingBase64 = p.imgs.filter(i => i.startsWith('data:image'));
@@ -1004,7 +988,6 @@
             } else {
                 imgsArray = [...existingBase64, ...imgsArray];
             }
-
             const idx = tiendaData.productos.findIndex(i => i.id === id);
             tiendaData.productos[idx] = { ...p, nombre: name, desc, precio: price, precioAnterior: parseInt(document.getElementById('new-p-old-price').value) || null, stock, imgs: imgsArray, cat, subcat, stockAlert: document.getElementById('new-p-stock-alert').checked, destacado: isDestacado };
             if (isDestacado) { if (!destacadosIds.includes(id)) destacadosIds.push(id); }
@@ -1013,7 +996,6 @@
             savedCats = Object.keys(categoriasData);
             save(); resetPForm(); renderAdminList(); updateDashboard(); updatePublicStore();
         };
-        
         document.getElementById('admin-panel').scrollTo({top: 0, behavior: 'smooth'});
         switchAdminTab('productos');
     }
@@ -1045,7 +1027,7 @@
         document.getElementById('footer-store-name').innerText = tiendaData.config.nombre;
         document.getElementById('announcement-text').innerText = tiendaData.config.announcement || "";
         document.getElementById('wa-float-link').href = `https://wa.me/${tiendaData.config.whatsapp}`;
-        document.getElementById('store-logo').src = tiendaData.config.logo || "https://via.placeholder.com/150x40?text=LOGO";
+        document.getElementById('store-logo').src = tiendaData.config.logo || DEFAULT_LOGO_URL;
         document.title = tiendaData.config.nombre + ' - Sistema de Ventas Profesional';
         renderCategories();
         runFilters();
@@ -1070,8 +1052,7 @@
                                 return `<span class="subcategory-item ${subActive ? 'active' : ''}" onclick="setSubcategory('${cat}', '${sub}')">${sub}</span>`;
                             }).join('')}
                         </div>
-                    </div>
-                `;
+                    </div>`;
             }
         }).join('');
     }
@@ -1109,13 +1090,11 @@
         const max = parseInt(document.getElementById('filter-max').value) || Infinity;
         const sortBy = document.getElementById('sort-select').value;
         const gridTitle = document.getElementById('grid-title');
-        
         let filtered = tiendaData.productos.filter(p => {
             const matchCat = currentCategory === 'TODOS' || p.cat === currentCategory;
             const matchSub = !currentSubcategory || (p.cat === currentCategory && p.subcat === currentSubcategory);
             return matchCat && matchSub && p.nombre.toLowerCase().includes(search) && p.precio >= min && p.precio <= max;
         });
-        
         if (currentCategory === 'TODOS' && !currentSubcategory && !search && min === 0 && max === Infinity && sortBy === 'default') {
             gridTitle.innerText = "Novedades y Destacados";
             const destacados = filtered.filter(p => p.destacado);
@@ -1127,10 +1106,8 @@
         } else {
             gridTitle.innerText = `Categoría: ${currentCategory}`;
         }
-
         filtered = sortProducts(filtered, sortBy);
         const isTodosDestacados = (currentCategory === 'TODOS' && !search && min === 0 && max === Infinity && sortBy === 'default' && !currentSubcategory);
-        
         if (!isTodosDestacados) {
             totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
             if (currentPage > totalPages) currentPage = totalPages;
@@ -1141,7 +1118,6 @@
             currentPage = 1;
             totalPages = 1;
         }
-
         const productGrid = document.getElementById('product-grid');
         if (filtered.length === 0) {
             productGrid.innerHTML = `<div class="col-span-full py-20 text-center bg-white rounded border border-dashed border-gray-300" style="grid-column: 1 / -1;"><i class="fa fa-search text-gray-200 text-6xl mb-4"></i><h3 class="text-gray-500 font-bold uppercase text-sm">No encontramos resultados</h3><button onclick="clearSearch()" class="mt-4 text-blue-600 font-bold text-[10px] hover:underline uppercase">Ver todos</button></div>`;
@@ -1155,10 +1131,7 @@
     function renderPagination() {
         const container = document.getElementById('pagination-container');
         if (totalPages <= 1) { container.innerHTML = ''; return; }
-        container.innerHTML = `
-            <button onclick="goToPage(${currentPage - 1})" class="page-btn" ${currentPage === 1 ? 'disabled' : ''}><i class="fa fa-chevron-left"></i></button>
-            <span class="text-xs text-gray-600 font-bold">Página ${currentPage} de ${totalPages}</span>
-            <button onclick="goToPage(${currentPage + 1})" class="page-btn" ${currentPage === totalPages ? 'disabled' : ''}><i class="fa fa-chevron-right"></i></button>`;
+        container.innerHTML = `<button onclick="goToPage(${currentPage - 1})" class="page-btn" ${currentPage === 1 ? 'disabled' : ''}><i class="fa fa-chevron-left"></i></button><span class="text-xs text-gray-600 font-bold">Página ${currentPage} de ${totalPages}</span><button onclick="goToPage(${currentPage + 1})" class="page-btn" ${currentPage === totalPages ? 'disabled' : ''}><i class="fa fa-chevron-right"></i></button>`;
     }
 
     function goToPage(page) {
@@ -1315,10 +1288,10 @@
         document.getElementById('edit-store-name').value = tiendaData.config.nombre;
         document.getElementById('edit-store-name-display').value = tiendaData.config.nombre;
         document.getElementById('edit-store-wa').value = tiendaData.config.whatsapp;
-        document.getElementById('edit-json-url').value = tiendaData.config.jsonUrl || "";
-        document.getElementById('edit-logo-url').value = tiendaData.config.logo || "";
-        document.getElementById('config-url-input').value = tiendaData.config.configUrl || "";
-        document.getElementById('logo-preview').src = tiendaData.config.logo || "https://via.placeholder.com/150x40?text=LOGO";
+        document.getElementById('edit-json-url').value = tiendaData.config.jsonUrl || DEFAULT_DB_URL;
+        document.getElementById('edit-logo-url').value = tiendaData.config.logo || DEFAULT_LOGO_URL;
+        document.getElementById('config-url-input').value = tiendaData.config.configUrl || DEFAULT_CONFIG_URL;
+        document.getElementById('logo-preview').src = tiendaData.config.logo || DEFAULT_LOGO_URL;
         renderAdminList();
         updateDashboard();
     }
@@ -1350,14 +1323,11 @@
                     </div>
                 </div>
                 <div class="flex justify-end gap-3 border-t pt-2 mt-2">
-                    <button onclick="toggleDestacado(${p.id})" class="btn-destacar text-[9px] font-bold px-2 py-1 rounded border ${p.destacado ? 'active' : 'text-gray-400 border-gray-300'}">
-                        <i class="fa fa-star"></i> ${p.destacado ? 'DESTACADO' : 'DESTACAR'}
-                    </button>
+                    <button onclick="toggleDestacado(${p.id})" class="btn-destacar text-[9px] font-bold px-2 py-1 rounded border ${p.destacado ? 'active' : 'text-gray-400 border-gray-300'}"><i class="fa fa-star"></i> ${p.destacado ? 'DESTACADO' : 'DESTACAR'}</button>
                     <button onclick="editP(${p.id})" class="text-[9px] text-gray-400 font-bold hover:text-blue-600">EDITAR</button>
                     <button onclick="delP(${p.id})" class="text-[9px] text-red-300 font-bold hover:text-red-600">BORRAR</button>
                 </div>
-            </div>
-        `).join('');
+            </div>`).join('');
     }
 
     function quickUpdate(id, field, value) {
@@ -1365,7 +1335,12 @@
         if (idx !== -1) { tiendaData.productos[idx][field] = field === 'precio' ? parseInt(value) : value; save(); updateDashboard(); updatePublicStore(); }
     }
 
+    // ====== CARGA INICIAL DESDE URLs ======
     async function loadInitialConfig() {
+        let configLoaded = false;
+        let bannersLoaded = false;
+        
+        // 1. Intentar cargar configuración desde configUrl
         if (tiendaData.config.configUrl) {
             try {
                 const response = await fetch(tiendaData.config.configUrl);
@@ -1376,13 +1351,29 @@
                         if (configData.config.logo) tiendaData.config.logo = configData.config.logo;
                         if (configData.config.whatsapp) tiendaData.config.whatsapp = configData.config.whatsapp;
                         if (configData.config.announcement) tiendaData.config.announcement = configData.config.announcement;
-                        if (configData.banners) bannerData = configData.banners;
-                        if (configData.categorias) { categoriasData = configData.categorias; savedCats = Object.keys(categoriasData); }
-                        save();
+                        if (configData.banners && Array.isArray(configData.banners)) {
+                            bannerData = configData.banners;
+                            bannersLoaded = true;
+                        }
+                        if (configData.categorias) {
+                            categoriasData = configData.categorias;
+                            savedCats = Object.keys(categoriasData);
+                        }
+                        configLoaded = true;
+                        console.log('✅ Configuración cargada desde:', tiendaData.config.configUrl);
                     }
                 }
-            } catch (e) {}
+            } catch (e) {
+                console.log('⚠️ No se pudo cargar config desde URL:', e.message);
+            }
         }
+        
+        // 2. Si no se cargaron banners, usar los default
+        if (!bannersLoaded) {
+            console.log('ℹ️ Usando banners predeterminados');
+        }
+        
+        // 3. Intentar cargar productos desde jsonUrl
         if (tiendaData.config.jsonUrl) {
             try {
                 const response = await fetch(tiendaData.config.jsonUrl);
@@ -1397,11 +1388,15 @@
                         const newCats = [...new Set(data.productos.map(p => p.cat))];
                         newCats.forEach(c => { if (!categoriasData[c]) categoriasData[c] = []; });
                         savedCats = Object.keys(categoriasData);
-                        save();
+                        console.log('✅ Productos cargados desde:', tiendaData.config.jsonUrl);
                     }
                 }
-            } catch (e) {}
+            } catch (e) {
+                console.log('⚠️ No se pudo cargar productos desde URL:', e.message);
+            }
         }
+        
+        save();
     }
 
     async function initializeStore() {
