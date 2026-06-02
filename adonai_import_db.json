@@ -5,38 +5,10 @@
     "logo": "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true",
     "pin": "1234",
     "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-    "jsonUrl": "https://adonaiimport.github.io/py/adonai_import_db.json",
+    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json",
     "configUrl": "https://raw.githubusercontent.com/adonaiimport/py/refs/heads/img/adonai_import_config.json"
   },
   "productos": [
-    {
-      "id": 101,
-      "nombre": "Reel Profesional Pesca",
-      "desc": "Reel de alta gama, fabricado en aluminio. Perfecto para variada pesada.",
-      "precio": 250000,
-      "precioAnterior": 320000,
-      "stock": 15,
-      "imgs": [
-        "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"
-      ],
-      "cat": "PESCA",
-      "stockAlert": true,
-      "destacado": true
-    },
-    {
-      "id": 102,
-      "nombre": "Carpa Térmica 4P",
-      "desc": "Carpa para 4 personas con protección UV y resistente al agua.",
-      "precio": 680000,
-      "precioAnterior": null,
-      "stock": 8,
-      "imgs": [
-        "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=400"
-      ],
-      "cat": "CAMPING",
-      "stockAlert": true,
-      "destacado": true
-    },
     {
       "id": 1779227228399,
       "nombre": "COCINA INFRARROJO BRISA",
@@ -97,7 +69,7 @@
       "id": 1779242313556,
       "nombre": "Sandwichera Doble RAF",
       "desc": "Sandwichera Doble RAF\n💫 Cod.: R. 264S\nCaracterísticas:\n⚡️Potencia: 850w\n⚡️Antiadherente\n⚡️Base antideslizante",
-      "precio": 900000,
+      "precio": 90000,
       "precioAnterior": null,
       "stock": 10,
       "imgs": [
@@ -370,6 +342,608 @@
         "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(8).jpg"
       ],
       "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779466471651,
+      "nombre": "COCINA ELÉCTRICA  HOT PLATE",
+      "desc": "COCINA ELÉCTRICA  HOT PLATE\n⚡2H espiral \n⚡Dos indicadores de encendido/apagado \n⚡️Varias operaciones de calor\n⚡Dos termostatos automáticos\n⚡ Potencia: 2000W",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779466579311,
+      "nombre": "Cocina (1H) Espiral",
+      "desc": "Cocina (1H) Espiral\n📌 Marca: RAF\n📌 Cod: R. 8010BB\n📌 Potencia: 1000w\n📌 Indicador de encendido/apagado\n📌 Protección contra sobrecalentamiento",
+      "precio": 55000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(10).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779466670910,
+      "nombre": "Cocina (1H) Placa",
+      "desc": "Cocina (1H) Placa\n📌 Marca: RAF\n📌 Cod: R. 8010 AB\n📌 Potencia: 1000w\n📌 Indicador de encendido/apagado\n📌 Protección contra sobrecalentamiento",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(2).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779466782092,
+      "nombre": "Cocina A GAS (1H) RAF",
+      "desc": "Cocina A GAS (1H) RAF\n💫 Cod.: R - 8032\n⚡ Con 1 hornalla \n⚡ 1 perilla graduable \n⚡ Fácil de limpiar \n",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(7).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779466882591,
+      "nombre": "Cocina Electrica RAF (2 H) ",
+      "desc": "Cocina Electrica RAF (2 H) 👨🏻‍🍳👩🏻‍🍳🔝\nCaracterísticas:\n⚡COD: R. 8020AB\n⚡Formato tipo \"Plancha\" (2 H)\n⚡Potencia: 2000w\n⚡Indicador de encendido\n⚡Control de temperatura\n⚡Protección contra sobre calentamiento\n",
+      "precio": 100000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(9).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779467026775,
+      "nombre": "Camara Luo inteligente Lu-E109",
+      "desc": "Camara Luo inteligente\nLu-E109\n\n☆ Doble visor: Cuenta con dos lentes para cubrir diferentes ángulos simultáneamente.\n\n☆ Conectividad: Funciona mediante conexión Wi-Fi de red doméstica.\n\n☆ Aplicación móvil Se controla y visualiza a través de la app V380 Pro.\nAccesorios incluidos.",
+      "precio": 130000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(3).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779467121384,
+      "nombre": "CÁMARA DE SEGURIDAD DOBLE VISOR LUO Cod : E105 ",
+      "desc": "CÁMARA DE SEGURIDAD DOBLE VISOR LUO\n⚡Cod : E105\n⚡Interior y exterior\n⚡App: V380pro",
+      "precio": 170000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(4).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": false,
+      "destacado": false
+    },
+    {
+      "id": 1779467280769,
+      "nombre": "CÁMARA DE SEGURIDAD LUO Cod : E97",
+      "desc": "CÁMARA DE SEGURIDAD LUO\n⚡Cod : E97\n⚡Interior / Exterior \n⚡️A prueba de agua\n⚡App: V380pro",
+      "precio": 130000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(5).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779467403004,
+      "nombre": "Camara Triple visor Lu-E127",
+      "desc": "Camara Triple visor\n\nLu-E127\n\nIncorpora lentes laterales ajustables de forma manual y una cámara domo central de rotación motorizada (PTZ) que gira hasta 355° en horizontal y 90° en vertical.\nAplicación móvil \nSe gestiona y configura por completo a través de la aplicación oficial V380 Pro.\n\nResistencia a la intemperie ",
+      "precio": 220000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/58c1dd39ec99f548b2b541f77320e66b0feb0ce4/abc1%20(8).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779473922478,
+      "nombre": "Arrancador de batería multifuncional para autos",
+      "desc": "Arrancador de batería multifuncional para autos (Jump Starter) y  compresor de aire",
+      "precio": 195000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(7).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779474057879,
+      "nombre": "Maletín de herramienta  inalámbricas que incluye un taladro",
+      "desc": "Maletín de herramienta  inalámbricas que incluye un taladro\n\n Marca Boashi.\n\n ⚡Voltaje El taladro funciona con baterías que indican 36V (3.0Ah)\n\nContenido Trae un total de 116 piezas\nContiene\n* Taladro inalámbrico con dos baterías y cargador.\n* Herramientas manuales (martillo, alicates, llave ajustable, destornilladores, sierra de mano).\n* Accesorios (brocas para madera y metal, puntas de destornillador, tubos, cinta \n",
+      "precio": 280000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779474244229,
+      "nombre": "Cocina infrarroja MAST  ",
+      "desc": "Cocina infrarroja MAST \n2200W 8 niveles de control tactil\nVidrio de alta resistencia\nCompatible con cualquier tipo de ollas",
+      "precio": 130000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(2).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779475123928,
+      "nombre": "Aro de luz Led",
+      "desc": "Aro de luz Led\n  Lu-480\n☆ Tamaño:  Cuenta con un diámetro de 48 centímetros.\n☆ Soporte triple: Incluye espacio para colocar hasta 3 teléfonos celulares a la vez.\n\nTrípode ajustable: Viene con un parante ajustable para regular la altura.\n\n☆ Control de iluminación Permite cambiar la temperatura de color (cálida, neutra y fría) desde 3000k hasta 6500k.\n\n☆ Brillo regulable Cuenta con botones para aumentar o disminuir la intensidad de la luz",
+      "precio": 170000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(3).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779475202338,
+      "nombre": "PULIDORA / AMOLADORA BOASHI",
+      "desc": "PULIDORA / AMOLADORA BOASHI😎\n ✨Boashi modelo BS - 73000. \n✨Capacidad del mandril: 120 mm\n✨Potencia de entrada nominal: 600 W\n✨Velocidad sin carga: 0-4500 r/min\n✨Frecuencia nominal: 50 Hz\n✨Voltaje nominal: 220 V\n",
+      "precio": 150000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(5).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779475276581,
+      "nombre": "Cocina a gas Biónica de 2 hornallas ",
+      "desc": "Cocina a gas Biónica de 2 hornallas ✨✨ \n\n\nCARACTERÍSTICAS\n\nEncendido automático\n\nQuemadores y Jgos. de tapas de hierro fundido\n\nTamaño del quemador: 100 mm+100 mm\n\nMedidas: 70*37.5*9 cm\n",
+      "precio": 215000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779475322367,
+      "nombre": "LINTERNA MULTI-FUNCIONAL",
+      "desc": "LINTERNA MULTI-FUNCIONAL 🔦☀️\n📌 Cod: 7739-C\n📌 Linterna de 2 posiciones de encendido \n📌 Luz de emergencia con dos posiciones de encendido y baliza \n📌 Panel solar \n📌 Doble batería \n Incluye:\n📌 Cúter \n📌 Dos llave L\n📌 Pinza \n📌 Cinta métrica de 1m\n📌 Destornillador y Llave ",
+      "precio": 900000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779483639369,
+      "nombre": "Compresor portátil ",
+      "desc": "Compresor portátil \n🔋 Banco de Energía\nUso: Carga dispositivos en emergencias.\nPuertos: Doble interfaz (USB y Tipo-C).\nCapacidad Batería grande de larga duración. \n\n💨 Inflado Inteligente\nModos: Ajustes para autos, motos, bicicletas y balones.\nControl: Permite sumar o restar presión manualmente.\nOperación: Se infla con un solo botón tras fijar el valor.\n\n🚨 Luz de Emergencia\nModo 1: Luz blanca para iluminación común.\nModo 2: Luz roja intermitente para auxilio o guía.\nModo 3: Luz roja y azul intermitente para advertir fallas.\n",
+      "precio": 110000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(9).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1779483763781,
+      "nombre": "Cocina a gas Raf",
+      "desc": "Cocina a gas Raf💥\n\n R.8075\n\n▪️︎ Quemadores Cuenta con 5 estufas o fuegos independientes.\n▪️︎ Fuente de gas: Diseñada para funcionar con gas natural (NG - Natural Gas).\n\n▪️︎ Superficie: Paneles de cristal con bordes rectos para un acabado moderno y fácil limpieza.\n\n▪️︎ Encendido : Sistema de encendido rápido y dispositivo de encendido por pulsos.\n\n▪️︎ Soportes Repisa o parrillas de hierro fundido para mayor estabilidad y resistencia al calor\n\nSeguridad Diseño enfocado en el ahorro energético y uso seguro.",
+      "precio": 700000,
+      "precioAnterior": null,
+      "stock": 5,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/d7ff88f02f9fce1c18189e68b0bcf7358ad114d6/abc2%20(4).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780329297788,
+      "nombre": "SECADOR DALING",
+      "desc": "SECADOR DALING\n📌 COD: DL - 3012\nCaracterísticas:\n📌 2 velocidades y 3 ajustes de temperatura\n📌 Mango plegable\n📌 Potencia 1400W",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(3).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780329400870,
+      "nombre": "JUEGO DE COCINA ALHAMBRA 6 PCS",
+      "desc": "JUEGO DE COCINA ALHAMBRA 6 PCS\n💫 Cod.: GUK13\nCaracterísticas:\n📌 Sarten: 22cm\n📌 Olla de sopera: 22cm\n📌 Olla de leche: 16cm\n📌 Olla de sopera: 18cm\n📌 2 Cucharona\n📌 Antiadherente, Tapa de vidrio ",
+      "precio": 160000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780329717314,
+      "nombre": "JUEGO DE LLAVE TUBO",
+      "desc": "JUEGO DE LLAVE TUBO\nCaracterísticas:\n⚡ Marca: Aiwa \n⚡ Tipo de cabezal: hexagonal\n⚡ Juego de 40pçs\n⚡ Práctico juegos de llaves\n⚡ Asas de fácil agarre \n⚡ Conjunto compacto y multiuso",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(7).jpg"
+      ],
+      "cat": "CAMPING",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780329851964,
+      "nombre": "SET DE LLAVE TUBO NEW TOOLS 12 PCS",
+      "desc": "SET DE LLAVE TUBO NEW TOOLS 12 PCS\nCaracterísticas:\n📌 Incluye 10 vasos métricos de 1/2\" (tamaños 8, 10, 12, 13, 14, 15, 17, 19, 21, 24 mm), un mango de trinquete rápido y una barra de extensión de 5\".",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(5).jpg"
+      ],
+      "cat": "CAMPING",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780330307980,
+      "nombre": "TALADRO ELECTRICO BOASHI",
+      "desc": "TALADRO ELÉCTRICO BOASHI\n💫 Cod.: BS - 81010\nCaracterísticas:\n📌 Potencia: Motor de 450W con una velocidad nominal de 3200 r/min.\n📌 Capacidad: Mandril con capacidad para brocas de hasta 10mm. \n📌 Voltaje: Funciona con un voltaje de 220V a una frecuencia de 50Hz.\n📌 Diseño: Cuenta con regulación de velocidad continua y se destaca por ser de uso industrial y profesional. ",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(11).jpg"
+      ],
+      "cat": "CAMPING",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780330382622,
+      "nombre": "Juego de Herramientas de 216 Piezas",
+      "desc": "Juego de Herramientas de 216 Piezas\n - Completo y Versátil!\nEste kit de herramientas es la solución perfecta para profesionales y aficionados. Fabricado en acero de alta calidad para garantizar resistencia y durabilidad, viene en un maletín robusto y organizado para que puedas llevarlo a cualquier lugar.",
+      "precio": 430000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(10).jpg"
+      ],
+      "cat": "CAMPING",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780330463256,
+      "nombre": "POCHOCLERA RAF📽️🍿😎 ",
+      "desc": "POCHOCLERA RAF📽️🍿😎 \nCaracterísca:\n⚡ Marca: RAF\n⚡ Cod.: R. 9001\n⚡ Potencia: 1200w\n⚡ Cap. 3.3lts\n⚡ Palomitas listas en 3 min\n⚡ Fácil de usar y limpiar \n⚡ Funciona con aire caliente, no es necesario agregar aceite \n⚡ Tamaño compacto y ligero \n⚡ Base antideslizante ",
+      "precio": 160000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(4).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780330550206,
+      "nombre": "Pochoclera📽️🍿😎",
+      "desc": "Pochoclera📽️🍿😎\nCaracterísca:\n⚡ Marca: RAF\n⚡cód: R. 9014\n⚡ Potencia: 1200w\n⚡ Cap. 2lts\n⚡ Palomitas listas en 3 min\n⚡ Fácil de usar y limpiar \n⚡ Funciona con aire caliente, no es necesario agregar aceite \n⚡ Tamaño compacto y ligero \n⚡ Base antideslizante ",
+      "precio": 100000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780400759620,
+      "nombre": "WAFLERA RAF",
+      "desc": "WAFLERA RAF\n💫 Cod.: R. 525\n⚡ Potencia: 850w \n⚡ Placa de parrilla\n⚡️ Indicador de encendido \n⚡️ Revestimiento Antiadherente ",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780400820703,
+      "nombre": "Waflera marca RAF",
+      "desc": "Waflera marca RAF\n⚡ COD. R 519🥞🤤\n⚡potencia:1200w\n⚡perilla regulable",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(2).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780400937847,
+      "nombre": "PARLANTE PORTATIL INOVA 'REMIX P2'",
+      "desc": "PARLANTE PORTATIL INOVA 'REMIX P2'\n💫 Cod: RAD - 0037\nCaracterísticas:\n📌 Potencia: 20w\n📌 Radio FM, USB, TF, BTH, MIC\n📌 Batería: 3600mAh \n📌 Pantalla Digital \n📌 Woofer 8\"\n📌 Entrada p/ Micrófono \n📌 Micrófono inalámbrico ",
+      "precio": 305000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(12).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780405577279,
+      "nombre": " Horno Eléctrico RAF ",
+      "desc": "Horno Eléctrico RAF \nCaracteristicas: \n⚡ Marca: RAF\n⚡ Capacidad: 14 lts\n⚡ Potencia: 850w\n⚡ Temporizador: 30 minutos\n⛔ Sin Rotisserie (Rosticero)  \n⚡ accesorios incluidos: bandeja para hornear, rejilla, mango de bandeja ",
+      "precio": 280000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(3).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780405752680,
+      "nombre": "FREIDORA Biónica 6 LTS",
+      "desc": "FREIDORA Biónica 6 LTS\nRL150749\n\n▪️︎ Capacidad: 6 Lts.\n\n▪️︎ Voltaje: 220-240V\n\n▪️︎ Frecuencia: 50Hz.\n\n▪️︎ Potencia: 2500W.",
+      "precio": 250000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(13).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780405832446,
+      "nombre": "BATIDORA PLANETARIA C/ BOWL NOBEL HOME",
+      "desc": "BATIDORA PLANETARIA C/ BOWL NOBEL HOME \nCaracterísticas:\n⚡ Marca: Nobel Home\n⚡ Cod. 01426\n⚡ Funcionamiento: 3 en 1 (amasadora, mezcladora y batidora) \n⚡ Capacidad De Bolw: 3.50lts\n⚡ Potencia: 1000w \n⚡ Velocidades: 6 speeds\n⚡ Tapa anti-salpicaduras\n⚡ Tapa para añadir ingredientes en cualquier momento \n",
+      "precio": 495000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(14).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408201152,
+      "nombre": "COCINA A GAS 4 HORNALLAS MARYLAND",
+      "desc": "COCINA A GAS 4 HORNALLAS MARYLAND\n💫 Cod.: MR - G404\nCaracterísticas: \n📌 Parrilla de Mesa: Alambrado de 4 mm\n📌 Mesa: Acero inoxidable\n📌 Encendido: Manual\n📌 Número de Hornallas: 4\n📌 Tipo: A gas\n📌 Uso: Mesa",
+      "precio": 285000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(10).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408293551,
+      "nombre": "LICUADORA DE PLASTICO MOX",
+      "desc": "LICUADORA DE PLASTICO MOX\n\nMO-LC56.\n\n☆Jarra de 1.5L.\n\n☆Botón de 4 velocidades continuas & pulso.\n\n☆Potencia: 350W.\n\n☆Voltaje: 220-240V 50-60HZ.\n\n☆4 cuchillas de acero inoxidable.\n",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408385501,
+      "nombre": "freidora eléctrica de aceite ",
+      "desc": "freidora eléctrica de aceite \n ✔️ Marca RAF.\n cod R.5299 \nPotencia : Funciona con 2000 Watts para un calentamiento rápido\n\nCapacidad: Cuenta con un tanque con espacio para 3. litros de aceite\n\nControl térmico: Incluye una perilla para ajustar la temperatura según el alimento\n\nEstructura metálica Cuerpo exterior fabricado en acero inoxidable duradero\n",
+      "precio": 240000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(11).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408477051,
+      "nombre": "Cortador de Fiambre Eléctrico Euro Max",
+      "desc": "Cortador de Fiambre Eléctrico Euro Max\nCaracterísca:\n⚡ Gran cuchilla de acero fino inoxidable\n⚡ Diferentes ajustes para grosor de corte desde 0 a 15mm\n⚡ Potencia de 180 vatios\n⚡ Cuchilla Removible de Acero inoxidable \n⚡ Empujador de Alimentos (Cubierta Transparente)\n⚡ Dimensiones de la Unidad: 37.5 x 29 x 27.5 cm ",
+      "precio": 355000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(4).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408564839,
+      "nombre": "Vaporera Electrica Vaporizador Alimentos  Vapor ",
+      "desc": "Vaporera Electrica Vaporizador Alimentos  Vapor \n* ✨El Vaporizador de Alimentos RAF modelo R.5238 Blanco es un electrodoméstico diseñado para cocinar alimentos al vapor de manera eficiente y saludable.\n* ⁠Capacidad total: 12 litros.\n* Capacidad por nivel: 4 litros.\n* Número de niveles de cocción: 3.\n* ⁠Material de la estructura:\n* ⁠Plástico resistente\n* ⁠Color: Blanco.\n* ⁠Sistema de cocción al vapor.\n* ⁠Control de temperatura ajustable.\n* ⁠Temporizador incorporado.\n* ⁠Indicadores luminosos de\n* ⁠encendido y finalización de la cocción.\n* ⁠Función de apagado automático de seguridad.\n* ⁠Potencia: 1000-1200 vatios .\n* ⁠Dimensiones aproximadas: 63.5X22.8X21CM",
+      "precio": 240000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780408659506,
+      "nombre": "Ducha Eletrônica  220V 7700W de la marca Zagonel",
+      "desc": "Ducha Eletrônica  220V 7700W de la marca Zagonel\n\n *Cuenta con un diseño cuadrado moderno y un gran esparcidor. \n\n * Potencia: Tiene una potencia de 7700W funcionando a 220V. ",
+      "precio": 185000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(5).jpg"
+      ],
+      "cat": "GENERAL",
+      "stockAlert": false,
+      "destacado": false
+    },
+    {
+      "id": 1780409001053,
+      "nombre": "Ducha Electrónica Zagone ",
+      "desc": "Ducha Electrónica Zagone \nMoment en color blanco.     ●Potencia: 7500W. \n●Voltaje: 220V. \n●Tipo de Control: Regulador electrónico de temperatura. \n◇ Incluye un gran dispersor para mayor confort, \n▪️︎ vareta para regular la temperatura ",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(7).jpg"
+      ],
+      "cat": "GENERAL",
+      "stockAlert": false,
+      "destacado": false
+    },
+    {
+      "id": 1780409132536,
+      "nombre": "Ducha eléctrica Lorenzetti",
+      "desc": "Ducha eléctrica Lorenzetti\n ☆Maxi Ducha Ultra. \n\n☆Potencia: 5500W.\n\n☆Voltaje:   220V.\n\n☆ Incluye selector de temperatura (Verano, Desliga, Invierno) y manguera.\n\n☆Calentamiento Instantáneo de agua sin necesidad de un calentador central\n",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(9).jpg"
+      ],
+      "cat": "GENERAL",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780409203939,
+      "nombre": "AMPLIFICADOR DE SEÑAL WIFI LUO",
+      "desc": "AMPLIFICADOR DE SEÑAL WIFI LUO\n💫 Cod.: LU - 2606\n⚡️4 antena",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(15).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780409283852,
+      "nombre": "OLLA A PRESIÓN PANELART 4.5 LTS",
+      "desc": "OLLA A PRESIÓN PANELART 4.5 LTS\n⚡ Marca panelart \n⚡ Capacidad 4.5 lts",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 5,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(12).jpg"
+      ],
+      "cat": "HOGAR",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780409354484,
+      "nombre": "MASAJEADOR ELÉCTRICO MOX ",
+      "desc": "MASAJEADOR ELÉCTRICO MOX \n\nMo -MG60\n\n Características :\n⚡ Potencia de motor 30W\n⚡ Capacidad de la batería 1800 mAh\n⚡ Tipo de interfaz: tipo C\n⚡ 6 velocidades\n⚡ Cabeza intercambiable\n⚡ Batería de larga duración \n⚡ Operación silenciosa y pacífica",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/661f6e0f8d112f874326e6a1b064b42bdbf7093d/A3%20(2).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
       "stockAlert": true,
       "destacado": false
     }
