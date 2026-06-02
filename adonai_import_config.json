@@ -5,8 +5,8 @@
     "logo": "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true",
     "pin": "1234",
     "announcement": "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
-    "jsonUrl": "https://adonaiimport.github.io/demo/adonai_import_db.json",
-    "configUrl": ""
+    "jsonUrl": "https://adonaiimport.github.io/py/adonai_import_db.json",
+    "configUrl": "https://adonaiimport.github.io/py/adonai_import_config.json"
   },
   "banners": [
     {
@@ -67,8 +67,9 @@
       "Computación",
       "Accesorios"
     ],
-    "GENERAL": []
+    "GENERAL": [],
+    "SALUD Y BELLEZA": []
   },
   "version": "2.0",
-  "fecha": "2026-06-02T16:43:12.196Z"
+  "fecha": "2026-06-02T16:53:33.330Z"
 }
