@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>ADONAI IMPORT - Sistema de Ventas Profesional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -31,7 +31,10 @@
         .category-chip.active { color: var(--amazon-orange); border-bottom-color: var(--amazon-orange); font-weight: bold; }
         .category-dropdown { position: relative; display: inline-block; }
         .category-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #1a2533; min-width: 200px; border-radius: 0 0 4px 4px; z-index: 100; box-shadow: 0 8px 16px rgba(0,0,0,0.3); border: 1px solid #374151; }
-        .category-dropdown:hover .category-dropdown-content { display: block; }
+        /* --- Comportamiento mejorado para móvil/desktop --- */
+        @media (min-width: 769px) {
+            .category-dropdown:hover .category-dropdown-content { display: block; }
+        }
         .subcategory-item { display: block; padding: 8px 16px; color: #ddd; font-size: 12px; cursor: pointer; transition: 0.2s; white-space: nowrap; }
         .subcategory-item:hover { background: #374151; color: var(--amazon-orange); }
         .subcategory-item.active { color: var(--amazon-orange); font-weight: bold; background: #1f2937; }
@@ -114,7 +117,7 @@
 
 <div id="top-announcement-bar">
     <i class="fa fa-truck-fast announcement-icon"></i>
-    <span id="announcement-text">¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!</span>
+    <span id="announcement-text">Cargando configuración...</span>
     <i class="fa fa-star announcement-icon text-yellow-400"></i>
 </div>
 
@@ -336,7 +339,7 @@
 <header class="amazon-header text-white sticky top-0 z-50 shadow-md">
     <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
         <div class="flex items-center space-x-4 shrink-0">
-            <img id="store-logo" src="https://github.com/adonaiimport/py/blob/img/logo.png?raw=true" alt="Logo" class="h-12 cursor-pointer hover:opacity-80" ondblclick="accessAdmin()" onerror="this.src='https://via.placeholder.com/150x40?text=LOGO'">
+            <img id="store-logo" src="" alt="Logo" class="h-12 cursor-pointer hover:opacity-80" ondblclick="accessAdmin()" onerror="this.src='https://via.placeholder.com/150x40?text=LOGO'">
             <span class="font-bold text-lg hidden md:block uppercase tracking-tighter" id="store-name"></span>
         </div>
         <div class="flex-grow max-w-2xl relative">
@@ -351,7 +354,7 @@
         </div>
     </div>
     <nav id="category-nav" class="category-nav text-white px-4 py-1 text-sm flex flex-wrap items-center gap-1">
-        <span class="category-chip ${currentCategory === 'TODOS' && !currentSubcategory ? 'active' : ''}" onclick="setCategory('TODOS')">TODOS</span>
+        <span class="category-chip" onclick="setCategory('TODOS')">TODOS</span>
         <div id="category-list" class="flex items-center gap-1 flex-wrap"></div>
         <div class="hidden md:flex items-center space-x-3 border-l border-gray-600 pl-4 py-1 flex-wrap ml-auto">
             <div class="flex items-center space-x-1">
@@ -435,13 +438,14 @@
 </div>
 
 <script>
+    // --- Constantes y URLs de carga automática ---
     const STORAGE_KEY = 'retail_py_final_data_v20';
     const CATS_KEY = 'retail_py_cats_v20';
     const DESTACADOS_KEY = 'retail_py_destacados_v20';
     const BANNERS_KEY = 'retail_py_banners_v20';
     const SUBCATS_KEY = 'retail_py_subcats_v20';
     
-    // URLs por defecto
+    // URLs por defecto (TUS ARCHIVOS JSON)
     const DEFAULT_LOGO_URL = "https://github.com/adonaiimport/py/blob/img/logo.png?raw=true";
     const DEFAULT_DB_URL = "https://adonaiimport.github.io/py/adonai_import_db.json";
     const DEFAULT_CONFIG_URL = "https://adonaiimport.github.io/py/adonai_import_config.json";
@@ -456,49 +460,28 @@
     const ITEMS_PER_PAGE = 50;
     const MAX_DESTACADOS = 10;
 
-    let categoriasData = JSON.parse(localStorage.getItem(SUBCATS_KEY)) || {
-        "PESCA": ["Cañas", "Reels", "Señuelos", "Accesorios"],
-        "CAMPING": ["Carpas", "Mochilas", "Cocina", "Iluminación"],
-        "HOGAR": ["Cocina", "Decoración", "Limpieza", "Muebles"],
-        "TECNOLOGÍA": ["Celulares", "Audio", "Computación", "Accesorios"],
-        "GENERAL": []
-    };
+    // Estructura inicial (se reemplazará al cargar desde JSON)
+    let categoriasData = {};
+    let savedCats = [];
+    let destacadosIds = [];
     
-    let savedCats = Object.keys(categoriasData);
-    let destacadosIds = JSON.parse(localStorage.getItem(DESTACADOS_KEY)) || [];
-
-    const defaultBanners = [
-        { title: "Equipamiento<br>Profesional", desc: "Envíos a todo el país", images: ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=1200&auto=format&fit=crop", "https://i.postimg.cc/rp2jjvLN/Image.jpg", "https://i.postimg.cc/Hxgpps1T/691761692-1844287196243576-2005709712628552983-n.jpg", "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop", "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=1200&auto=format&fit=crop"] },
-        { title: "Tecnología<br>Y mas", desc: "Donde la calidad se encuentra con la innovación", images: ["https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200&auto=format&fit=crop", "https://i.postimg.cc/2S2MKk2x/694489541-1281162194189334-5257669950632948176-n.jpg", "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop", "https://i.postimg.cc/bYnJcWXd/687730914-1640511601010905-5717185380612022505-n.jpg", "https://i.postimg.cc/Zqykvkxr/358-3586075-ledtv-bkdrop1-min-led-tv-banner-png-transparent.png"] },
-        { title: "Hogar &<br>Cocina", desc: "Calidad para tu familia", images: ["https://i.postimg.cc/3JxPCHJb/cocina-q0w3kra3kk81pt19sh4m79vx57jv4artav9wvm7w2w.jpg", "https://i.postimg.cc/tTDBYYPj/batidoras-1600x900.jpg", "https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?q=80&w=1200&auto=format&fit=crop", "https://i.postimg.cc/28x4QVSZ/images.jpg", "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop"] },
-        { title: "Artículos<br>de Pesca", desc: "Prepárate para tu mejor captura", images: ["https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=1200&auto=format&fit=crop", "https://i.postimg.cc/dQGTwz22/pesca-166012056-612x612.jpg", "https://i.postimg.cc/k4018kGJ/istockphoto-1342441625-612x612.jpg", "https://i.postimg.cc/tTNZt6CB/istockphoto-1092160614-612x612.jpg", "https://i.postimg.cc/ZRPLX0jr/685635662-3256598154548896-3654142656584478875-n.jpg"] }
-    ];
-
-    let bannerData = JSON.parse(localStorage.getItem(BANNERS_KEY)) || defaultBanners;
-
-    const defaultStore = {
+    let bannerData = [];
+    
+    // Datos por defecto (mínimos, solo para no romper la carga inicial)
+    let tiendaData = {
         config: { 
             nombre: "ADONAI IMPORT", 
             whatsapp: "595981000000", 
             logo: DEFAULT_LOGO_URL, 
             pin: "1234",
-            announcement: "¡ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS MAYORES A 500.000 Gs!",
+            announcement: "Cargando datos...",
             jsonUrl: DEFAULT_DB_URL,
             configUrl: DEFAULT_CONFIG_URL
         },
-        productos: [
-            { id: 101, nombre: "Reel Profesional Pesca", desc: "Reel de alta gama, fabricado en aluminio.", precio: 250000, precioAnterior: 320000, stock: 15, imgs: ["https://images.unsplash.com/photo-1544552866-d3ed42536cfd?q=80&w=400"], cat: "PESCA", subcat: "Reels", stockAlert: true, destacado: true },
-            { id: 102, nombre: "Carpa Térmica 4P", desc: "Carpa para 4 personas con protección UV.", precio: 680000, precioAnterior: null, stock: 8, imgs: ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=400"], cat: "CAMPING", subcat: "Carpas", stockAlert: true, destacado: true }
-        ]
+        productos: []
     };
-
-    let tiendaData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || defaultStore;
     
-    // Asegurar que las URLs por defecto se apliquen si no existen
-    if (!tiendaData.config.logo) tiendaData.config.logo = DEFAULT_LOGO_URL;
-    if (!tiendaData.config.jsonUrl) tiendaData.config.jsonUrl = DEFAULT_DB_URL;
-    if (!tiendaData.config.configUrl) tiendaData.config.configUrl = DEFAULT_CONFIG_URL;
-
+    // Función para guardar todo en localStorage
     function save() { 
         localStorage.setItem(STORAGE_KEY, JSON.stringify(tiendaData)); 
         localStorage.setItem(CATS_KEY, JSON.stringify(savedCats));
@@ -507,37 +490,123 @@
         localStorage.setItem(SUBCATS_KEY, JSON.stringify(categoriasData));
     }
 
+    // Helper para obtener subcategorías de una categoría
     function getCategorySubcategories(cat) {
         return categoriasData[cat] || [];
     }
-
+    
     function getAllCategories() {
-        return Object.keys(categoriasData);
+        return Object.keys(categoriasData).sort();
     }
 
-    // ====== SCROLL PARA OCULTAR BANNER DE CATEGORÍAS ======
+    // ========== MEJORA: MENÚ CON CLICK PARA MÓVIL ==========
+    let activeMobileDropdown = null;
+    
+    function closeAllDropdowns() {
+        document.querySelectorAll('.category-dropdown-content').forEach(d => {
+            d.style.display = 'none';
+        });
+        activeMobileDropdown = null;
+    }
+    
+    function toggleDropdown(event, cat) {
+        event.stopPropagation();
+        const dropdownContent = document.getElementById(`dropdown-${cat}`);
+        const allDropdowns = document.querySelectorAll('.category-dropdown-content');
+        
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+            activeMobileDropdown = null;
+        } else {
+            allDropdowns.forEach(d => d.style.display = 'none');
+            dropdownContent.style.display = 'block';
+            activeMobileDropdown = cat;
+        }
+    }
+    
+    // Función principal de renderizado del menú
+    function renderCategories() {
+        const container = document.getElementById('category-list');
+        const cats = getAllCategories();
+        
+        if (cats.length === 0) {
+            container.innerHTML = '<span class="text-gray-400 text-xs">Cargando categorías...</span>';
+            return;
+        }
+        
+        container.innerHTML = cats.map(cat => {
+            const subs = getCategorySubcategories(cat);
+            const isActive = currentCategory === cat && !currentSubcategory;
+            
+            if (subs.length === 0) {
+                return `<span class="category-chip ${isActive ? 'active' : ''}" onclick="setCategory('${cat}')">${cat}</span>`;
+            } else {
+                return `
+                    <div class="category-dropdown" data-cat="${cat}">
+                        <span class="category-chip ${isActive || currentCategory === cat ? 'active' : ''}" 
+                              onclick="toggleDropdown(event, '${cat}')">
+                            ${cat} <i class="fa fa-chevron-down text-[8px]"></i>
+                        </span>
+                        <div class="category-dropdown-content" id="dropdown-${cat}">
+                            <span class="subcategory-item ${isActive ? 'active' : ''}" onclick="setCategory('${cat}')">
+                                Todo en ${cat}
+                            </span>
+                            ${subs.map(sub => {
+                                const subActive = currentCategory === cat && currentSubcategory === sub;
+                                return `<span class="subcategory-item ${subActive ? 'active' : ''}" onclick="setSubcategory('${cat}', '${sub}')">${sub}</span>`;
+                            }).join('')}
+                        </div>
+                    </div>`;
+            }
+        }).join('');
+        
+        // Cerrar dropdowns al hacer clic fuera (para móvil)
+        document.removeEventListener('click', window._closeDropdownsHandler);
+        window._closeDropdownsHandler = function(e) {
+            if (!e.target.closest('.category-dropdown')) {
+                closeAllDropdowns();
+            }
+        };
+        document.addEventListener('click', window._closeDropdownsHandler);
+    }
+    
+    // Modificar setCategory y setSubcategory para cerrar dropdowns
+    function setCategory(cat) {
+        currentCategory = cat;
+        currentSubcategory = '';
+        currentPage = 1;
+        closeAllDropdowns();
+        renderCategories();
+        runFilters();
+    }
+    
+    function setSubcategory(cat, sub) {
+        currentCategory = cat;
+        currentSubcategory = sub;
+        currentPage = 1;
+        closeAllDropdowns();
+        renderCategories();
+        runFilters();
+    }
+    // ========== FIN MEJORA MENÚ ==========
+
+    // ========== SCROLL PARA OCULTAR BANNER DE CATEGORÍAS ==========
     function handleCategoryNavScroll() {
         const categoryNav = document.getElementById('category-nav');
         const mainBanner = document.getElementById('main-banner');
         const currentScrollY = window.scrollY;
-        
-        // Si el banner principal ya no es visible, ocultar la barra de categorías al hacer scroll hacia abajo
         const bannerBottom = mainBanner.offsetTop + mainBanner.offsetHeight;
         
         if (currentScrollY > bannerBottom && currentScrollY > lastScrollY) {
-            // Scrolling hacia abajo después del banner
             categoryNav.classList.add('hidden-nav');
         } else if (currentScrollY < lastScrollY || currentScrollY <= bannerBottom) {
-            // Scrolling hacia arriba o antes del banner
             categoryNav.classList.remove('hidden-nav');
         }
-        
         lastScrollY = currentScrollY;
     }
-
     window.addEventListener('scroll', handleCategoryNavScroll, { passive: true });
 
-    // ====== FUNCIONES DE PESTAÑAS DEL ADMIN ======
+    // ========== FUNCIONES ADMIN (TABS, CATEGORÍAS, ETC) ==========
     function switchAdminTab(tab) {
         document.querySelectorAll('.admin-tab-content').forEach(el => el.style.display = 'none');
         document.querySelectorAll('.admin-tab').forEach(el => {
@@ -554,10 +623,13 @@
         if (tab === 'categorias') renderCategoriasAdmin();
     }
 
-    // ====== GESTIÓN DE CATEGORÍAS EN EL ADMIN ======
     function renderCategoriasAdmin() {
         const container = document.getElementById('categorias-admin-container');
         const cats = getAllCategories();
+        if (cats.length === 0) {
+            container.innerHTML = '<p class="text-gray-500 text-xs">Cargando categorías...</p>';
+            return;
+        }
         container.innerHTML = cats.map(cat => {
             const subs = getCategorySubcategories(cat);
             return `
@@ -661,7 +733,6 @@
         subcatSelect.innerHTML = '<option value="">Sin subcategoría</option>' + subs.map(s => `<option value="${s}">${s}</option>`).join('');
     }
 
-    // ====== FUNCIONES DE LOGO Y NOMBRE ======
     function updateLogoAndName() {
         const newLogoUrl = document.getElementById('edit-logo-url').value.trim();
         const newStoreName = document.getElementById('edit-store-name-display').value.trim();
@@ -737,13 +808,17 @@
 
     function renderBannerEditor() {
         const container = document.getElementById('banner-editor-container');
+        if (!bannerData || bannerData.length === 0) {
+            container.innerHTML = '<p class="text-gray-400 text-xs">No hay banners configurados. Carga una configuración.</p>';
+            return;
+        }
         container.innerHTML = bannerData.map((banner, index) => `
             <div class="banner-editor-card">
                 <h3 class="text-[11px] font-bold text-gray-700 uppercase mb-2">Banner #${index + 1}</h3>
                 <div class="grid grid-cols-1 gap-3">
                     <div><label class="text-[9px] font-bold text-gray-400 uppercase">Título</label><input type="text" value="${banner.title.replace(/<br>/g, '\\n')}" onchange="updateBannerField(${index}, 'title', this.value)" class="w-full p-2 border rounded text-xs outline-none"></div>
                     <div><label class="text-[9px] font-bold text-gray-400 uppercase">Descripción</label><input type="text" value="${banner.desc}" onchange="updateBannerField(${index}, 'desc', this.value)" class="w-full p-2 border rounded text-xs outline-none"></div>
-                    <div><label class="text-[9px] font-bold text-gray-400 uppercase">Imágenes (5 URLs)</label><textarea rows="3" onchange="updateBannerImages(${index}, this.value)" class="w-full p-2 border rounded text-[10px] outline-none">${banner.images.join(', ')}</textarea></div>
+                    <div><label class="text-[9px] font-bold text-gray-400 uppercase">Imágenes (URLs)</label><textarea rows="2" onchange="updateBannerImages(${index}, this.value)" class="w-full p-2 border rounded text-[10px] outline-none">${banner.images.join(', ')}</textarea></div>
                     <div class="flex gap-2 overflow-x-auto no-scrollbar">${banner.images.map((img, i) => `<img src="${img}" class="banner-thumb" onclick="setBannerPreview(${index}, ${i})" onerror="this.src='https://via.placeholder.com/50x40'">`).join('')}</div>
                     <img src="${banner.images[0]}" class="banner-preview-img" id="banner-preview-${index}" onerror="this.src='https://via.placeholder.com/400x60'">
                 </div>
@@ -880,7 +955,7 @@
         });
     }
 
-    function updateAnnouncement(val) { tiendaData.config.announcement = val; document.getElementById('announcement-text').innerText = val; }
+    function updateAnnouncement(val) { tiendaData.config.announcement = val; document.getElementById('announcement-text').innerText = val; save(); }
 
     function updateDashboard() {
         const totalItems = tiendaData.productos.length;
@@ -1033,46 +1108,6 @@
         runFilters();
     }
 
-    function renderCategories() {
-        const container = document.getElementById('category-list');
-        const cats = getAllCategories();
-        container.innerHTML = cats.map(cat => {
-            const subs = getCategorySubcategories(cat);
-            const isActive = currentCategory === cat && !currentSubcategory;
-            if (subs.length === 0) {
-                return `<span class="category-chip ${isActive ? 'active' : ''}" onclick="setCategory('${cat}')">${cat}</span>`;
-            } else {
-                return `
-                    <div class="category-dropdown">
-                        <span class="category-chip ${isActive || currentCategory === cat ? 'active' : ''}" onclick="setCategory('${cat}')">${cat} <i class="fa fa-chevron-down text-[8px]"></i></span>
-                        <div class="category-dropdown-content">
-                            <span class="subcategory-item ${isActive ? 'active' : ''}" onclick="setCategory('${cat}')">Todo en ${cat}</span>
-                            ${subs.map(sub => {
-                                const subActive = currentCategory === cat && currentSubcategory === sub;
-                                return `<span class="subcategory-item ${subActive ? 'active' : ''}" onclick="setSubcategory('${cat}', '${sub}')">${sub}</span>`;
-                            }).join('')}
-                        </div>
-                    </div>`;
-            }
-        }).join('');
-    }
-
-    function setCategory(cat) {
-        currentCategory = cat;
-        currentSubcategory = '';
-        currentPage = 1;
-        renderCategories();
-        runFilters();
-    }
-
-    function setSubcategory(cat, sub) {
-        currentCategory = cat;
-        currentSubcategory = sub;
-        currentPage = 1;
-        renderCategories();
-        runFilters();
-    }
-
     function sortProducts(products, sortBy) {
         switch(sortBy) {
             case 'alpha-asc': return [...products].sort((a, b) => a.nombre.localeCompare(b.nombre));
@@ -1214,19 +1249,26 @@
     let currentSlideIndex = 0;
     function renderBanners() {
         const container = document.getElementById('slider-container');
+        if (!bannerData || bannerData.length === 0) {
+            container.innerHTML = '<div class="slide active bg-gray-700 flex items-center justify-center"><div class="banner-overlay"><h2 class="text-white">Bienvenidos</h2></div></div>';
+            return;
+        }
         container.innerHTML = bannerData.map((data, index) => {
-            const img = data.images[Math.floor(Math.random() * data.images.length)];
-            return `<div class="slide ${index === currentSlideIndex ? 'active' : ''}" style="background-image: url('${img}')"><div class="banner-overlay"><div><h2 class="text-3xl md:text-5xl font-black italic uppercase leading-none">${data.title}</h2><p class="text-amazon-orange font-bold mt-2">${data.desc}</p></div></div></div>`;
+            const img = data.images && data.images.length ? data.images[0] : 'https://via.placeholder.com/1200x300?text=Banner';
+            return `<div class="slide ${index === currentSlideIndex ? 'active' : ''}" style="background-image: url('${img}')"><div class="banner-overlay"><div><h2 class="text-3xl md:text-5xl font-black italic uppercase leading-none">${data.title || 'Oferta'}</h2><p class="text-amazon-orange font-bold mt-2">${data.desc || ''}</p></div></div></div>`;
         }).join('');
     }
     function updateSlides() {
         document.querySelectorAll('.slide').forEach((s, i) => {
-            if (i === currentSlideIndex) { s.style.backgroundImage = `url('${bannerData[i].images[Math.floor(Math.random() * bannerData[i].images.length)]}')`; s.classList.add('active'); }
-            else s.classList.remove('active');
+            if (i === currentSlideIndex) { 
+                const img = bannerData[i]?.images?.[0] || 'https://via.placeholder.com/1200x300?text=Banner';
+                s.style.backgroundImage = `url('${img}')`;
+                s.classList.add('active');
+            } else s.classList.remove('active');
         });
     }
-    function nextBannerSlide() { currentSlideIndex = (currentSlideIndex + 1) % bannerData.length; updateSlides(); }
-    function prevBannerSlide() { currentSlideIndex = (currentSlideIndex - 1 + bannerData.length) % bannerData.length; updateSlides(); }
+    function nextBannerSlide() { if(bannerData.length) { currentSlideIndex = (currentSlideIndex + 1) % bannerData.length; updateSlides(); } }
+    function prevBannerSlide() { if(bannerData.length) { currentSlideIndex = (currentSlideIndex - 1 + bannerData.length) % bannerData.length; updateSlides(); } }
 
     // ====== QUICK VIEW ======
     function openQuickView(id) {
@@ -1309,6 +1351,10 @@
 
     function renderAdminList() {
         const list = document.getElementById('admin-inventory-list');
+        if (tiendaData.productos.length === 0) {
+            list.innerHTML = '<p class="text-gray-400 text-xs">No hay productos cargados. Carga desde URL o agrega uno.</p>';
+            return;
+        }
         list.innerHTML = tiendaData.productos.map(p => `
             <div class="p-3 bg-white rounded border border-gray-100 item-admin" data-name="${p.nombre.toLowerCase()}">
                 <div class="flex items-start gap-3">
@@ -1335,82 +1381,84 @@
         if (idx !== -1) { tiendaData.productos[idx][field] = field === 'precio' ? parseInt(value) : value; save(); updateDashboard(); updatePublicStore(); }
     }
 
-    // ====== CARGA INICIAL DESDE URLs ======
-    async function loadInitialConfig() {
-        let configLoaded = false;
-        let bannersLoaded = false;
+    // ====== CARGA INICIAL DESDE URLs (AUTOMÁTICA) ======
+    async function loadInitialData() {
+        console.log("🔄 Cargando datos desde URLs...");
         
-        // 1. Intentar cargar configuración desde configUrl
-        if (tiendaData.config.configUrl) {
-            try {
-                const response = await fetch(tiendaData.config.configUrl);
-                if (response.ok) {
-                    const configData = await response.json();
-                    if (configData && configData.config) {
-                        if (configData.config.nombre) tiendaData.config.nombre = configData.config.nombre;
-                        if (configData.config.logo) tiendaData.config.logo = configData.config.logo;
-                        if (configData.config.whatsapp) tiendaData.config.whatsapp = configData.config.whatsapp;
-                        if (configData.config.announcement) tiendaData.config.announcement = configData.config.announcement;
-                        if (configData.banners && Array.isArray(configData.banners)) {
-                            bannerData = configData.banners;
-                            bannersLoaded = true;
-                        }
-                        if (configData.categorias) {
-                            categoriasData = configData.categorias;
-                            savedCats = Object.keys(categoriasData);
-                        }
-                        configLoaded = true;
-                        console.log('✅ Configuración cargada desde:', tiendaData.config.configUrl);
-                    }
+        // 1. Cargar configuración (banners y categorías)
+        try {
+            const configResponse = await fetch(DEFAULT_CONFIG_URL);
+            if (configResponse.ok) {
+                const configData = await configResponse.json();
+                if (configData.config) {
+                    tiendaData.config = { ...tiendaData.config, ...configData.config };
                 }
-            } catch (e) {
-                console.log('⚠️ No se pudo cargar config desde URL:', e.message);
+                if (configData.banners && Array.isArray(configData.banners)) {
+                    bannerData = configData.banners;
+                } else {
+                    bannerData = [
+                        { title: "Equipamiento<br>Profesional", desc: "Envíos a todo el país", images: ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=1200"] },
+                        { title: "Tecnología<br>Y mas", desc: "Calidad e innovación", images: ["https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200"] },
+                        { title: "Hogar &<br>Cocina", desc: "Calidad para tu familia", images: ["https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?q=80&w=1200"] }
+                    ];
+                }
+                if (configData.categorias) {
+                    categoriasData = configData.categorias;
+                    savedCats = Object.keys(categoriasData);
+                } else {
+                    categoriasData = { "GENERAL": [] };
+                    savedCats = ["GENERAL"];
+                }
+                console.log("✅ Configuración cargada");
+            } else {
+                throw new Error("No se pudo cargar configuración");
             }
+        } catch (error) {
+            console.warn("⚠️ Usando configuración por defecto", error);
+            bannerData = [
+                { title: "Equipamiento<br>Profesional", desc: "Envíos a todo el país", images: ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=1200"] },
+                { title: "Tecnología<br>Y mas", desc: "Calidad e innovación", images: ["https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200"] }
+            ];
+            categoriasData = { "GENERAL": [] };
+            savedCats = ["GENERAL"];
         }
         
-        // 2. Si no se cargaron banners, usar los default
-        if (!bannersLoaded) {
-            console.log('ℹ️ Usando banners predeterminados');
-        }
-        
-        // 3. Intentar cargar productos desde jsonUrl
-        if (tiendaData.config.jsonUrl) {
-            try {
-                const response = await fetch(tiendaData.config.jsonUrl);
-                if (response.ok) {
-                    const data = await response.json();
-                    if (data && data.productos && data.productos.length > 0) {
-                        const oldDestacados = {};
-                        tiendaData.productos.forEach(p => { if (p.destacado) oldDestacados[p.id] = true; });
-                        tiendaData.productos = data.productos.map(p => ({ ...p, destacado: oldDestacados[p.id] || p.destacado || false, subcat: p.subcat || "" }));
-                        destacadosIds = tiendaData.productos.filter(p => p.destacado).map(p => p.id);
-                        if (data.config) tiendaData.config = { ...tiendaData.config, ...data.config };
-                        const newCats = [...new Set(data.productos.map(p => p.cat))];
-                        newCats.forEach(c => { if (!categoriasData[c]) categoriasData[c] = []; });
-                        savedCats = Object.keys(categoriasData);
-                        console.log('✅ Productos cargados desde:', tiendaData.config.jsonUrl);
-                    }
+        // 2. Cargar productos
+        try {
+            const productsResponse = await fetch(DEFAULT_DB_URL);
+            if (productsResponse.ok) {
+                const data = await productsResponse.json();
+                if (data && data.productos && data.productos.length > 0) {
+                    tiendaData.productos = data.productos.map(p => ({ ...p, subcat: p.subcat || "" }));
+                    destacadosIds = tiendaData.productos.filter(p => p.destacado).map(p => p.id);
+                    // Actualizar categorías según productos
+                    const newCats = [...new Set(tiendaData.productos.map(p => p.cat))];
+                    newCats.forEach(c => { if (!categoriasData[c]) categoriasData[c] = []; });
+                    savedCats = Object.keys(categoriasData);
+                    console.log(`✅ Productos cargados: ${tiendaData.productos.length}`);
                 }
-            } catch (e) {
-                console.log('⚠️ No se pudo cargar productos desde URL:', e.message);
+            } else {
+                throw new Error("No se pudo cargar productos");
             }
+        } catch (error) {
+            console.warn("⚠️ No se pudieron cargar productos", error);
+            tiendaData.productos = [];
         }
         
         save();
-    }
-
-    async function initializeStore() {
-        destacadosIds = tiendaData.productos.filter(p => p.destacado).map(p => p.id);
-        await loadInitialConfig();
         updatePublicStore();
         renderBanners();
         changeView('grid-md');
+        loadAdmin();
+        
+        // Iniciar intervalos
+        setInterval(nextBannerSlide, 6000);
+        setInterval(triggerSocialProof, 60000);
+        setTimeout(triggerSocialProof, 5000);
     }
 
-    initializeStore();
-    setInterval(nextBannerSlide, 6000);
-    setInterval(triggerSocialProof, 60000);
-    setTimeout(triggerSocialProof, 5000);
+    // Iniciar todo
+    loadInitialData();
 </script>
 
 </body>
