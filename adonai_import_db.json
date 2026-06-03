@@ -28,16 +28,16 @@
       "id": 1779227439359,
       "nombre": " Escurridor de Platos de 2 Niveles",
       "desc": "🥈 2 Niveles: Máximo espacio de secado.\n 💪 Acero Duradero: Alta calidad y acabado cromado.\n 💧 Bandeja de Goteo: Mantiene tu encimera seca.\n🥢 Incluye Soportes: Para cubiertos y vasos.\n",
-      "precio": 89999,
+      "precio": 90000,
       "precioAnterior": null,
-      "stock": 0,
+      "stock": 10,
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/baa5f5042b67c28c65cdae4673ecd4e4785e8dd5/ADN%20(10).jpg"
       ],
       "cat": "HOGAR",
       "stockAlert": false,
       "destacado": true,
-      "subcat": ""
+      "subcat": "Cocina"
     },
     {
       "id": 1779227708819,
@@ -1013,6 +1013,711 @@
       "stockAlert": true,
       "destacado": false,
       "subcat": ""
+    },
+    {
+      "id": 1780494821177,
+      "nombre": "JARRA ELÉCTRICA LAS VEGAS",
+      "desc": "JARRA ELÉCTRICA LAS VEGAS\n💫 Cod.: 181\nCaracterísticas:\n📌 Potencia: 2000w\n📌 Capacidad: 2lts\n📌 Apagado automático \n📌 Acero inoxidable ",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(7).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780494875067,
+      "nombre": "HERVIDORA ELÉCTRICA RAF",
+      "desc": "HERVIDORA ELÉCTRICA RAF\n💫 Cod.: R. 7883\nCaracterísticas:\n📌 Potencia: 2000w\n📌 Capacidad: 2.3lts\n📌 Apagado automático \n📌 Indicador de nivel de agua\n📌 Acero inoxidable ",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780494938357,
+      "nombre": "Caloventor Raf",
+      "desc": "Caloventor Raf\n\nR.1181\n\nPotencia máxima 2000 Watts para un calentamiento rápido.\n\nSeguridad Cuenta con protección contra sobrecalentamiento.\n\nControl Incluye un termostato ajustable y un selector de funciones.\nModos de flujo Aire caliente de alta velocidad y opción de ventilación.\n\nPortabilidad Diseño compacto con asa de transporte integrada en la parte superior.",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780495028102,
+      "nombre": "JUEGO DE CHURRASCO TRAMONTINA 12 PIEZAS",
+      "desc": "JUEGO DE CHURRASCO TRAMONTINA 12 PIEZAS\n Contenido:\n⚡6 cuchillos\n⚡6 tenedores ",
+      "precio": 145000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780495114249,
+      "nombre": "Mini Speaker luo",
+      "desc": "Mini Speaker\n✅ COD. 3267\n",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(5).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780495168149,
+      "nombre": "SILLA CAMPING",
+      "desc": "SILLA CAMPING\n⚡ Plegable \n⚡ Con porta vaso \n⚡ (INCLUYE FUNDA) \n",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(2).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780495234826,
+      "nombre": "Mini Lampara G Speaker",
+      "desc": "Mini Lampara G Speaker\n📌 Cod: BT-2301\n📌 Opción de carga inalámbrica para dispositivos compatibles\n📌 Tamaño de altavoz: 3\"\n📌 Funciones: Bluetooth; USB; Tarjeta de memoria; AUX\n📌 Juego de luces con opción de seleccionar hasta 7 colores \n",
+      "precio": 80000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(4).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780495317917,
+      "nombre": "LAMPARA P/ ESCRITORIO",
+      "desc": "LAMPARA P/ ESCRITORIO\nCaracterísticas:\n⚡ Marca: Sunlight\n⚡ Cod.: S2102\n⚡ Tamaño compacto & Ligero\n⚡ Conexión: 220v",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/f470f8422a4ff32c5917cbb8f4cc436fa1104152/a5%20(3).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Decoración",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780497867808,
+      "nombre": "Maq. p/ Mini Donuts Cake",
+      "desc": "Maq. p/ Mini Donuts Cake\nCaracterísticas:\n⚡Marca: RAF\n⚡️Cod.: R. 563\n⚡Potencia: 1000W\n⚡Fácil de Limpiar\n⚡Calor uniforme\n⚡Revestimiento Antiadherente\n⚡Agitación de doble cara\n⚡Luz indicadora\n⚡Almohadilla Antideslizante en la base\n⚡Capacidad: 7 donas",
+      "precio": 115000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(9).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780497992641,
+      "nombre": "Maq. P/ Mini Donuts Cake ",
+      "desc": "Maq. P/ Mini Donuts Cake \n⚡️Cod: RN8025\nCaracterísticas:\n⚡Potencia: 1000 W\n⚡Fácil de Limpiar\n⚡Calor uniforme\n⚡Revestimiento Antiadherente\n⚡Agitación de doble cara\n⚡Luz indicadora\n⚡Almohadilla Antideslizante en la base\n⚡Capacidad: 7 donas\n",
+      "precio": 105000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(11).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498080824,
+      "nombre": "Maq. p/ Mini Donuts Cake",
+      "desc": "Maq. p/ Mini Donuts Cake\n💫 Cod.: 1014\n⚡Capacidad: 16 donas\n\nCaracterísticas:\n⚡Potencia: 1400W\n⚡Fácil de Limpiar\n⚡Calor uniforme\n⚡Revestimiento Antiadherente\n⚡Agitación de doble cara\n⚡Luz indicadora\n⚡Almohadilla Antideslizante en la base",
+      "precio": 155000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(6).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498180793,
+      "nombre": "Máquina de hacer  donas marca Ackiliss",
+      "desc": "Máquina de hacer  donas marca Ackiliss\n modelo ACL-95004\n\n ▪️︎ Permite preparar hasta 7 mini dona\n \n▪️︎ Potencia:  1000W \n\n▪️︎ Incluye luces indicadoras de funcionamiento y cocción\n",
+      "precio": 110000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(10).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498248481,
+      "nombre": "Maq. p/ Mini Donuts Cake",
+      "desc": "Maq. p/ Mini Donuts Cake\nCaracterísticas:\n⚡Marca: RAF\n⚡️Cod.: R. 588\n⚡Potencia: 750W\n⚡Revestimiento Antiadherente\n⚡Tostado por las 2 caras\n⚡Luz indicadora\n⚡Almohadilla Antideslizante en la base\n⚡Capacidad: 6 donas\nCaracterísticas:\n⚡Marca: RAF\n⚡️Cod.: R. 588\n⚡Potencia: 750W\n⚡Revestimiento Antiadherente\n⚡Tostado por las 2 caras\n⚡Luz indicadora\n⚡Almohadilla Antideslizante en la base\n⚡Capacidad: 6 donas",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(12).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498325491,
+      "nombre": "WAFLERA",
+      "desc": "WAFLERA\n💫 Cod.: 1010\n⚡ Potencia: 1000w \n⚡ Placa de parrilla\n⚡️ Indicador de encendido \n⚡️ Revestimiento Antiadherente \n",
+      "precio": 105000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498379211,
+      "nombre": "MÁQUINA P/ OMELETTE",
+      "desc": "MÁQUINA P/ OMELETTE\nCaracterísticas \n⚡ Potencia: 1000w\n⚡ Fácil de limpiar \n⚡ Antiadherente  \n⚡ Luz indicadora",
+      "precio": 100000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(3).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498477258,
+      "nombre": "SANDWICHERA GRILL NOBEL HOME",
+      "desc": "SANDWICHERA GRILL NOBEL HOME\n💫 Cod.: NH - 00815A\nCaracterísticas:\n⚡️Placa antiadherente \n⚡️Potencia: 750W\n⚡️2 luces indicadores",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(13).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498540442,
+      "nombre": "Sandwichera 2en1",
+      "desc": "Sandwichera 2en1\n💫 Cod.: R. 212\n📌 Cerámica antiadherente \n📌 Fácil de limpiar \n📌 750w de potencia \n",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(1).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498652075,
+      "nombre": "SANDWICHERA C/ DISEÑO RAF",
+      "desc": "SANDWICHERA C/ DISEÑO RAF\n💫 Cod.: R. 251\nCaracterísticas:\n⚡️Potencia 750w\n⚡️Revestimiento antiadherente \n⚡️2 indicadores de luz",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(2).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498706387,
+      "nombre": "SARTÉN ELÉCTRICA P/ PANQUEQUES RAF",
+      "desc": "SARTÉN ELÉCTRICA P/ PANQUEQUES RAF\n💫 Cod.: R. 5209B\nCaracterísticas:\n⚡️Potencia: 650 W\n⚡️Tensión nominal: 220 V\n⚡️Frecuencia: 50-60 Hz\n⚡️Material: aluminio",
+      "precio": 110000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(5).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780498850592,
+      "nombre": "Batidora c/ Bowl Inox. RAF",
+      "desc": "Batidora c/ Bowl Inox. RAF\n 💫 Cod.: 6637\nCaracterísca:\n⚡2 batidoras cromado\n⚡2 mezcladora de pasta (masa)\n⚡Bowl inox \n⚡7 velocidades con función turb\n⚡Selector de velocidades\n⚡Potencia de 250 W\n",
+      "precio": 115000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(7).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780499027727,
+      "nombre": "BATIDORA MANUAL RAF",
+      "desc": "BATIDORA MANUAL RAF\nCaracterísticas:\n⚡ COD: 6633\n💫 Potencia: 160W\n💫 5 velocidades \n💫 Incluye 4 aspas (2 aspas para batir huevos) (2 aspas en espiral, para harina) \n",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(4).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780499183216,
+      "nombre": "BATIDORA NOBEL HOME",
+      "desc": "BATIDORA NOBEL HOME\n💫 Cod.: NH - 01443\nCaracterísticas:\n⚡️5 velocidades c/ Función de turbo\n⚡️2 batidores\n⚡️2 mezcladores \n⚡️Potencia: AC 220~240V -  50/60Hz, 350v",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(15).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780499246311,
+      "nombre": "BATIDORA DE MANO INALÁMBRICO LUO",
+      "desc": "BATIDORA DE MANO INALÁMBRICO LUO\n💫 Cod: 4945\n💫 Con 4 Aspas\n💫 3 velocidades \n💫 Puerto de carga tipo C\n",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(17).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780499392967,
+      "nombre": "ASPIRADORA RAF 2 EN 1",
+      "desc": "ASPIRADORA RAF 2 EN 1\n💫 Cod.: R. 8673B\n📌 Tipo: Aspiradora de mano y de varilla (2 en 1).\n📌 Potencia: 600W.\n📌 Características principales: Fuerte succión, filtro lavable tipo ciclón, y depósito de polvo ajustable.\n",
+      "precio": 215000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/0b8424b130ebf5eee153bc28ecb74f7c31f0d910/A4%20(14).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Limpieza",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780503626730,
+      "nombre": " RADIO LUO",
+      "desc": "\nRADIO LUO\n💫 Cod: LU -  LU - 798 ",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(27).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780503667708,
+      "nombre": "RADIO LUO",
+      "desc": "RADIO LUO\n💫 Cod: LU - 790\n",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(29).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780503762176,
+      "nombre": "RADIO LUO ",
+      "desc": "RADIO LUO \nCaracteristicas:\n📌 Cod.: LU-776\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(35).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780503883045,
+      "nombre": "RADIO LUO ",
+      "desc": "RADIO LUO \nCaracteristicas:\n📌 Cod.: LU-792\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(33).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780503976598,
+      "nombre": "RADIO LU-793",
+      "desc": "RADIO LUO \nCaracteristicas:\n📌 Cod.: LU-793\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB",
+      "precio": 80000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(37).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780504025709,
+      "nombre": "RADIO LUO",
+      "desc": "RADIO LUO\n💫 Cod: LU - 791\n",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(39).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505044410,
+      "nombre": "RADIO LUO ",
+      "desc": "\nRADIO LUO \nCaracteristicas:\n📌 Cod.: LU-797\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB\n💫 Con panel solar",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(21).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505109206,
+      "nombre": "RADIO LUO ",
+      "desc": "RADIO LUO \nCaracteristicas:\n📌 Cod.: LU-799\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB\n",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(27).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505238405,
+      "nombre": "RADIO LUO ",
+      "desc": "RADIO LUO \nCaracteristicas:\n📌 Cod.: LU-796\n💫 Radio FM/AM/SW/BT\n💫 Voltaje: 100 - 240V / 50 - 60Hz\n💫 Entrada de tarjeta TF y Puerto USB\n💫 Con panel solar",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(32).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505335306,
+      "nombre": "RADIO LUO",
+      "desc": "RADIO LUO\n💫 Cod: LU - 795",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(23).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505426504,
+      "nombre": "Speaker portable LUO",
+      "desc": "Speaker portable LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3265\n⚡️Soporte: TF, USB, BT",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(26).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505486521,
+      "nombre": "Mini Speaker portable LUO",
+      "desc": "Mini Speaker portable LUO\nCaracterísticas:\n✅ COD. 3304\n⚡️Soporte: TF, USB, FM y BT",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(19).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505565140,
+      "nombre": "Mini Speaker portable LUO",
+      "desc": "Mini Speaker portable LUO\nCaracterísticas:\n✅ COD. 3294\n⚡️Soporte: TF, USB, FM y BT\n⚡️Luz RGB",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(31).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505727518,
+      "nombre": "Mini Speaker Luo",
+      "desc": "Mini Speaker Luo\nCaracterísticas:\n\n✨ Marca: Luo\n✨ Cod: 3138\n✨ Potencia: 6 W\n✨ Bateria: Lithium 1200 mAh\n✨Resistencia a salpicaduras de agua (ipx6)\n✨ Tamaño: 11.5x9x9cm\n✨TWS system: se puede emparejar con dos dispositivos a la vez",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(22).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780505824051,
+      "nombre": "Mini Speaker portable LUO",
+      "desc": "Mini Speaker portable LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3155\n⚡ Batería: 1200mAh\n⚡️Soporte: TF, USB, FM y BT",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(28).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506056307,
+      "nombre": "Speaker portable LUO",
+      "desc": "Speaker portable LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3258\n⚡️Soporte: TF, USB, BT\n⚡️Luz RGB",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(1).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506240175,
+      "nombre": "Mini Speaker portable LUO",
+      "desc": "Mini Speaker portable LUO\nCaracterísticas:\n✅ Parlante Osito\n✅ COD. 3296\n⚡️Soporte: TF, USB, BT\n⚡️Luces RGB",
+      "precio": 55000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(40).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506304167,
+      "nombre": "MINI SPEAKER PORTABLE LUO",
+      "desc": "MINI SPEAKER PORTABLE LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3298\n⚡️Soporte: TF, USB, BT",
+      "precio": 55000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(20).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506368740,
+      "nombre": "MINI SPEAKER PORTABLE LUO",
+      "desc": "MINI SPEAKER PORTABLE LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3285\n⚡️Soporte: TF, USB, BT\n⚡️Potencia 5W",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(34).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506459595,
+      "nombre": "MINI SPEAKER PORTABLE LUO",
+      "desc": "MINI SPEAKER PORTABLE LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3242\n⚡️Soporte: TF, USB, BT\n",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(36).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506538776,
+      "nombre": "Mini Speaker portable LUO",
+      "desc": "Mini Speaker portable LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3267\n⚡ Batería: 500mAh\n⚡️Soporte: TF, USB, BT",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(38).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506606418,
+      "nombre": "Speaker Inova",
+      "desc": "Speaker Inova\n📌 Marca: Inova\n📌 Cod: RAD - 0008\n⭐️ Características:\n📌 Batería: 10000 mAh\n📌 Doble salida USB\n📌 Potencia: 2x20w\n⭐ Funciones:\n📌 Bluetooth; USB; TF card; AUX",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(24).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780506754299,
+      "nombre": "Speaker portable LUO",
+      "desc": "Speaker portable LUO\nCaracterísticas:\n✅ Marca: Luo\n✅ COD. 3297\n⚡️Soporte: TF, USB, BT\n⚡️Potencia: 7w",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/46b73372a6b03f9b2718b821d8d1950c5c6f2159/a6%20(25).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Audio",
+      "stockAlert": true,
+      "destacado": false
     }
   ]
 }
