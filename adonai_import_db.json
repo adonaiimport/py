@@ -1718,6 +1718,216 @@
       "subcat": "Audio",
       "stockAlert": true,
       "destacado": false
+    },
+    {
+      "id": 1780534410008,
+      "nombre": "SOPORTE P/ TV MOVIBLE  32\" / 55\"",
+      "desc": "SOPORTE P/ TV MOVIBLE\n📌 Tipo de soporte: Movible \n📌 Para televisores de 32\" / 55\"\n📌 Fácil de instalar ",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(8).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780534476995,
+      "nombre": "SOPORTE P/ TV FIJO 26\"-63\"",
+      "desc": "SOPORTE P/ TV FIJO\n📌 Tipo de soporte: Fijo\n📌 Para televisores de entre 26\"-63\"\n📌 Fácil de instalar ",
+      "precio": 55000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(2).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780534558593,
+      "nombre": "SOPORTE P/ TV FIJO 40\"-80\"",
+      "desc": "SOPORTE P/ TV FIJO📺\n📌 Tipo de soporte: Fijo\n📌 Para televisores de entre 40\"-80\"\n📌 Fácil de instalar ",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(9).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780535026380,
+      "nombre": "Medidor de presión   ZK-B876. ",
+      "desc": "Medidor de presión  \nLuo \n ZK-B876. \n\n Mide la presión de forma automática. \n\nPantalla de alta definición: Cuenta con una pantalla LCD grande y fácil de leer. \n\n Se puede alimentar mediante cable USB o pilas AAA.",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(11).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780535654730,
+      "nombre": "Medidor de presión LUO, ZK-W863.",
+      "desc": "Medidor de presión\n\n Marca LUO, modelo ZK-W863.\n\n✨Es un tensiómetro automático digital diseñado para medir la presión arterial sistólica, diastólica y la frecuencia cardíaca. \n\n✨Cuenta con una pantalla LCD grande para facilitar la lectura de los resultados. \n\n✨Utiliza tecnología de chip inteligente para mediciones rápidas y precisas. \n\n✨El paquete incluye el monitor, un brazalete ajustable y un estuche de almacenamiento. ",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(13).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780535719845,
+      "nombre": "Medidor de presión  ZK-B869",
+      "desc": "Medidor de presión \n\n ZK-B869\n✨Totalmente Automático: Inflado y medición\n ✨automática con un solo botón.\n✨Voz Inteligente: Incluye guía de voz en idioma español para facilitar la lectura.\n\n✨Funciona con 4 pilas AAA o mediante cable USB.\n\n\n✨Funciona con 4 pilas AAA o mediante cable USB.",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(6).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780535867962,
+      "nombre": "ALARGUE LUO",
+      "desc": "ALARGUE LUO\n💫 Cod.: LU - 4966\n📌 2 Puerto tipo C\n📌 4 Puerto USB\n📌 3 Puerto de universal\n📌 3000w\n📌 Dimensión: 1.20cm",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(5).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780536107649,
+      "nombre": "ANTENA DE TV DIGITAL ",
+      "desc": "ANTENA DE TV DIGITAL \n⚡marca LUO \n⚡Cód: LU_TX02\n⚡esta antena DVB_T pasiva especial  le permite recibir señal de televisión  digital ",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(3).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780536857711,
+      "nombre": "Medidor de precisión",
+      "desc": "Medidor de precisión\nCod : Zk - B873.\n\n✨Totalmente automático y cuenta con una pantalla de alta definición.\n\n✨Mide la presión sistólica, diastólica y el pulso.\n\n✨El brazalete es ajustable, con un rango de circunferencia de 22-32 cm.\n\n✨Funciona con cable USB y a pilas.",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(7).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780536925476,
+      "nombre": "JBL BOONBOX 2 ",
+      "desc": "* JBL BOONBOX 2 \n* CARACTERÍSCAS\n* Potencia total (Modo AC - conectado): 80W RMS\n* Potencia total (Modo Batería)\n* Transductores\n* Radiadores pasivos\n* Versión de Bluetooth: Bluetooth 5.1, que asegura menor latencia y mayor estabilidad de señal.",
+      "precio": 195000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(10).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780537016844,
+      "nombre": "NEBULIZADOR LUO",
+      "desc": "\nCaracterísticas:\n⚡ Modelo: 715\n⚡ Voltaje: 200-249V ~ 50/60Hz\n⚡ Mascarilla p/ niños y adultos\n⚡ Compacto y ligero",
+      "precio": 125000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(14).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780537064714,
+      "nombre": "MINI NEBULIZADOR LUO",
+      "desc": "MINI NEBULIZADOR LUO\nCaracterísticas:\n⚡ Modelo: 709M\n⚡ Voltaje: 200-240V ~ 50/60Hz\n⚡ Mascarilla p/ niños y adultos\n⚡ Compacto y ligero\n⚡️ Funcionamiento Silenciosa ",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(1).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780537148442,
+      "nombre": "NEBULIZADOR PORTÁTIL LUO",
+      "desc": "NEBULIZADOR PORTÁTIL LUO\nCaracterísticas:\n⚡ Modelo: Q3\n⚡ Facil de limpiar\n⚡ Ideal para todas las edades \n⚡ Compacto y ligero",
+      "precio": 125000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(12).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1780537222749,
+      "nombre": "MASAJEADOR LU - 4982",
+      "desc": "MASAJEADOR LUO\n💫 Cod.: LU - 4982\n Características :\n⚡ Marca: LUO\n⚡ Potencia de motor 20W\n⚡ Tipo de interfaz: tipo C\n⚡ 6 velocidades\n⚡ Cabeza intercambiable\n⚡ Batería de larga duración \n⚡ Operación silenciosa y pacífica \n⚡️4 cabezales \n⚡️Mango Extensible ",
+      "precio": 105000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/501d0ea0d33e44a6c04d7cd85e14328ab36d4adc/a7%20(4).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
     }
   ]
 }
