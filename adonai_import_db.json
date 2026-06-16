@@ -1928,6 +1928,486 @@
       "subcat": "",
       "stockAlert": true,
       "destacado": false
+    },
+    {
+      "id": 1781624060975,
+      "nombre": "Corta pelo inalámbrico  Wa -0127",
+      "desc": "Corta pelo inalámbrico\n\nWa -0127\n\n☆Cuchillas: Equipadas con una combinación de cerámica y titanio, lo que ofrece un corte preciso y de alta resistencia.\n\n☆Ajuste de Corte: Incluye una palanca lateral ajustable para variar la longitud del corte de forma gradual sin necesidad de cambiar los peines guía.\n\n☆Batería y Carga: Es un dispositivo recargable que permite el uso inalámbrico. ",
+      "precio": 100000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(10).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624121023,
+      "nombre": "Kit Profesional waer 2 en 1 WA-1941",
+      "desc": "Kit Profesional waer 2 en 1\nWA-1941\n\n✔️ Cuenta con cuchillas de acero inoxidable\nIncluye una máquina cortadora principal ➕una patillera inalámbrica \n\nambas recargables mediante cable USB.\n\nEl paquete viene con accesorios que incluyen\n ✔️aceite lubricante, \n✔️un cepillo de limpieza,\n ✔️tijeras\n ✔️peines guía intercambiables",
+      "precio": 130000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(24).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624222440,
+      "nombre": "Balanza personal digital  RAF R.10034 ",
+      "desc": "Balanza personal digital\n RAF R.10034 \n\nCapacidad Máxima: Soporta un peso de hasta 180 kg\n\nAlta Precisión: Cuenta con una división de medición de 50 gramos (D=50g).\n\nMaterial Premium Plataforma de vidrio templado de alta calidad, seguro y de diseño moderno.\n",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(34).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624312658,
+      "nombre": "Juego de Ollas Tramontina Caribe de 4 piezas en color Beige",
+      "desc": "Juego de Ollas Tramontina Caribe de 4 piezas en color Beige\n\nOlla de 18 cm de diámetro (Capacidad: 2 Litros).\n\nCacerola con asas de 18 cm de diámetro (Capacidad: 2 Litros)\n\nSartén de 20 cm de diámetro\n\nHervidor / Hervidora de leche de 12 cm de diámetro (Capacidad: 1 Litro). \n",
+      "precio": 225000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(7).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624469407,
+      "nombre": "COMPRESOR DE AIRE",
+      "desc": "COMPRESOR DE AIRE\nCaracterísticas:\n⚡ DC 12V\n⚡ Cable de 3m\n⚡ Apto para camiones, camionetas y autos\n⚡ Incluye 3 picos \n",
+      "precio": 105000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(22).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624562223,
+      "nombre": "Hervidora  de vidrio Nobel Home  NH-05007 ",
+      "desc": "Hervidora  de vidrio Nobel Home\n NH-05007 \n  \nPotencia de 1800W, lo que permite hervir agua rápidamente para té o café\n\nSeguridad: Incluye un sistema de corte automático de seguridad que apaga el dispositivo una vez que el agua alcanza el punto de ebullición.\n",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(36).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624648990,
+      "nombre": "balanza comercial electrónica",
+      "desc": "balanza comercial electrónica\n ✔️ Marca  Parana \n(PA-110),\n\nCapacidad máxima Hasta 40 kg.\n\nGraduación mínima: Pesaje de 5 gramos en 5 gramos.\n\nRango de voltaje : Funciona con corriente de 110V a 220V.\n\nFunciones de pantalla:  Tres pantallas digitales para mostrar el Peso (Weight), el Precio Unitario (Unit Price) y el Precio Total (Total Price).",
+      "precio": 120000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(20).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624760358,
+      "nombre": "Juego de herramientas de 108 piezas ",
+      "desc": "Juego de herramientas de 108 piezas \n✔️ Adecuado para reparaciones automotrices o del hogar.\n\n✔️ Incluye dados, llaves de vaso y trinquetes (ratchets) de 1/4\" y 1/2\".\n\n✔️Las herramientas están fabricadas en acero cromo vanadio para mayor durabilidad.\n\n✔️Viene en un maletín de plástico soplado para almacenamiento y transporte organizado.\n",
+      "precio": 220000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(11).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624821258,
+      "nombre": "juego de herramientas de 94 piezas",
+      "desc": "juego de herramientas de 94 piezas\n\n✔️El kit incluye dados (copas) de 1/4\" y 1/2\", llaves crique (matracas) de liberación rápida y varias extensiones.\n\n✔️Las herramientas están fabricadas en acero cromo vanadio, diseñado para resistencia y durabilidad en trabajos mecánicos.\n\n✔️El estuche portátil incluido mantiene organizados los dados, puntas y mangos para facilitar su transporte. ",
+      "precio": 200000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(29).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624930182,
+      "nombre": "TIRA de luz LED tipo neón flexible de 5 metros  color azul.🔵",
+      "desc": "TIRA de luz LED tipo neón flexible de 5 metros  color azul.🔵\n✔️Funciona con un voltaje de 12V y viene con su propia fuente de alimentación incluida.\n\n✔️Su diseño flexible permite moldearla para crear formas, letras o figuras decorativas.\n",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(12).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Decoración",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781624978424,
+      "nombre": "Tira LED Neon de 5 metros en color verde ",
+      "desc": "Tira LED Neon de 5 metros en color verde \n\n   ✔️ Diseñada para uso decorativo en interiores y exteriores.\n\n✔️ El kit generalmente incluye una fuente de alimentación de 12V y la tira flexible de silicona con 120 LEDs por metro.\n\n✔️ La manguera es cortable (a menudo cada metro o cada 2.5 cm) y ofrece una iluminación uniforme. \n",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(35).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Decoración",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781625044491,
+      "nombre": "Cinta LED neón flexible de 5 metros en color rojo",
+      "desc": "Cinta LED neón flexible de 5 metros en color rojo\n ✔️ Ideal para cartelería o decoración \n\n✔️El paquete incluye una fuente de alimentación de 12V y la cinta tiene una protección, lo que permite su uso en interiores y exteriores. \n",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(17).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Decoración",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781625692642,
+      "nombre": "LED de neón flexible de 5 metros en color cálido",
+      "desc": "LED de neón flexible de 5 metros en color cálido\n\n✔️El kit incluye una fuente de alimentación de 12V para su funcionamiento.\n\n✔️Es apta para uso decorativo en interiores y exteriores cubiertos.",
+      "precio": 50000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(31).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Decoración",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781625822966,
+      "nombre": "COLCHON INFL. INTEX 1½ PLAZA",
+      "desc": "COLCHON INFL. INTEX 1½ PLAZA\n⚡Medida: 99x 191x 25cm\n",
+      "precio": 105000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(6).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "Inflables",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626063483,
+      "nombre": "COLCHON INFL. INTEX (1 plaza)",
+      "desc": "COLCHON INFL. INTEX (1 plaza)\n⚡Medida: 76x191x22cm",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(5).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "Inflables",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626141064,
+      "nombre": "COLCHON INFLABLE INTEX 2 PLAZA",
+      "desc": "COLCHON INFLABLE INTEX 2 PLAZA\n⚡Cod: 64108\n⚡Medida :137 x 191 x 25",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(14).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "Inflables",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626227830,
+      "nombre": "COLCHÓN INFLABLE 1.83x2.03x25cm",
+      "desc": "COLCHÓN INFLABLE DURA-BEAM INTEX\nCaracterísticas:\n📌 Medida: 1.83x2.03x25 cm\n📌 Diseñado para 2 personas\n📌 Soporta un peso máx. de 272 kg",
+      "precio": 160000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(16).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "Inflables",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626476811,
+      "nombre": "TOSTADORA RAF ",
+      "desc": "TOSTADORA RAF \n📌 Cod.: R. 263\nCaracterísticas:\n💫 Capacidad: 2 rebanadas \n💫 Base antideslizante \n💫 Base para guardar cables\n💫 Niveles de tostados:",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(18).jpg"
+      ],
+      "cat": "CAMPING",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626556767,
+      "nombre": "MÁQUINA p / coser",
+      "desc": "MÁQUINA p / coser\n\n​¡Tu aliada perfecta para costuras rápidas y precisas!\n\n​Modelo: EUROMAX SM-202A.\n\n*​Diseño Compacto: Incluye una amplia mesa de extensión para mayor comodidad en la  costura\n\n​Sistema de Doble Hilo: Garantiza costuras más resistentes y duraderas.\n\n​Doble Velocidad: Ajusta el ritmo según la complejidad de tu trabajo.\n\n​Versatilidad: Ideal para arreglos rápidos en el hogar o proyectos creativos.\n\n\n​¡Llévala donde quieras y empieza a crear hoy mismo!\n",
+      "precio": 95000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(9).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626670077,
+      "nombre": "cocina infrarroja Maxon  MX-123",
+      "desc": "cocina infrarroja Maxon\n MX-123\n✔️ potencia de 2200W, ideal para cocinar.\n\n✔️ Incluye protección contra sobrecalentamiento y un sistema de seguridad.\n\n✔️Cuenta con un temporizador incorporado para controlar el tiempo de cocción.\n",
+      "precio": 125000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(13).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626718197,
+      "nombre": "Set de ollas y sartenes Tramontina Línez, 7 piezas ",
+      "desc": "Set de ollas y sartenes Tramontina Línez, 7 piezas \n \n✅ Marca: Tramontina — reconocida calidad brasileña en utensilios de cocina.\n\n✔️Contiene \n\n✓ 1 Olla de 20 cm (2,8 litros) con tapa\n                                  \n✓ 1 Olla de 18 cm (2,0 litros) con tapa.\n \n✓ 1 Olla de 16 cm (1,4 litros) con tap\n ✓1 Hervidor de leche de 12 cm (1,1 litros)\n\n✓ 1 Sartén de 20 cm (0,8 litros)\n✓ 1 Sartén de 16 cm (0,4 litros)\n\n✓ 1 Olla / Cacerola adicional\n (completando las 7 piezas del empaque junto con las tapas correspondientes) ",
+      "precio": 305000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(23).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626770827,
+      "nombre": "Medidor de Glucosa LUO  JZK-206, ",
+      "desc": "Medidor de Glucosa LUO\n JZK-206, \n \n✔️  Dispositivo digital portátil con botones M (Memoria) y S (Configuración).\n\n✔️ Tiras reactivas (50 unidades): Cartuchos donde se deposita la muestra.\n\n✔️ Lancetas estériles (50 unidades): Agujas finas de un solo uso.\n\n✔️ Dispositivo de punción: Portalancetas ajustable o lápiz para pinchar el dedo.\n\n✔️Estuche de almacenamiento: Bolsa negra de transporte con la marca LUO. ",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(32).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781626949426,
+      "nombre": "JUEGO DE TAZA Y PLATILLO",
+      "desc": "JUEGO DE TAZA Y PLATILLO\nCOD: 1020\n6 pieza de taza \n6 pieza de platillo ",
+      "precio": 85000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(26).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627042294,
+      "nombre": "Juego de cuchillos de cocina de 6 piezas",
+      "desc": "Juego de cuchillos de cocina de 6 piezas\n \n   EREASTHQS SG-9200\n\n\nEl set Contiene \n✔️ Cuchillo de Chef (cocinero)\n✔️Cuchillo para Pan (dentado)\n✔️Cuchillo para carnes o rebanador\n✔️Cuchillo utilitario mediano\n✔️Cuchillo pelador pequeñoPelador de verduras con hoja de cerámica.\n",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(15).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627113350,
+      "nombre": "kit llave de impacto inalámbrica Sunlight ",
+      "desc": "it llave de impacto inalámbrica Sunlight \n   ▪️︎ Con dos baterías de 168V y 4.0Ah.\n\n▪️︎ Las baterías cuentan con tecnología Lithium-Ion para un rendimiento duradero y un diseño de liberación rápida.\n\n▪️︎  El maletín de transporte rígido mantiene la herramienta, el cargador y los accesorios organizados y protegidos.",
+      "precio": 265000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(30).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627185358,
+      "nombre": "inversor de corriente para vehículos",
+      "desc": "inversor de corriente para vehículos\n\n ☆ potencia máxima de 1500W.\n\nEste aparato convierte la corriente continua (DC) de la batería de tu automóvil en corriente alterna (AC) para conectar dispositivos domésticos comunes\n\n✔️*Potencia*: 1500 vatios nominales / pico.\n\n✔️*Salidas USB*: Cuenta con 4 puertos USB (especificación USB 1.1 indicada en el panel).\n\n\n✔️*Enchufe universal:* Entrada compatible con diferentes tipos de clavijas eléctricas.\n\n✔️*Conexión* Incluye un adaptador para el encendedor de cigarrillos del coche.\n",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(21).jpg"
+      ],
+      "cat": "GENERAL",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627249646,
+      "nombre": "Set de utensilios de cocina Toallwin de 19 Pcs",
+      "desc": "Set de utensilios de cocina Toallwin de 19 Pcs\n\n▪️︎ El juego incluye espátulas, cucharones, batidores, brocha de cocina y pinzas.\n▪️︎ Además de los utensilios, contiene cuchillos de acero inoxidable, tijeras y una tabla de cortar.\n",
+      "precio": 90000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(8).jpg"
+      ],
+      "cat": "HOGAR",
+      "subcat": "Cocina",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627316363,
+      "nombre": "Kit de Depilación Femenina 4 en 1 Daling  DL-6028",
+      "desc": "Kit de Depilación Femenina 4 en 1 Daling\n DL-6028\n\nCabezal principal:\nAfeitadora corporal para piernas, brazos y axilas.\n\nRecortador de vello facial / cejas : Para perfilar o eliminar vello en el rostro de manera indolora.\n\nCortador para nariz y orejas: Diseñado para zonas pequeñas y delicadas.\n\nCepillo de limpieza facial:  Ayuda a limpiar la piel o dar un acabado suave.\n\nAlimentación  Funciona con batería recargable mediante un cable USB incluido.",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(2).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627373244,
+      "nombre": "Depiladora eléctrica femenina Daling  DL-6013",
+      "desc": "Depiladora eléctrica femenina Daling\n DL-6013\n▪️︎ El dispositivo es  recargable mediante un cable USB incluido, ofreciendo portabilidad para su uso en piernas, axilas y zona íntima.\n\n▪️︎ El kit incluye un cabezal de afeitado principal y un cepillo de limpieza para el mantenimiento adecuado del producto.",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(4).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627454400,
+      "nombre": "herramientas de acero inoxidable para manicura y pedicura de acero inoxidable con estuche",
+      "desc": "El set contiene 10 piezas diseñadas para el cuidado de uñas, manos y pies.\n\nCada herramienta está diseñada con alta durabilidad y resistencia a la corrosión para un uso prolongado.",
+      "precio": 30000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(19).jpg"
+      ],
+      "cat": "SALUD Y BELLEZA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627732727,
+      "nombre": "tV Box G96 L2 4K ",
+      "desc": "tV Box G96 L2 4K – Convierte tu Tele en Smart TV\n​¡Dale nueva vida a tu pantalla! Conecta este dispositivo y disfruta de tus plataformas de streaming favoritas en alta definición.\n​⚙️ Especificaciones Técnicas:\n​Resolución: 4K Ultra HD\n​Sistema: Android TV Box\n​Conectividad: Wi-Fi Dual (2.4G / 5G) y Bluetooth\n​Apps Compatibles: Netflix, YouTube, Google Play, Chrome y más\n​ ¿Qué incluye la caja?\n​1x Dispositivo TV Box G96 L2\n​1x Control remoto\n​1x Cable HDMI\n​1x Adaptador de corriente\n​Manual de usuario\n",
+      "precio": 180000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(3).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1781627774171,
+      "nombre": "TV Box Luo",
+      "desc": "TV Box Luo\n\nLU-V81 4K\n\nSistema Operativo\n Funciona bajo la interfaz de Android\n\nResolución de Video  Soporta reproducción de imágenes en 4K Ultra HD (3840×2160).\n\nConectividad Cuenta con soporte para redes inalámbricas Wi-Fi Dual Band (2.4 GHz / 5 GHz), Bluetooth y una entrada física para cable de red Ethernet.",
+      "precio": 145000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(1).jpg"
+      ],
+      "cat": "TECNOLOGÍA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
     }
   ]
 }
