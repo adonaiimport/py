@@ -679,7 +679,7 @@
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(7).jpg"
       ],
-      "cat": "CAMPING",
+      "cat": "GENERAL",
       "stockAlert": true,
       "destacado": false,
       "subcat": ""
@@ -694,7 +694,7 @@
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(5).jpg"
       ],
-      "cat": "CAMPING",
+      "cat": "GENERAL",
       "stockAlert": true,
       "destacado": false,
       "subcat": ""
@@ -709,7 +709,7 @@
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(11).jpg"
       ],
-      "cat": "CAMPING",
+      "cat": "GENERAL",
       "stockAlert": true,
       "destacado": false,
       "subcat": ""
@@ -724,7 +724,7 @@
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/e39c2c3d420ff506ad64bccdcc435d7403e95fc1/a2%20(10).jpg"
       ],
-      "cat": "CAMPING",
+      "cat": "GENERAL",
       "stockAlert": true,
       "destacado": false,
       "subcat": ""
@@ -2194,8 +2194,8 @@
       "imgs": [
         "https://raw.githubusercontent.com/adonaiimport/py/9dd7d96b7825132dd662308c1cfcbe8e6a598e2f/ART1%20(18).jpg"
       ],
-      "cat": "CAMPING",
-      "subcat": "Cocina",
+      "cat": "HOGAR",
+      "subcat": "",
       "stockAlert": true,
       "destacado": false
     },
@@ -2406,6 +2406,306 @@
       ],
       "cat": "TECNOLOGÍA",
       "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320054427,
+      "nombre": "Cortaplumas Buck NF6080",
+      "desc": "Cortaplumas Buck NF6080",
+      "precio": 39000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(11).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320129741,
+      "nombre": "Cortaplumas Buck NF6087",
+      "desc": "Cortaplumas Buck NF6087",
+      "precio": 39000,
+      "precioAnterior": 45000,
+      "stock": 5,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(13).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320249741,
+      "nombre": "Cortaplumas Buck NF6088",
+      "desc": "Cortaplumas Buck NF6088",
+      "precio": 42000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(4).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320302331,
+      "nombre": "Cortaplumas Buck NF6091",
+      "desc": "Cortaplumas Buck NF6091",
+      "precio": 40000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(2).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320375488,
+      "nombre": "Cortaplumas Boker  NF5069",
+      "desc": "Cortaplumas Boker  NF5069",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(10).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320427303,
+      "nombre": "Cortaplumas Buck NF6342",
+      "desc": "Cortaplumas Buck NF6342",
+      "precio": 42000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(18).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320495796,
+      "nombre": "Cortaplumas Browning NF6333",
+      "desc": "Cortaplumas Browning NF6333",
+      "precio": 52000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(16).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320564910,
+      "nombre": "Cortaplumas Browning NF6335",
+      "desc": "Cortaplumas Browning NF6335",
+      "precio": 52000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(8).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320675010,
+      "nombre": "Cuchillo tipo artesanal NF6814",
+      "desc": "Cuchillo tipo artesanal NF6814",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(6).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320718104,
+      "nombre": "Cuchillo tipo artesanal NF6820",
+      "desc": "Cuchillo tipo artesanal NF6820",
+      "precio": 62000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(15).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320817624,
+      "nombre": "Cuchillo tipo artesanal NF6351",
+      "desc": "Cuchillo tipo artesanal NF6351",
+      "precio": 65000,
+      "precioAnterior": 75000,
+      "stock": 5,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(9).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": true
+    },
+    {
+      "id": 1782320858724,
+      "nombre": "Cuchillo tipo artesanal NF6352",
+      "desc": "Cuchillo tipo artesanal NF6352",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(21).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320946487,
+      "nombre": "Cuchillo NF6812",
+      "desc": "Cuchillo NF6812",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(5).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782320992681,
+      "nombre": "Cuchillo curvo 20507",
+      "desc": "Cuchillo curvo 20507",
+      "precio": 40000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(1).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321068928,
+      "nombre": "Cortaplumas S1351",
+      "desc": "Cortaplumas S1351",
+      "precio": 25000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(3).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321151509,
+      "nombre": "Cuchillo 20513",
+      "desc": "Cuchillo 20513\n",
+      "precio": 45000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(19).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321219970,
+      "nombre": "Cuchillo 20516",
+      "desc": "Cuchillo 20516",
+      "precio": 40000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(20).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321281140,
+      "nombre": "Cuchillo 20510",
+      "desc": "Cuchillo 20510",
+      "precio": 32000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(17).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321316842,
+      "nombre": "Cuchillo 20512",
+      "desc": "Cuchillo 20512",
+      "precio": 32000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(12).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782321371800,
+      "nombre": "Cuchillo 20517",
+      "desc": "Cuchillo 20517",
+      "precio": 43000,
+      "precioAnterior": null,
+      "stock": 6,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/29ae6d889aefb283e5189cf273e9035e93827bb0/cuchillos1%20(7).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
       "stockAlert": true,
       "destacado": false
     }
