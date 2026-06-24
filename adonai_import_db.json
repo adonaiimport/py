@@ -21,7 +21,7 @@
       ],
       "cat": "HOGAR",
       "stockAlert": false,
-      "destacado": true,
+      "destacado": false,
       "subcat": ""
     },
     {
@@ -81,7 +81,7 @@
       ],
       "cat": "HOGAR",
       "stockAlert": true,
-      "destacado": true,
+      "destacado": false,
       "subcat": ""
     },
     {
@@ -276,7 +276,7 @@
       ],
       "cat": "TECNOLOGÍA",
       "stockAlert": true,
-      "destacado": true,
+      "destacado": false,
       "subcat": ""
     },
     {
@@ -1117,7 +1117,7 @@
       "cat": "TECNOLOGÍA",
       "subcat": "Audio",
       "stockAlert": true,
-      "destacado": false
+      "destacado": true
     },
     {
       "id": 1780495317917,
@@ -2227,7 +2227,7 @@
       "cat": "HOGAR",
       "subcat": "Cocina",
       "stockAlert": true,
-      "destacado": false
+      "destacado": true
     },
     {
       "id": 1781626718197,
@@ -2242,7 +2242,7 @@
       "cat": "HOGAR",
       "subcat": "",
       "stockAlert": true,
-      "destacado": false
+      "destacado": true
     },
     {
       "id": 1781626770827,
@@ -2708,6 +2708,201 @@
       "subcat": "Accesorios",
       "stockAlert": true,
       "destacado": false
+    },
+    {
+      "id": 1782330450176,
+      "nombre": "Fluorocarbon Vexter",
+      "desc": "0.33_\n0.43_\n0.47_\n0.52_",
+      "precio": 65000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(13).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Accesorios",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782330530718,
+      "nombre": "Caja de pesca es el modelo Tiburón H545",
+      "desc": "Caja de pesca es el modelo Tiburón H545, diseñada con una gran capacidad de almacenamiento y alta resistencia para organizar equipos.\n•Cuenta con 3 bandejas articuladas internas que ofrecen hasta 35 compartimentos divisores para organizar anzuelos, plomos y otros accesorios.\n•Sus dimensiones son aproximadamente 46 x 27 x 20 cm, e incluye cierres seguros para mayor protección del contenido",
+      "precio": 195000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(6).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782330597101,
+      "nombre": "Silla para pesca sin respaldo 15017",
+      "desc": "Silla para pesca sin respaldo 15017\nMedidas: 25x17x26cm",
+      "precio": 35000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(3).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782330649745,
+      "nombre": "Caja Tiburon modelo FB-J267Caja Tiburon modelo FB-J267",
+      "desc": "Caja Tiburon modelo FB-J267, diseñada para organizar señuelos y accesorios de pesca. Este modelo específico tiene unas dimensiones de 35 cm x 20,5 cm x 8 cm",
+      "precio": 70000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(7).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782330844653,
+      "nombre": "Caña telescópica CW Crystal Sensitive Carbon, 3.60mts",
+      "desc": "Caña telescópica CW Crystal Sensitive Carbon, diseñada para una pesca ligera y sensible.\n•Características: Está construida en carbono 24-T de alta calidad y cuenta con una puntera muy sensible para detectar movimientos sutiles.\n•Variantes: Está disponible en tamaños de 3.60m a 5.40m, con una potencia clasificada como \"Leve\" (ligera).",
+      "precio": 75000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(10).jpeg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782330911637,
+      "nombre": "Caña de pescar telescópica de la marca Kawana, 2.10mts",
+      "desc": "Caña de pescar telescópica de la marca Kawana, modelo Max Spin \n•Tipo: Caña telescópica diseñada para la pesca de costa o fondo (surfcasting).\n•Potencia:  \"Medio Pesado\" (Medium Heavy), ideal para lances de plomos pesados.\n•Capacidad de Lanzamiento: Soporta pesos de plomo (chumbo) entre 10 hasta 100 gramos, lo que indica gran versatilidad para diferentes condiciones de pesca.\n•Diseño: Construcción robusta en color negro con detalles en verde, adecuada para agua dulce o salada.",
+      "precio": 55000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(11).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331021742,
+      "nombre": "Caña Daiwa Lexa-BR. Modelos LX802HFB-BR,Medida: 2.44mts",
+      "desc": "Caña Daiwa Lexa-BR. Modelos LX802HFB-BR\nAlgunas de sus características principales son:\n•Marca: Daiwa\n•Modelo: Lexa-BR\n•Material del blank: Grafito tubular\n•Mango: EVA\n•Pasahilos: Fuji\n•Otras características:\nSistema de corte y empalme (split blank)\n•Portareel Daiwa\n-Especificaciones de los modelos:\nLX802HFB-BR\nMedida: 2.44mts\nLibras: 20-50lb",
+      "precio": 350000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(5).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Cañas",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331080569,
+      "nombre": "Nuevos señuelos UNICITY ",
+      "desc": "Nuevos señuelos UNICITY \nModelos:\n-Minnow-02\n-Minnow-05\n-Pencil-Bait",
+      "precio": 20000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(1).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Señuelos",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331158702,
+      "nombre": " caña Strike Force. 1.80mts 12-25lbs",
+      "desc": " caña Strike Force. 1.80mts 12-25lbs",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(2).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Cañas",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331237003,
+      "nombre": "Caña Marine Versus",
+      "desc": "Caña Marine Versus\nDisponible\n●Rotativo \n-Entera \n•1.98mts 12-25lbs",
+      "precio": 177000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(9).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Cañas",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331302542,
+      "nombre": "Nuevo reel Sumax Dragon 3.500 Black ",
+      "desc": "Nuevo reel Sumax Dragon 3.500 Black \n•Sistema con 3 rulemanes\n•Carretel cromado\n•Sistema balanceado\n•Relacion 5.2:1\n•Drag potente de 17lbs\n•Capacidad 0.30/230mts",
+      "precio": 56000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(4).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Reels",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331373962,
+      "nombre": "Caña Sumax Olimpic ",
+      "desc": "Caña Sumax Olimpic \n•Fibra de vidrio solido\n•Mango en E.V.A \n•Pasahilos en cerámica \n•Medida: 1.80mts",
+      "precio": 60000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(8).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Cañas",
+      "stockAlert": true,
+      "destacado": false
+    },
+    {
+      "id": 1782331439303,
+      "nombre": "Cañas Venza Fusion",
+      "desc": "Cañas Venza Fusion\n (Medidas que estaban en falta)\nVNZF-C662HF 1.98mts 18-40lbs",
+      "precio": 140000,
+      "precioAnterior": null,
+      "stock": 10,
+      "imgs": [
+        "https://raw.githubusercontent.com/adonaiimport/py/4433c224ded882c5dbcab94fb11aba9527013786/PESCA1%20(12).jpg"
+      ],
+      "cat": "PESCA",
+      "subcat": "Cañas",
+      "stockAlert": true,
+      "destacado": true
     }
   ]
 }
