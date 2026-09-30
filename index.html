@@ -25,20 +25,38 @@
         /* ====== OPTIMIZACIÓN MÓVIL (solo < 768) ===== */
         /* ============================================ */
         @media (max-width: 768px) {
-            /* --- BASE: evitar desbordes horizontales --- */
+            /* --- BASE --- */
             body { font-size: 15px; overflow-x: hidden; }
             * { max-width: 100%; }
 
             /* --- HEADER --- */
             .amazon-header .container { padding: 10px 12px; gap: 8px; flex-wrap: wrap; }
-            #store-logo { height: 46px !important; }
+            #store-logo { height: 44px !important; object-fit: contain; padding: 2px; }
             .hamburger-btn { font-size: 22px !important; padding: 8px 8px !important; }
             #cart-anchor i { font-size: 22px !important; }
-            #orders-btn, #push-bell, .dark-mode-toggle { font-size: 18px !important; padding: 8px !important; min-width: 40px; min-height: 40px; }
+            #orders-btn, #push-bell, .dark-mode-toggle, #install-app-btn { font-size: 18px !important; padding: 8px !important; min-width: 40px; min-height: 40px; }
             .amazon-header .flex-grow { order: 3; width: 100%; max-width: 100%; margin-top: 6px; }
             #user-search { font-size: 15px !important; padding: 11px 44px 11px 14px !important; height: 44px; border-radius: 10px !important; }
             .amazon-header .flex-grow button { padding: 0 16px !important; border-top-right-radius: 10px !important; border-bottom-right-radius: 10px !important; }
-            #store-name { display: block !important; font-size: 14px !important; font-weight: 800; letter-spacing: 0.3px; line-height: 1.1; max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+            #store-name { display: block !important; font-size: 14px !important; font-weight: 800; letter-spacing: 0.3px; line-height: 1.1; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+            /* --- BOTÓN INSTALAR APP (nuevo, solo móvil) --- */
+            #install-app-btn {
+                background: linear-gradient(135deg, #10b981, #059669) !important;
+                border-radius: 10px !important;
+                color: white !important;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                animation: pulse-install 2s infinite;
+                box-shadow: 0 3px 10px rgba(16, 185, 129, 0.4);
+            }
+            #install-app-btn.hidden { display: none !important; }
+            #install-app-btn:active { transform: scale(0.92); }
+            @keyframes pulse-install {
+                0%, 100% { box-shadow: 0 3px 10px rgba(16, 185, 129, 0.4); }
+                50% { box-shadow: 0 3px 10px rgba(16, 185, 129, 0.8), 0 0 0 4px rgba(16, 185, 129, 0.2); }
+            }
 
             /* --- SUB-HEADER ULTRA FINO --- */
             #sub-header { padding: 5px 0 !important; font-size: 10.5px !important; overflow: hidden; }
@@ -48,71 +66,111 @@
             #sub-header .info-item span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
             #sub-header .info-item:nth-child(4) { display: none !important; }
 
-            /* --- BARRA DE ANUNCIO --- */
-            #top-announcement-bar { font-size: 10.5px; padding: 7px 10px; letter-spacing: 0.3px; }
+            /* --- BARRA DE ANUNCIO MÁS FINA --- */
+            #top-announcement-bar { font-size: 10px !important; padding: 5px 8px !important; letter-spacing: 0.2px !important; gap: 6px !important; }
+            #top-announcement-bar .announcement-icon { font-size: 11px !important; }
 
             /* --- BANNER --- */
-            #main-banner { height: 200px !important; margin-top: 12px !important; border-radius: 12px !important; }
-            .banner-overlay { padding-left: 24px !important; }
-            .banner-overlay h2 { font-size: 22px !important; line-height: 1.1; }
-            .banner-overlay p { font-size: 13px !important; margin-top: 4px !important; }
+            #main-banner { height: 180px !important; margin-top: 10px !important; border-radius: 12px !important; }
+            .banner-overlay { padding-left: 20px !important; }
+            .banner-overlay h2 { font-size: 20px !important; line-height: 1.1; }
+            .banner-overlay p { font-size: 12px !important; margin-top: 3px !important; }
 
             /* --- MAIN --- */
-            main.container { padding-left: 16px !important; padding-right: 16px !important; padding-top: 20px !important; }
+            main.container { padding-left: 14px !important; padding-right: 14px !important; padding-top: 18px !important; }
 
             /* --- CATEGORÍAS DESTACADAS --- */
-            #featured-categories-scroll { display: flex; overflow-x: auto; gap: 12px; padding: 14px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; }
+            #featured-categories-scroll { display: flex; overflow-x: auto; gap: 10px; padding: 12px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; }
             #featured-categories-scroll::-webkit-scrollbar { display: none; }
-            .featured-cat-card { min-width: 96px; max-width: 96px; flex-shrink: 0; padding: 14px 10px; min-height: 108px; border-radius: 14px; scroll-snap-align: start; }
-            .featured-cat-card .cat-icon { width: 48px; height: 48px; font-size: 22px; margin-bottom: 4px; }
-            .featured-cat-card .cat-name { font-size: 11px; font-weight: 700; }
+            .featured-cat-card { min-width: 100px; max-width: 100px; flex-shrink: 0; padding: 12px 8px; min-height: 104px; border-radius: 12px; scroll-snap-align: start; }
+            .featured-cat-card .cat-icon { width: 44px; height: 44px; font-size: 20px; margin-bottom: 4px; }
+            .featured-cat-card .cat-name { font-size: 10.5px; font-weight: 700; line-height: 1.15; }
 
             /* --- SECCIONES --- */
-            .section-header-custom { margin: 24px 0 14px 0; padding-bottom: 10px; }
-            .section-title-custom { font-size: 16px; letter-spacing: 0.4px; }
-            .section-see-all { font-size: 12px; padding: 8px 4px; font-weight: 700; }
+            .section-header-custom { margin: 20px 0 12px 0; padding-bottom: 8px; }
+            .section-title-custom { font-size: 15px; letter-spacing: 0.3px; }
+            .section-see-all { font-size: 12px; padding: 6px 4px; font-weight: 700; }
 
             /* --- BREADCRUMBS --- */
-            #breadcrumbs { font-size: 11px !important; padding: 8px 0 14px 0 !important; gap: 8px; }
+            #breadcrumbs { font-size: 11px !important; padding: 6px 0 12px 0 !important; gap: 8px; }
 
-            /* --- GRID DE PRODUCTOS --- */
-            .grid-md { gap: 14px !important; }
-            .product-card { border-radius: 12px !important; overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+            /* --- GRID DE PRODUCTOS: CARDS MÁS AIREADAS --- */
+            .grid-md { gap: 12px !important; }
+            .product-card { border-radius: 12px !important; overflow: hidden; transition: transform 0.15s ease; }
             .product-card:active { transform: scale(0.98); }
-            .product-card .main-img-container { height: 180px; padding: 14px; background: #fff; }
-            .product-card h3 { font-size: 13px !important; line-height: 1.3 !important; font-weight: 700 !important; padding: 10px 12px 6px 12px !important; margin-top: 0 !important; letter-spacing: 0.1px; }
-            .product-card .text-lg { font-size: 18px !important; font-weight: 800 !important; }
+            .product-card .main-img-container { height: 170px; padding: 12px; background: #fff; }
+            .product-card h3 {
+                font-size: 13px !important;
+                line-height: 1.35 !important;
+                font-weight: 700 !important;
+                padding: 10px 12px 8px 12px !important;
+                margin-top: 0 !important;
+                letter-spacing: 0.1px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                min-height: 54px;
+            }
+            .product-card .text-lg { font-size: 17px !important; font-weight: 800 !important; }
             .product-card .btn-amazon {
                 font-size: 13px !important;
-                padding: 14px 10px !important;
-                min-height: 48px;
-                font-weight: 700;
+                padding: 13px 8px !important;
+                min-height: 46px;
+                font-weight: 800;
                 letter-spacing: 0.3px;
-                transition: transform 0.12s ease, background-color 0.15s ease;
+                border-radius: 10px !important;
+                margin: 0 12px 12px 12px !important;
+                width: calc(100% - 24px) !important;
+                transition: transform 0.12s ease;
             }
             .product-card .btn-amazon:active { transform: scale(0.97); background-color: #f7a01b; }
-            .product-card .text-\[10px\].text-gray-500 { font-size: 11px !important; margin-top: 6px !important; }
-            .product-card .mt-1.mb-3 { margin-top: 6px !important; margin-bottom: 10px !important; }
+            .product-card .text-\[10px\].text-gray-500 {
+                font-size: 11px !important;
+                margin-top: 6px !important;
+                padding: 0 12px !important;
+            }
+            .product-card .mt-1.mb-3 {
+                margin-top: 8px !important;
+                margin-bottom: 10px !important;
+                padding: 0 12px !important;
+            }
 
-            /* --- BADGES Y TAGS --- */
-            .badge-oferta, .badge-destacado, .badge-bestseller { font-size: 10.5px !important; padding: 4px 10px !important; font-weight: 800; border-radius: 6px; }
-            .product-badges-row { padding: 8px 12px 0 12px !important; gap: 6px; }
-            .product-tag { font-size: 10px !important; padding: 4px 8px !important; border-radius: 6px; font-weight: 700; }
+            /* --- BADGES Y TAGS: SEPARACIÓN CORRECTA --- */
+            .badge-oferta, .badge-destacado, .badge-bestseller {
+                font-size: 10px !important;
+                padding: 4px 9px !important;
+                font-weight: 800;
+                border-radius: 5px;
+            }
+            .product-badges-row {
+                padding: 8px 12px 4px 12px !important;
+                gap: 5px;
+                margin-bottom: 6px;
+            }
+            .product-tag {
+                font-size: 9.5px !important;
+                padding: 3px 7px !important;
+                border-radius: 5px;
+                font-weight: 700;
+                display: inline-flex;
+                align-items: center;
+                gap: 3px;
+            }
 
             /* --- MINIATURAS EXTRA --- */
-            .extra-thumbs { padding: 6px 12px 12px 12px !important; gap: 8px; }
-            .extra-thumbs img { width: 42px; height: 42px; border-radius: 6px; }
+            .extra-thumbs { padding: 4px 12px 10px 12px !important; gap: 6px; }
+            .extra-thumbs img { width: 38px; height: 38px; border-radius: 6px; }
 
             /* --- STOCK INDICATOR --- */
-            .stock-indicator { width: 8px; height: 8px; margin-right: 5px; }
+            .stock-indicator { width: 7px; height: 7px; margin-right: 5px; }
 
             /* --- PAGINACIÓN --- */
-            #pagination-container { gap: 8px !important; margin-top: 24px !important; }
-            .page-btn { padding: 12px 18px !important; font-size: 13px !important; min-height: 46px; border-radius: 10px; font-weight: 700; }
-            .page-btn:active { background: #febd69; transform: scale(0.96); }
+            #pagination-container { gap: 8px !important; margin-top: 22px !important; }
+            .page-btn { padding: 11px 16px !important; font-size: 13px !important; min-height: 44px; border-radius: 10px; font-weight: 700; }
 
             /* ============================================ */
-            /* MODAL VISTA RÁPIDA — COMPACTO Y QUE NO SE CORTE */
+            /* MODAL: COMPACTO, CON "VER MÁS" EN DESCRIPCIÓN */
             /* ============================================ */
             #quick-view-modal {
                 padding: 8px !important;
@@ -137,7 +195,7 @@
                 width: 34px !important;
                 height: 34px !important;
                 line-height: 1 !important;
-                background: rgba(255,255,255,0.9) !important;
+                background: rgba(255,255,255,0.95) !important;
                 border-radius: 50% !important;
                 display: flex !important;
                 align-items: center !important;
@@ -145,140 +203,73 @@
                 box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
                 z-index: 20 !important;
             }
-            .modal-body {
-                padding: 12px !important;
-                gap: 10px !important;
-                display: flex !important;
-                flex-direction: column !important;
-                overflow: visible !important;
-            }
-            .gallery-main {
-                height: 170px !important;
-                border-radius: 10px !important;
-                padding: 8px !important;
-                background: #f9fafb !important;
-            }
-            .gallery-main img {
-                max-width: 100% !important;
-                max-height: 100% !important;
-                object-fit: contain !important;
-            }
-            #modal-name {
-                font-size: 15px !important;
-                line-height: 1.25 !important;
-                margin-bottom: 6px !important;
-                font-weight: 800 !important;
-                word-break: break-word;
-            }
-            #modal-price {
-                font-size: 22px !important;
-                font-weight: 800 !important;
-                line-height: 1 !important;
-            }
+            .modal-body { padding: 12px !important; gap: 10px !important; display: flex !important; flex-direction: column !important; overflow: visible !important; }
+            .gallery-main { height: 160px !important; border-radius: 10px !important; padding: 8px !important; background: #f9fafb !important; }
+            .gallery-main img { max-width: 100% !important; max-height: 100% !important; object-fit: contain !important; }
+            #modal-name { font-size: 15px !important; line-height: 1.25 !important; margin-bottom: 4px !important; font-weight: 800 !important; word-break: break-word; }
+            #modal-price { font-size: 22px !important; font-weight: 800 !important; line-height: 1 !important; }
             #modal-old-price { font-size: 11px !important; }
+            #modal-cat { font-size: 9px !important; font-weight: 800 !important; letter-spacing: 0.5px; margin-bottom: 4px !important; }
+
+            /* --- DESCRIPCIÓN CON "VER MÁS" --- */
             #modal-desc {
                 font-size: 12px !important;
-                line-height: 1.4 !important;
+                line-height: 1.45 !important;
                 color: #6b7280;
-                margin-bottom: 8px !important;
                 margin-top: 6px !important;
+                margin-bottom: 0 !important;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                transition: all 0.3s ease;
             }
-            #modal-cat {
-                font-size: 9px !important;
-                font-weight: 800 !important;
-                letter-spacing: 0.5px;
-                margin-bottom: 4px !important;
+            #modal-desc.expanded {
+                -webkit-line-clamp: unset;
+                display: block;
+                overflow: visible;
             }
-            .gallery-thumbs {
-                gap: 6px !important;
-                margin-top: 6px !important;
-                padding-bottom: 2px !important;
-            }
-            .gallery-thumbs img {
-                width: 42px !important;
-                height: 42px !important;
-                border-radius: 6px !important;
-                border-width: 2px !important;
-            }
-            #modal-stock-alert {
-                padding: 6px 8px !important;
-                margin-top: 6px !important;
-                margin-bottom: 8px !important;
-                border-radius: 8px !important;
-            }
-            #modal-stock-alert p {
-                font-size: 10px !important;
-                font-weight: 700;
-                margin-bottom: 4px !important;
-            }
-            #modal-stock-alert .stock-bar-container {
-                height: 5px !important;
-                margin: 4px 0 0 0 !important;
-            }
-            #modal-bought-together {
-                margin-top: 8px !important;
-                padding-top: 8px !important;
-            }
-            #modal-bought-together h4 {
-                font-size: 10px !important;
-                margin-bottom: 6px !important;
+            #modal-desc-toggle {
+                display: none;
+                color: #3b82f6;
+                font-size: 11px !important;
                 font-weight: 800;
-            }
-            #bought-together-list {
-                gap: 6px !important;
-                padding-bottom: 2px !important;
-            }
-            .bought-together-item {
-                min-width: 78px !important;
-                max-width: 78px !important;
-                padding: 4px !important;
-                border-radius: 8px !important;
-            }
-            .bought-together-item img {
-                height: 42px !important;
-                margin-bottom: 3px !important;
-                border-radius: 5px !important;
-            }
-            .bought-together-item .bt-name {
-                font-size: 8.5px !important;
-                height: 20px !important;
-                font-weight: 700;
-                line-height: 1.15;
-            }
-            .bought-together-item .bt-price {
-                font-size: 9px !important;
-                font-weight: 800;
-                margin-top: 1px !important;
-            }
-            #modal-add-btn {
-                padding: 14px 10px !important;
-                font-size: 13px !important;
-                min-height: 48px !important;
-                margin-top: 8px !important;
-                border-radius: 10px !important;
-                font-weight: 800 !important;
+                text-transform: uppercase;
                 letter-spacing: 0.3px;
+                padding: 6px 0 4px 0 !important;
+                background: none;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 6px !important;
             }
+            #modal-desc-toggle.show { display: inline-block !important; }
+            #modal-desc-toggle:active { opacity: 0.6; }
+
+            /* --- GALERÍA MINIATURAS --- */
+            .gallery-thumbs { gap: 6px !important; margin-top: 6px !important; padding-bottom: 2px !important; }
+            .gallery-thumbs img { width: 40px !important; height: 40px !important; border-radius: 6px !important; border-width: 2px !important; }
+
+            /* --- ALERTA STOCK --- */
+            #modal-stock-alert { padding: 6px 8px !important; margin-top: 8px !important; margin-bottom: 8px !important; border-radius: 8px !important; }
+            #modal-stock-alert p { font-size: 10px !important; font-weight: 700; margin-bottom: 4px !important; }
+            #modal-stock-alert .stock-bar-container { height: 5px !important; margin: 4px 0 0 0 !important; }
+
+            /* --- COMPRADOS JUNTOS --- */
+            #modal-bought-together { margin-top: 8px !important; padding-top: 8px !important; }
+            #modal-bought-together h4 { font-size: 10px !important; margin-bottom: 6px !important; font-weight: 800; }
+            #bought-together-list { gap: 6px !important; padding-bottom: 2px !important; }
+            .bought-together-item { min-width: 76px !important; max-width: 76px !important; padding: 4px !important; border-radius: 8px !important; }
+            .bought-together-item img { height: 40px !important; margin-bottom: 3px !important; border-radius: 5px !important; }
+            .bought-together-item .bt-name { font-size: 8.5px !important; height: 18px !important; font-weight: 700; line-height: 1.15; }
+            .bought-together-item .bt-price { font-size: 9px !important; font-weight: 800; margin-top: 1px !important; }
+
+            /* --- BOTONES MODAL --- */
+            #modal-add-btn { padding: 13px 10px !important; font-size: 13px !important; min-height: 46px !important; margin-top: 8px !important; border-radius: 10px !important; font-weight: 800 !important; letter-spacing: 0.3px; }
             #modal-add-btn:active { transform: scale(0.98); }
-            .btn-consult-wa {
-                padding: 13px 10px !important;
-                font-size: 13px !important;
-                min-height: 46px !important;
-                margin-top: 6px !important;
-                border-radius: 10px !important;
-                font-weight: 800;
-            }
+            .btn-consult-wa { padding: 12px 10px !important; font-size: 13px !important; min-height: 44px !important; margin-top: 6px !important; border-radius: 10px !important; font-weight: 800; }
             .btn-consult-wa:active { transform: scale(0.98); }
-            #quick-view-modal .border-t {
-                padding-top: 10px !important;
-                margin-top: 8px !important;
-                border-top-width: 1px !important;
-            }
-            #quick-view-modal .border-t p {
-                font-size: 10px !important;
-                margin-bottom: 8px !important;
-                line-height: 1.3;
-            }
+            #quick-view-modal .border-t { padding-top: 10px !important; margin-top: 8px !important; border-top-width: 1px !important; }
+            #quick-view-modal .border-t p { font-size: 10px !important; margin-bottom: 8px !important; line-height: 1.3; }
             #quick-view-modal .mb-4 { margin-bottom: 8px !important; }
             #quick-view-modal .mt-auto { margin-top: 0 !important; }
 
@@ -291,14 +282,20 @@
             #cart-drawer button[onclick*="sendWhatsApp"] { padding: 16px !important; font-size: 15px !important; min-height: 54px; border-radius: 10px !important; font-weight: 800; letter-spacing: 0.3px; }
             #cart-items { gap: 10px !important; }
 
-            /* --- WHATSAPP FLOAT --- */
-            .whatsapp-float { width: 56px !important; height: 56px !important; font-size: 26px !important; bottom: calc(20px + env(safe-area-inset-bottom)) !important; right: 16px !important; }
+            /* --- WHATSAPP FLOTANTE: ARRIBA PARA NO TAPAR BOTONES --- */
+            .whatsapp-float {
+                width: 52px !important;
+                height: 52px !important;
+                font-size: 24px !important;
+                bottom: calc(90px + env(safe-area-inset-bottom)) !important;
+                right: 14px !important;
+            }
             .whatsapp-float:active { transform: scale(0.92); }
 
             /* --- NOTIFICACIONES --- */
             #sales-notification { max-width: 300px !important; padding: 14px !important; border-radius: 12px; }
-            #sales-notification.active { left: 14px !important; bottom: 84px !important; }
-            #toast-notification { bottom: 88px !important; font-size: 14px !important; padding: 14px 20px !important; max-width: 92vw; border-radius: 10px; font-weight: 700; }
+            #sales-notification.active { left: 14px !important; bottom: 150px !important; }
+            #toast-notification { bottom: 150px !important; font-size: 13px !important; padding: 13px 18px !important; max-width: 92vw; border-radius: 10px; font-weight: 700; }
 
             /* --- ADMIN --- */
             #admin-panel { padding: 14px !important; }
@@ -314,9 +311,9 @@
             .order-card { padding: 16px !important; border-radius: 12px; }
             .order-card .order-reorder { padding: 12px 16px !important; font-size: 12px !important; min-height: 42px; border-radius: 8px; font-weight: 700; }
 
-            /* --- CHATBOT MÓVIL --- */
-            #chatbot-panel { bottom: 84px; left: 12px; right: 12px; width: auto; height: 58vh; max-height: 58vh; border-radius: 16px; }
-            #chatbot-btn { width: 48px; height: 48px; font-size: 20px; bottom: 84px; left: 16px; }
+            /* --- CHATBOT --- */
+            #chatbot-panel { bottom: 152px !important; left: 12px; right: 12px; width: auto; height: 58vh; max-height: 58vh; border-radius: 16px; }
+            #chatbot-btn { width: 48px; height: 48px; font-size: 20px; bottom: 90px; left: 16px; }
             #chatbot-btn:active { transform: scale(0.9); }
             #chatbot-panel .chat-header { padding: 10px 14px; font-size: 13px; gap: 8px; font-weight: 800; }
             #chatbot-panel .chat-header i { font-size: 14px; }
@@ -330,18 +327,9 @@
             #chatbot-input-area { padding: 10px; gap: 8px; }
             #chatbot-input { padding: 10px 14px; font-size: 14px; border-radius: 20px; height: 42px; }
             #chatbot-send { width: 42px; height: 42px; font-size: 15px; }
-            #chatbot-send:active { transform: scale(0.9); }
 
-            /* --- PWA INSTALL BANNER (visible en móvil) --- */
-            #pwa-install-banner {
-                bottom: calc(90px + env(safe-area-inset-bottom)) !important;
-                right: 12px !important;
-                max-width: 230px;
-                font-size: 12px;
-                padding: 12px 14px;
-                border-radius: 14px;
-            }
-            #pwa-install-banner.show { display: flex !important; }
+            /* --- PWA INSTALL BANNER (el original, complementario) --- */
+            #pwa-install-banner { bottom: calc(160px + env(safe-area-inset-bottom)) !important; right: 12px !important; max-width: 220px; font-size: 12px; padding: 10px 12px; border-radius: 12px; }
 
             /* --- ABOUT MODAL --- */
             #about-modal { padding: 16px !important; }
@@ -376,16 +364,17 @@
         }
 
         @media (max-width: 380px) {
-            #store-logo { height: 42px !important; }
+            #store-logo { height: 40px !important; }
             #user-search { font-size: 14px !important; padding: 10px 42px 10px 12px !important; height: 42px; }
-            .product-card h3 { font-size: 12px !important; }
-            .product-card .text-lg { font-size: 16px !important; }
-            .featured-cat-card { min-width: 88px; max-width: 88px; }
-            .featured-cat-card .cat-icon { width: 44px; height: 44px; font-size: 20px; }
-            #store-name { font-size: 13px !important; max-width: 110px; }
-            .gallery-main { height: 150px !important; }
+            .product-card h3 { font-size: 12px !important; min-height: 50px; }
+            .product-card .text-lg { font-size: 15px !important; }
+            .featured-cat-card { min-width: 92px; max-width: 92px; }
+            .featured-cat-card .cat-icon { width: 40px; height: 40px; font-size: 18px; }
+            #store-name { font-size: 13px !important; max-width: 100px; }
+            .gallery-main { height: 140px !important; }
             #modal-name { font-size: 14px !important; }
             #modal-price { font-size: 20px !important; }
+            #orders-btn, #push-bell, .dark-mode-toggle, #install-app-btn { min-width: 36px; min-height: 36px; font-size: 16px !important; }
         }
         @media (min-width: 769px) and (max-width: 1024px) {
             .grid-md { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
@@ -397,9 +386,9 @@
         }
         @supports (-webkit-touch-callout: none) { input, select, textarea { -webkit-appearance: none; border-radius: 8px; } }
         @supports (padding: env(safe-area-inset-bottom)) {
-            .whatsapp-float { bottom: calc(20px + env(safe-area-inset-bottom)); right: calc(16px + env(safe-area-inset-right)); }
+            .whatsapp-float { bottom: calc(90px + env(safe-area-inset-bottom)); right: calc(14px + env(safe-area-inset-right)); }
             #cart-drawer { padding-bottom: calc(20px + env(safe-area-inset-bottom)); }
-            #pwa-install-banner { bottom: calc(90px + env(safe-area-inset-bottom)); }
+            #pwa-install-banner { bottom: calc(160px + env(safe-area-inset-bottom)); }
         }
 
         /* ====== MODO OSCURO ====== */
@@ -435,6 +424,7 @@
         body.dark-mode #quick-view-modal .bg-red-50 { background-color: #2a1a1a !important; }
         body.dark-mode #quick-view-modal .border-red-100 { border-color: #4a2a2a !important; }
         body.dark-mode #quick-view-modal .text-red-600 { color: #ef4444 !important; }
+        body.dark-mode #modal-desc-toggle { color: #60a5fa !important; }
         body.dark-mode .about-content { background-color: #16213e !important; color: #e0e0e0 !important; }
         body.dark-mode .about-content .text-gray-600 { color: #b0b0b0 !important; }
         body.dark-mode .about-content .text-gray-800 { color: #e0e0e0 !important; }
@@ -664,9 +654,9 @@
         body.dark-mode #modal-bought-together { border-color: #2a3a5c; }
 
         @media (max-width: 380px) {
-            #chatbot-panel { bottom: 78px; left: 10px; right: 10px; height: 56vh; max-height: 56vh; }
-            #chatbot-btn { width: 46px; height: 46px; font-size: 19px; bottom: 78px; left: 14px; }
-            #pwa-install-banner { bottom: 140px; right: 10px; max-width: 190px; font-size: 11px; padding: 10px 12px; }
+            #chatbot-panel { bottom: 140px; left: 10px; right: 10px; height: 56vh; max-height: 56vh; }
+            #chatbot-btn { width: 46px; height: 46px; font-size: 19px; bottom: 84px; left: 14px; }
+            #pwa-install-banner { bottom: 148px; right: 10px; max-width: 190px; font-size: 11px; padding: 10px 12px; }
             #orders-modal { padding: 0 !important; }
             .orders-content { max-height: 100vh; border-radius: 0; height: 100vh; }
             .featured-cat-card { padding: 12px 8px; min-height: 100px; }
@@ -808,6 +798,7 @@
         @media (min-width: 769px) {
             #mobile-menu-overlay, #mobile-menu { display: none !important; }
             .hamburger-btn { display: none !important; }
+            #install-app-btn { display: none !important; }
         }
     </style>
 </head>
@@ -895,6 +886,7 @@
                 <span id="modal-cat" class="text-[10px] font-bold text-blue-600 tracking-widest mb-1 uppercase">GENERAL</span>
                 <h2 id="modal-name" class="text-2xl font-bold text-gray-800 mb-2 leading-tight uppercase">Nombre</h2>
                 <p id="modal-desc" class="text-sm text-gray-600 mb-3 whitespace-pre-line mt-2"></p>
+                <button id="modal-desc-toggle" onclick="toggleModalDesc()">Ver más ▾</button>
                 <div id="modal-stock-alert" class="bg-red-50 p-2 border border-red-100 rounded mt-2 mb-4">
                     <p class="text-[11px] font-bold text-red-600 uppercase mb-1"><i class="fa fa-bolt"></i> ¡Solo quedan <span id="stock-num">4</span> unidades!</p>
                     <div class="stock-bar-container"><div id="stock-bar" class="stock-bar-fill"></div></div>
@@ -917,10 +909,10 @@
     </div>
 </div>
 
-<!-- ====== PANEL ADMIN (se llena dinámicamente) ====== -->
+<!-- ====== PANEL ADMIN ====== -->
 <div id="admin-panel" class="p-4 md:p-8" style="display: none;"></div>
 
-<!-- ====== HTML DEL ADMIN (guardado como template) ====== -->
+<!-- ====== HTML DEL ADMIN ====== -->
 <template id="admin-panel-template">
     <div class="max-w-7xl mx-auto">
         <div class="flex justify-between items-center border-b-2 border-gray-300 pb-4 mb-6">
@@ -1115,6 +1107,9 @@
             <button class="absolute right-0 top-0 h-full px-4 bg-orange-400 text-black rounded-r-sm"><i class="fa fa-search"></i></button>
         </div>
         <div class="flex items-center shrink-0 space-x-2">
+            <button id="install-app-btn" class="hidden" onclick="installPWA()" title="Instalar App">
+                <i class="fa fa-download"></i>
+            </button>
             <button id="orders-btn" onclick="openOrders()" title="Mis Pedidos">
                 <i class="fa fa-box"></i>
                 <span class="orders-badge" id="orders-count">0</span>
@@ -1484,6 +1479,12 @@
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
+            // Mostrar botón en el header (siempre que no esté instalada)
+            const installBtn = document.getElementById('install-app-btn');
+            if (installBtn && !localStorage.getItem(PWA_KEY)) {
+                installBtn.classList.remove('hidden');
+            }
+            // Mostrar también el banner flotante después de 10 segundos
             if (!localStorage.getItem(PWA_KEY)) {
                 setTimeout(() => {
                     const banner = document.getElementById('pwa-install-banner');
@@ -1491,15 +1492,34 @@
                 }, 10000);
             }
         });
+        // Si ya está instalada, no mostrar el botón
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            const installBtn = document.getElementById('install-app-btn');
+            if (installBtn) installBtn.classList.add('hidden');
+        }
     }
     function installPWA() {
-        if (!deferredPrompt) { showToast('Tu navegador no permite instalar la app. Usá Chrome o Safari.', 'fa-info-circle'); return; }
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') showToast('✅ ¡App instalada! Buscala en tu inicio');
-            deferredPrompt = null;
-            dismissPWA();
-        });
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') showToast('✅ ¡App instalada! Buscala en tu inicio');
+                deferredPrompt = null;
+                dismissPWA();
+            });
+        } else {
+            // Fallback: instrucciones según navegador
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+            let msg = '';
+            if (isIOS) {
+                msg = '📲 Para instalar en iPhone:\n\n1. Tocá el botón Compartir ⬆️\n2. Elegí "Añadir a pantalla de inicio"\n3. Confirmá con "Agregar"';
+            } else if (isAndroid) {
+                msg = '📲 Para instalar en Android:\n\n1. Tocá el menú ⋮ del navegador\n2. Elegí "Instalar app" o "Añadir a pantalla de inicio"\n3. Confirmá';
+            } else {
+                msg = '📲 Tu navegador no permite instalar la app automáticamente.\n\nAbrila en Chrome (Android) o Safari (iPhone) para instalarla.';
+            }
+            alert(msg);
+        }
     }
     function dismissPWA() {
         const banner = document.getElementById('pwa-install-banner');
@@ -2530,7 +2550,20 @@
         const p = tiendaData.productos.find(prod => prod.id === id);
         const modal = document.getElementById('quick-view-modal');
         document.getElementById('modal-name').innerText = p.nombre;
-        document.getElementById('modal-desc').innerText = p.desc || "";
+        const descEl = document.getElementById('modal-desc');
+        descEl.innerText = p.desc || "";
+        descEl.classList.remove('expanded');
+        // Mostrar/ocultar botón "Ver más" según largo del texto
+        setTimeout(() => {
+            const toggleBtn = document.getElementById('modal-desc-toggle');
+            const needsToggle = descEl.scrollHeight > descEl.clientHeight + 5;
+            if (needsToggle && p.desc && p.desc.length > 60) {
+                toggleBtn.classList.add('show');
+                toggleBtn.innerText = 'Ver más ▾';
+            } else {
+                toggleBtn.classList.remove('show');
+            }
+        }, 50);
         document.getElementById('modal-cat').innerText = p.cat + (p.subcat ? ' > ' + p.subcat : '');
         document.getElementById('modal-price').innerText = `${p.precio.toLocaleString()} Gs.`;
         document.getElementById('modal-old-price').innerText = p.precioAnterior ? `${p.precioAnterior.toLocaleString()} Gs.` : '';
@@ -2549,6 +2582,14 @@
         else { btn.innerText = "Agregar al Carrito"; btn.style.background = "var(--amazon-orange)"; btn.onclick = (e) => { flyToCart(e); addToCart(id); closeQuickView(); }; }
         modal.style.display = 'flex'; document.body.style.overflow = 'hidden';
     }
+
+    function toggleModalDesc() {
+        const desc = document.getElementById('modal-desc');
+        const toggle = document.getElementById('modal-desc-toggle');
+        const isExpanded = desc.classList.toggle('expanded');
+        toggle.innerText = isExpanded ? 'Ver menos ▴' : 'Ver más ▾';
+    }
+
     function changeModalImg(el, src) { document.getElementById('modal-main-img').src = src; document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('active')); el.classList.add('active'); }
     function closeQuickView() { document.getElementById('quick-view-modal').style.display = 'none'; document.body.style.overflow = 'auto'; }
     function consultWhatsApp(id) {
