@@ -21,121 +21,229 @@
         button, .category-chip, .subcategory-item, .menu-item, .submenu-item, .page-btn { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
         img { max-width: 100%; height: auto; }
 
+        /* ============================================ */
+        /* ====== OPTIMIZACIÓN MÓVIL (solo < 768) ===== */
+        /* ============================================ */
         @media (max-width: 768px) {
-            body { font-size: 14px; }
-            .amazon-header .container { padding: 8px 10px; gap: 6px; flex-wrap: wrap; }
-            #store-logo { height: 48px !important; }
-            .hamburger-btn { font-size: 24px !important; padding: 6px 8px !important; }
-            #cart-anchor i { font-size: 24px !important; }
-            #orders-btn, #push-bell, .dark-mode-toggle { font-size: 18px !important; padding: 6px !important; }
-            .amazon-header .flex-grow { order: 3; width: 100%; max-width: 100%; margin-top: 4px; }
-            #user-search { font-size: 15px !important; padding: 10px 40px 10px 14px !important; height: 42px; border-radius: 8px !important; }
-            .amazon-header .flex-grow button { padding: 0 14px !important; }
-            #store-name { display: block !important; font-size: 13px !important; letter-spacing: 0.3px; line-height: 1.1; max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+            /* --- BASE --- */
+            body { font-size: 15px; }
 
-            /* SUB-HEADER ULTRA FINO */
-            #sub-header { padding: 3px 0 !important; font-size: 10px !important; overflow: hidden; }
-            #sub-header .container { display: flex !important; gap: 12px !important; align-items: center; justify-content: center !important; padding: 0 10px !important; flex-wrap: nowrap !important; overflow: hidden !important; }
-            #sub-header .info-item { font-size: 10px !important; gap: 5px !important; flex-shrink: 1; min-width: 0; line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            /* --- HEADER --- */
+            .amazon-header .container { padding: 10px 12px; gap: 8px; flex-wrap: wrap; }
+            #store-logo { height: 46px !important; }
+            .hamburger-btn { font-size: 22px !important; padding: 8px 8px !important; }
+            #cart-anchor i { font-size: 22px !important; }
+            #orders-btn, #push-bell, .dark-mode-toggle { font-size: 18px !important; padding: 8px !important; min-width: 40px; min-height: 40px; }
+            .amazon-header .flex-grow { order: 3; width: 100%; max-width: 100%; margin-top: 6px; }
+            #user-search { font-size: 15px !important; padding: 11px 44px 11px 14px !important; height: 44px; border-radius: 10px !important; }
+            .amazon-header .flex-grow button { padding: 0 16px !important; border-top-right-radius: 10px !important; border-bottom-right-radius: 10px !important; }
+            #store-name { display: block !important; font-size: 14px !important; font-weight: 800; letter-spacing: 0.3px; line-height: 1.1; max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+            /* --- SUB-HEADER ULTRA FINO --- */
+            #sub-header { padding: 5px 0 !important; font-size: 10.5px !important; overflow: hidden; }
+            #sub-header .container { display: flex !important; gap: 14px !important; align-items: center; justify-content: center !important; padding: 0 12px !important; flex-wrap: nowrap !important; overflow: hidden !important; }
+            #sub-header .info-item { font-size: 10.5px !important; gap: 5px !important; flex-shrink: 1; min-width: 0; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
             #sub-header .info-item i { font-size: 11px !important; flex-shrink: 0; }
             #sub-header .info-item span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
             #sub-header .info-item:nth-child(4) { display: none !important; }
 
-            #top-announcement-bar { font-size: 10px; padding: 6px 8px; letter-spacing: 0.3px; }
-            #main-banner { height: 200px !important; margin-top: 10px !important; }
-            .banner-overlay h2 { font-size: 22px !important; }
-            .banner-overlay p { font-size: 13px !important; }
-            main.container { padding-left: 12px !important; padding-right: 12px !important; padding-top: 16px !important; }
-            #featured-categories-scroll { display: flex; overflow-x: auto; gap: 12px; padding: 12px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            /* --- BARRA DE ANUNCIO --- */
+            #top-announcement-bar { font-size: 10.5px; padding: 7px 10px; letter-spacing: 0.3px; }
+
+            /* --- BANNER --- */
+            #main-banner { height: 200px !important; margin-top: 12px !important; border-radius: 12px !important; }
+            .banner-overlay { padding-left: 24px !important; }
+            .banner-overlay h2 { font-size: 22px !important; line-height: 1.1; }
+            .banner-overlay p { font-size: 13px !important; margin-top: 4px !important; }
+
+            /* --- MAIN --- */
+            main.container { padding-left: 16px !important; padding-right: 16px !important; padding-top: 20px !important; }
+
+            /* --- CATEGORÍAS DESTACADAS (scroll horizontal) --- */
+            #featured-categories-scroll { display: flex; overflow-x: auto; gap: 12px; padding: 14px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; }
             #featured-categories-scroll::-webkit-scrollbar { display: none; }
-            .featured-cat-card { min-width: 110px; flex-shrink: 0; padding: 16px 12px; min-height: 120px; }
-            .featured-cat-card .cat-icon { width: 50px; height: 50px; font-size: 24px; }
-            .featured-cat-card .cat-name { font-size: 11px; }
-            .product-card .main-img-container { height: 180px; }
-            .product-card h3 { font-size: 12px !important; }
-            .product-card .text-lg { font-size: 16px !important; }
-            .product-card .btn-amazon { font-size: 12px !important; padding: 12px 6px !important; min-height: 44px; }
-            .badge-oferta, .badge-destacado, .badge-bestseller { font-size: 10px !important; padding: 3px 8px !important; }
-            .extra-thumbs { padding: 4px 8px 8px 8px; gap: 6px; }
-            .extra-thumbs img { width: 40px; height: 40px; }
-            #breadcrumbs { font-size: 10px !important; padding: 6px 0 12px 0 !important; }
-            .section-header-custom { margin: 20px 0 10px 0; }
-            .section-title-custom { font-size: 15px; }
-            .section-see-all { font-size: 11px; padding: 6px; }
+            .featured-cat-card { min-width: 96px; max-width: 96px; flex-shrink: 0; padding: 14px 10px; min-height: 108px; border-radius: 14px; scroll-snap-align: start; }
+            .featured-cat-card .cat-icon { width: 48px; height: 48px; font-size: 22px; margin-bottom: 4px; }
+            .featured-cat-card .cat-name { font-size: 11px; font-weight: 700; }
 
-            /* MODAL VISTA RÁPIDA — MÓVIL COMPACTO */
-            #quick-view-modal { padding: 12px !important; align-items: flex-start !important; padding-top: 20px !important; }
-            #quick-view-modal .modal-content { border-radius: 12px !important; max-height: calc(100vh - 40px) !important; height: auto !important; width: 100%; }
-            .modal-body { padding: 12px !important; gap: 12px; }
-            .gallery-main { height: 180px !important; }
-            #modal-name { font-size: 16px !important; line-height: 1.2; margin-bottom: 6px !important; }
-            #modal-price { font-size: 22px !important; }
+            /* --- SECCIONES --- */
+            .section-header-custom { margin: 24px 0 14px 0; padding-bottom: 10px; }
+            .section-title-custom { font-size: 16px; letter-spacing: 0.4px; }
+            .section-see-all { font-size: 12px; padding: 8px 4px; font-weight: 700; }
+
+            /* --- BREADCRUMBS --- */
+            #breadcrumbs { font-size: 11px !important; padding: 8px 0 14px 0 !important; gap: 8px; }
+
+            /* --- GRID DE PRODUCTOS: Cards más aireadas --- */
+            .grid-md { gap: 14px !important; }
+            .product-card { border-radius: 12px !important; overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+            .product-card:active { transform: scale(0.98); }
+            .product-card .main-img-container { height: 180px; padding: 14px; background: #fff; }
+            .product-card h3 { font-size: 13px !important; line-height: 1.3 !important; font-weight: 700 !important; padding: 10px 12px 6px 12px !important; margin-top: 0 !important; letter-spacing: 0.1px; }
+            .product-card .text-lg { font-size: 18px !important; font-weight: 800 !important; }
+            .product-card .btn-amazon {
+                font-size: 13px !important;
+                padding: 14px 10px !important;
+                min-height: 48px;
+                font-weight: 700;
+                letter-spacing: 0.3px;
+                transition: transform 0.12s ease, background-color 0.15s ease;
+            }
+            .product-card .btn-amazon:active { transform: scale(0.97); background-color: #f7a01b; }
+            .product-card .text-\[10px\].text-gray-500 { font-size: 11px !important; margin-top: 6px !important; }
+            .product-card .mt-1.mb-3 { margin-top: 6px !important; margin-bottom: 10px !important; }
+
+            /* --- BADGES Y TAGS --- */
+            .badge-oferta, .badge-destacado, .badge-bestseller { font-size: 10.5px !important; padding: 4px 10px !important; font-weight: 800; border-radius: 6px; }
+            .product-badges-row { padding: 8px 12px 0 12px !important; gap: 6px; }
+            .product-tag { font-size: 10px !important; padding: 4px 8px !important; border-radius: 6px; font-weight: 700; }
+
+            /* --- MINIATURAS EXTRA --- */
+            .extra-thumbs { padding: 6px 12px 12px 12px !important; gap: 8px; }
+            .extra-thumbs img { width: 42px; height: 42px; border-radius: 6px; }
+
+            /* --- STOCK INDICATOR --- */
+            .stock-indicator { width: 8px; height: 8px; margin-right: 5px; }
+
+            /* --- PAGINACIÓN --- */
+            #pagination-container { gap: 8px !important; margin-top: 24px !important; }
+            .page-btn { padding: 12px 18px !important; font-size: 13px !important; min-height: 46px; border-radius: 10px; font-weight: 700; }
+            .page-btn:active { background: #febd69; transform: scale(0.96); }
+
+            /* --- MODAL VISTA RÁPIDA --- */
+            #quick-view-modal { padding: 14px !important; align-items: flex-start !important; padding-top: 24px !important; }
+            #quick-view-modal .modal-content { border-radius: 16px !important; max-height: calc(100vh - 48px) !important; height: auto !important; width: 100%; }
+            .modal-body { padding: 14px !important; gap: 14px; }
+            .gallery-main { height: 190px !important; border-radius: 12px !important; }
+            #modal-name { font-size: 17px !important; line-height: 1.25; margin-bottom: 8px !important; font-weight: 800; }
+            #modal-price { font-size: 24px !important; font-weight: 800; }
             #modal-old-price { font-size: 12px !important; }
-            #modal-desc { font-size: 12px !important; line-height: 1.4; }
-            #modal-cat { font-size: 9px !important; }
-            .gallery-thumbs { gap: 6px !important; margin-top: 6px !important; }
-            .gallery-thumbs img { width: 44px; height: 44px; }
-            #modal-stock-alert { padding: 6px !important; margin-top: 4px !important; margin-bottom: 8px !important; }
-            #modal-stock-alert p { font-size: 10px !important; }
-            #modal-bought-together { margin-top: 8px !important; padding-top: 8px !important; }
-            #modal-bought-together h4 { font-size: 10px !important; margin-bottom: 6px !important; }
-            .bought-together-item { min-width: 84px; max-width: 84px; padding: 4px; }
-            .bought-together-item img { height: 48px; }
-            .bought-together-item .bt-name { font-size: 8px !important; height: 20px; }
-            .bought-together-item .bt-price { font-size: 9px !important; }
-            #modal-add-btn { padding: 12px !important; font-size: 13px !important; min-height: 46px; margin-top: 8px !important; }
-            .btn-consult-wa { padding: 11px !important; font-size: 13px !important; min-height: 44px; margin-top: 6px !important; }
-            #quick-view-modal .border-t { padding-top: 10px !important; margin-top: 8px !important; }
-            #quick-view-modal .border-t p { font-size: 10px !important; margin-bottom: 6px !important; }
+            #modal-desc { font-size: 12.5px !important; line-height: 1.5; color: #6b7280; }
+            #modal-cat { font-size: 10px !important; font-weight: 800; letter-spacing: 0.5px; }
+            .gallery-thumbs { gap: 8px !important; margin-top: 8px !important; }
+            .gallery-thumbs img { width: 48px; height: 48px; border-radius: 8px; }
+            #modal-stock-alert { padding: 8px !important; margin-top: 6px !important; margin-bottom: 10px !important; border-radius: 8px; }
+            #modal-stock-alert p { font-size: 11px !important; font-weight: 700; }
+            #modal-bought-together { margin-top: 10px !important; padding-top: 10px !important; }
+            #modal-bought-together h4 { font-size: 11px !important; margin-bottom: 8px !important; font-weight: 800; }
+            .bought-together-item { min-width: 88px; max-width: 88px; padding: 6px; border-radius: 10px; }
+            .bought-together-item img { height: 52px; border-radius: 6px; }
+            .bought-together-item .bt-name { font-size: 9px !important; height: 22px; font-weight: 700; }
+            .bought-together-item .bt-price { font-size: 10px !important; font-weight: 800; }
+            #modal-add-btn { padding: 14px !important; font-size: 14px !important; min-height: 50px; margin-top: 10px !important; border-radius: 10px !important; font-weight: 800; letter-spacing: 0.3px; }
+            #modal-add-btn:active { transform: scale(0.98); }
+            .btn-consult-wa { padding: 14px !important; font-size: 14px !important; min-height: 50px; margin-top: 8px !important; border-radius: 10px !important; font-weight: 800; }
+            .btn-consult-wa:active { transform: scale(0.98); }
+            #quick-view-modal .border-t { padding-top: 12px !important; margin-top: 10px !important; }
+            #quick-view-modal .border-t p { font-size: 11px !important; margin-bottom: 8px !important; }
 
-            #cart-drawer { width: 100% !important; max-width: 100% !important; padding: 20px 16px !important; }
-            #cart-drawer h2 { font-size: 18px !important; }
-            .checkout-field { font-size: 16px !important; padding: 12px !important; height: 48px; }
-            .checkout-label { font-size: 10px !important; }
-            #clear-cart-btn { font-size: 13px !important; padding: 8px !important; }
-            #cart-drawer button[onclick*="sendWhatsApp"] { padding: 16px !important; font-size: 15px !important; min-height: 52px; }
-            .whatsapp-float { width: 56px !important; height: 56px !important; font-size: 28px !important; bottom: 20px !important; right: 16px !important; }
-            #sales-notification { max-width: 280px !important; padding: 12px !important; }
-            #sales-notification.active { left: 12px !important; }
-            #toast-notification { bottom: 80px !important; font-size: 13px !important; padding: 12px 18px !important; max-width: 90vw; }
-            #admin-panel { padding: 12px !important; }
-            #admin-panel h1 { font-size: 16px !important; }
-            .admin-tab { font-size: 10px !important; padding: 10px 12px !important; }
-            .page-btn { padding: 12px 16px !important; font-size: 13px !important; min-height: 44px; }
-            #pagination-container { gap: 6px !important; }
-            .grid-sm, .grid-md, .grid-lg { gap: 10px !important; }
-            #about-modal { padding: 12px !important; }
-            .about-content { padding: 22px !important; }
+            /* --- CARRITO --- */
+            #cart-drawer { width: 100% !important; max-width: 100% !important; padding: 20px 16px calc(20px + env(safe-area-inset-bottom)) !important; }
+            #cart-drawer h2 { font-size: 19px !important; font-weight: 800; }
+            .checkout-field { font-size: 16px !important; padding: 14px !important; height: 50px; border-radius: 10px !important; }
+            .checkout-label { font-size: 11px !important; font-weight: 800; letter-spacing: 0.3px; margin-bottom: 6px !important; }
+            #clear-cart-btn { font-size: 13px !important; padding: 10px 12px !important; border-radius: 8px; font-weight: 700; }
+            #cart-drawer button[onclick*="sendWhatsApp"] { padding: 16px !important; font-size: 15px !important; min-height: 54px; border-radius: 10px !important; font-weight: 800; letter-spacing: 0.3px; }
+            #cart-items { gap: 10px !important; }
+
+            /* --- WHATSAPP FLOAT --- */
+            .whatsapp-float { width: 56px !important; height: 56px !important; font-size: 26px !important; bottom: calc(20px + env(safe-area-inset-bottom)) !important; right: 16px !important; }
+            .whatsapp-float:active { transform: scale(0.92); }
+
+            /* --- NOTIFICACIONES --- */
+            #sales-notification { max-width: 300px !important; padding: 14px !important; border-radius: 12px; }
+            #sales-notification.active { left: 14px !important; bottom: 84px !important; }
+            #toast-notification { bottom: 88px !important; font-size: 14px !important; padding: 14px 20px !important; max-width: 92vw; border-radius: 10px; font-weight: 700; }
+
+            /* --- ADMIN (interfaz interna) --- */
+            #admin-panel { padding: 14px !important; }
+            #admin-panel h1 { font-size: 17px !important; }
+            .admin-tab { font-size: 11px !important; padding: 12px 14px !important; min-height: 42px; font-weight: 700; }
+            .stat-card { padding: 12px !important; border-radius: 10px; }
+
+            /* --- PEDIDOS --- */
             #orders-modal { padding: 0 !important; }
             .orders-content { max-height: 100vh; border-radius: 0; height: 100vh; }
-            .orders-header { padding: 16px !important; }
-            .orders-header h2 { font-size: 16px !important; }
-            .order-card { padding: 14px !important; }
-            .order-card .order-reorder { padding: 10px 14px !important; font-size: 11px !important; min-height: 40px; }
+            .orders-header { padding: 18px !important; }
+            .orders-header h2 { font-size: 17px !important; font-weight: 800; }
+            .order-card { padding: 16px !important; border-radius: 12px; }
+            .order-card .order-reorder { padding: 12px 16px !important; font-size: 12px !important; min-height: 42px; border-radius: 8px; font-weight: 700; }
+
+            /* --- CHATBOT MÓVIL --- */
+            #chatbot-panel { bottom: 84px; left: 12px; right: 12px; width: auto; height: 60vh; max-height: 60vh; border-radius: 16px; }
+            #chatbot-btn { width: 48px; height: 48px; font-size: 20px; bottom: 84px; left: 16px; }
+            #chatbot-btn:active { transform: scale(0.9); }
+            #chatbot-panel .chat-header { padding: 10px 14px; font-size: 13px; gap: 8px; font-weight: 800; }
+            #chatbot-panel .chat-header i { font-size: 14px; }
+            #chatbot-panel .chat-header button { font-size: 20px; padding: 4px 8px; }
+            #chatbot-messages { padding: 12px; gap: 8px; }
+            .chat-msg { font-size: 13px; padding: 9px 13px; border-radius: 14px; max-width: 88%; line-height: 1.4; }
+            .chat-msg.product-suggestion { padding: 8px; gap: 8px; max-width: 95%; border-radius: 12px; }
+            .chat-msg.product-suggestion img { width: 36px; height: 36px; border-radius: 8px; }
+            .chat-msg.product-suggestion .name { font-size: 12px; font-weight: 700; }
+            .chat-msg.product-suggestion .price { font-size: 11.5px; font-weight: 700; }
+            #chatbot-input-area { padding: 10px; gap: 8px; }
+            #chatbot-input { padding: 10px 14px; font-size: 14px; border-radius: 20px; height: 42px; }
+            #chatbot-send { width: 42px; height: 42px; font-size: 15px; }
+            #chatbot-send:active { transform: scale(0.9); }
+
+            /* --- PWA INSTALL BANNER --- */
+            #pwa-install-banner { bottom: 152px; right: 12px; max-width: 220px; font-size: 12px; padding: 12px 14px; border-radius: 14px; }
+
+            /* --- ABOUT MODAL --- */
+            #about-modal { padding: 16px !important; }
+            .about-content { padding: 24px !important; border-radius: 12px !important; }
+            .about-content h2 { font-size: 18px !important; }
+            .about-content p { font-size: 13.5px !important; line-height: 1.6; }
+
+            /* --- NAV DE CATEGORÍAS (scroll horizontal) --- */
+            #category-nav { padding: 8px 12px !important; gap: 6px; }
+            .category-chip { font-size: 12px; padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+            .category-dropdown-content { position: fixed !important; left: 12px !important; right: 12px !important; width: auto !important; max-width: calc(100vw - 24px) !important; border-radius: 12px !important; margin-top: 6px; box-shadow: 0 12px 24px rgba(0,0,0,0.4); }
+            .subcategory-item { padding: 12px 18px; font-size: 13px; font-weight: 600; }
+
+            /* --- MENÚ HAMBURGUESA --- */
+            #mobile-menu .menu-item { padding: 14px 22px; font-size: 15px; font-weight: 600; }
+            #mobile-menu .menu-item-category { padding: 14px 22px; font-size: 15px; font-weight: 700; }
+            #mobile-menu .submenu-item { padding: 12px 22px 12px 44px; font-size: 14px; }
+
+            /* --- BOTONES CON FEEDBACK TÁCTIL --- */
+            button, .category-chip, .featured-cat-card, .mini-rec-card, .bought-together-item, .page-btn { transition: transform 0.12s ease; }
+            button:active, .category-chip:active, .featured-cat-card:active, .mini-rec-card:active, .bought-together-item:active { transform: scale(0.97); }
+
+            /* --- MINI REC CARD (Recomendados móvil) --- */
+            .mini-rec-card { min-width: 116px; max-width: 116px; padding: 10px; border-radius: 12px; }
+            .mini-rec-card .mini-rec-img { width: 84px; height: 84px; }
+            .mini-rec-card .mini-rec-name { font-size: 11px; font-weight: 700; height: 26px; }
+            .mini-rec-card .mini-rec-price { font-size: 12px; font-weight: 800; }
+            .mini-rec-card .mini-rec-badge { font-size: 9px; padding: 3px 6px; border-radius: 4px; font-weight: 800; }
+
+            /* --- RECOMENDADOS CONTAINER --- */
+            #bestsellers-container { gap: 12px; padding: 6px 4px 14px 4px; }
         }
+
         @media (max-width: 380px) {
             #store-logo { height: 42px !important; }
-            #user-search { font-size: 14px !important; padding: 10px 40px 10px 14px !important; }
-            .product-card h3 { font-size: 11px !important; }
-            .product-card .text-lg { font-size: 14px !important; }
-            .featured-cat-card { min-width: 100px; }
+            #user-search { font-size: 14px !important; padding: 10px 42px 10px 12px !important; height: 42px; }
+            .product-card h3 { font-size: 12px !important; }
+            .product-card .text-lg { font-size: 16px !important; }
+            .featured-cat-card { min-width: 88px; max-width: 88px; }
             .featured-cat-card .cat-icon { width: 44px; height: 44px; font-size: 20px; }
-            #store-name { font-size: 12px !important; max-width: 90px; }
+            #store-name { font-size: 13px !important; max-width: 110px; }
         }
         @media (min-width: 769px) and (max-width: 1024px) {
             .grid-md { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
             .grid-lg { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
         }
         @media (max-width: 768px) {
-            #category-nav { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 6px 10px !important; }
+            #category-nav { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
             #category-nav::-webkit-scrollbar { display: none; }
-            .category-dropdown-content { position: fixed !important; left: 10px !important; right: 10px !important; width: auto !important; max-width: calc(100vw - 20px) !important; border-radius: 8px !important; margin-top: 4px; }
         }
         @supports (-webkit-touch-callout: none) { input, select, textarea { -webkit-appearance: none; border-radius: 8px; } }
         @supports (padding: env(safe-area-inset-bottom)) {
             .whatsapp-float { bottom: calc(20px + env(safe-area-inset-bottom)); right: calc(16px + env(safe-area-inset-right)); }
             #cart-drawer { padding-bottom: calc(20px + env(safe-area-inset-bottom)); }
-            #pwa-install-banner { bottom: calc(90px + env(safe-area-inset-bottom)); }
+            #pwa-install-banner { bottom: calc(152px + env(safe-area-inset-bottom)); }
         }
 
         /* ====== MODO OSCURO ====== */
@@ -399,76 +507,17 @@
         body.dark-mode .bought-together-item .bt-name { color: #e0e0e0; }
         body.dark-mode #modal-bought-together { border-color: #2a3a5c; }
 
-        @media (max-width: 768px) {
-            /* CHATBOT MÓVIL COMPACTO */
-            #chatbot-panel {
-                bottom: 80px;
-                left: 10px;
-                right: 10px;
-                width: auto;
-                height: 58vh;
-                max-height: 58vh;
-                border-radius: 12px;
-            }
-            #chatbot-btn {
-                width: 48px;
-                height: 48px;
-                font-size: 20px;
-                bottom: 78px;
-                left: 14px;
-            }
-            #chatbot-panel .chat-header {
-                padding: 9px 12px;
-                font-size: 12px;
-                gap: 6px;
-            }
-            #chatbot-panel .chat-header i { font-size: 13px; }
-            #chatbot-panel .chat-header button { font-size: 18px; }
-            #chatbot-messages {
-                padding: 10px;
-                gap: 7px;
-            }
-            .chat-msg {
-                font-size: 11.5px;
-                padding: 7px 11px;
-                border-radius: 12px;
-                max-width: 85%;
-                line-height: 1.35;
-            }
-            .chat-msg.product-suggestion {
-                padding: 6px;
-                gap: 7px;
-                max-width: 95%;
-            }
-            .chat-msg.product-suggestion img {
-                width: 32px;
-                height: 32px;
-                border-radius: 6px;
-            }
-            .chat-msg.product-suggestion .name { font-size: 10.5px; }
-            .chat-msg.product-suggestion .price { font-size: 10px; }
-            #chatbot-input-area {
-                padding: 7px;
-                gap: 5px;
-            }
-            #chatbot-input {
-                padding: 8px 12px;
-                font-size: 12px;
-                border-radius: 16px;
-            }
-            #chatbot-send {
-                width: 34px;
-                height: 34px;
-                font-size: 13px;
-            }
-
-            #pwa-install-banner { bottom: 150px; right: 12px; max-width: 200px; font-size: 11px; padding: 10px 12px; }
+        /* --- ANCHO < 380px --- */
+        @media (max-width: 380px) {
+            #chatbot-panel { bottom: 78px; left: 10px; right: 10px; height: 58vh; max-height: 58vh; }
+            #chatbot-btn { width: 46px; height: 46px; font-size: 19px; bottom: 78px; left: 14px; }
+            #pwa-install-banner { bottom: 140px; right: 10px; max-width: 190px; font-size: 11px; padding: 10px 12px; }
             #orders-modal { padding: 0 !important; }
             .orders-content { max-height: 100vh; border-radius: 0; height: 100vh; }
-            .featured-cat-card { padding: 14px 10px; min-height: 110px; }
-            .featured-cat-card .cat-icon { width: 46px; height: 46px; font-size: 22px; }
+            .featured-cat-card { padding: 12px 8px; min-height: 100px; }
+            .featured-cat-card .cat-icon { width: 42px; height: 42px; font-size: 20px; }
             .featured-cat-card .cat-name { font-size: 10px; }
-            .section-title-custom { font-size: 14px; }
+            .section-title-custom { font-size: 15px; }
         }
 
         :root { --amazon-blue: #131921; --amazon-orange: #febd69; --amazon-light: #232f3e; }
@@ -2381,10 +2430,6 @@
         setTimeout(() => sn.classList.remove('active'), 6000);
     }
 
-    // ==========================================
-    // ====== SEGURIDAD DEL ADMIN ===============
-    // ==========================================
-
     async function sha256(str) {
         const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
         return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
@@ -2447,7 +2492,6 @@
         }
     }
 
-    // Trigger para PC: Ctrl + Shift + A
     document.addEventListener('keydown', (e) => {
         if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
             e.preventDefault();
@@ -2455,7 +2499,6 @@
         }
     });
 
-    // Trigger para móvil: 5 toques rápidos en el logo
     let logoTapCount = 0;
     let logoTapTimer = null;
     document.addEventListener('DOMContentLoaded', () => {
