@@ -33,44 +33,13 @@
             .amazon-header .flex-grow button { padding: 0 14px !important; }
             #store-name { display: block !important; font-size: 13px !important; letter-spacing: 0.3px; line-height: 1.1; max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-            /* SUB-HEADER ULTRA FINO (una cinta, texto se corta) */
-            #sub-header {
-                padding: 3px 0 !important;
-                font-size: 10px !important;
-                overflow: hidden;
-            }
-            #sub-header .container {
-                display: flex !important;
-                gap: 12px !important;
-                align-items: center;
-                justify-content: center !important;
-                padding: 0 10px !important;
-                flex-wrap: nowrap !important;
-                overflow: hidden !important;
-            }
-            #sub-header .info-item {
-                font-size: 10px !important;
-                gap: 5px !important;
-                flex-shrink: 1;
-                min-width: 0;
-                line-height: 1;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            #sub-header .info-item i {
-                font-size: 11px !important;
-                flex-shrink: 0;
-            }
-            #sub-header .info-item span {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                min-width: 0;
-            }
-            #sub-header .info-item:nth-child(4) {
-                display: none !important;
-            }
+            /* SUB-HEADER ULTRA FINO */
+            #sub-header { padding: 3px 0 !important; font-size: 10px !important; overflow: hidden; }
+            #sub-header .container { display: flex !important; gap: 12px !important; align-items: center; justify-content: center !important; padding: 0 10px !important; flex-wrap: nowrap !important; overflow: hidden !important; }
+            #sub-header .info-item { font-size: 10px !important; gap: 5px !important; flex-shrink: 1; min-width: 0; line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            #sub-header .info-item i { font-size: 11px !important; flex-shrink: 0; }
+            #sub-header .info-item span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+            #sub-header .info-item:nth-child(4) { display: none !important; }
 
             #top-announcement-bar { font-size: 10px; padding: 6px 8px; letter-spacing: 0.3px; }
             #main-banner { height: 200px !important; margin-top: 10px !important; }
@@ -93,15 +62,32 @@
             .section-header-custom { margin: 20px 0 10px 0; }
             .section-title-custom { font-size: 15px; }
             .section-see-all { font-size: 11px; padding: 6px; }
-            #quick-view-modal { padding: 0 !important; }
-            #quick-view-modal .modal-content { border-radius: 0 !important; max-height: 100vh !important; height: 100vh !important; width: 100%; }
-            .modal-body { padding: 16px !important; gap: 16px; }
-            .gallery-main { height: 260px !important; }
-            #modal-name { font-size: 20px !important; }
-            #modal-price { font-size: 26px !important; }
-            .gallery-thumbs img { width: 60px; height: 60px; }
-            #modal-add-btn { padding: 16px !important; font-size: 14px !important; min-height: 52px; }
-            .btn-consult-wa { padding: 14px !important; font-size: 14px !important; min-height: 52px; }
+
+            /* MODAL VISTA RÁPIDA — MÓVIL COMPACTO */
+            #quick-view-modal { padding: 12px !important; align-items: flex-start !important; padding-top: 20px !important; }
+            #quick-view-modal .modal-content { border-radius: 12px !important; max-height: calc(100vh - 40px) !important; height: auto !important; width: 100%; }
+            .modal-body { padding: 12px !important; gap: 12px; }
+            .gallery-main { height: 180px !important; }
+            #modal-name { font-size: 16px !important; line-height: 1.2; margin-bottom: 6px !important; }
+            #modal-price { font-size: 22px !important; }
+            #modal-old-price { font-size: 12px !important; }
+            #modal-desc { font-size: 12px !important; line-height: 1.4; }
+            #modal-cat { font-size: 9px !important; }
+            .gallery-thumbs { gap: 6px !important; margin-top: 6px !important; }
+            .gallery-thumbs img { width: 44px; height: 44px; }
+            #modal-stock-alert { padding: 6px !important; margin-top: 4px !important; margin-bottom: 8px !important; }
+            #modal-stock-alert p { font-size: 10px !important; }
+            #modal-bought-together { margin-top: 8px !important; padding-top: 8px !important; }
+            #modal-bought-together h4 { font-size: 10px !important; margin-bottom: 6px !important; }
+            .bought-together-item { min-width: 84px; max-width: 84px; padding: 4px; }
+            .bought-together-item img { height: 48px; }
+            .bought-together-item .bt-name { font-size: 8px !important; height: 20px; }
+            .bought-together-item .bt-price { font-size: 9px !important; }
+            #modal-add-btn { padding: 12px !important; font-size: 13px !important; min-height: 46px; margin-top: 8px !important; }
+            .btn-consult-wa { padding: 11px !important; font-size: 13px !important; min-height: 44px; margin-top: 6px !important; }
+            #quick-view-modal .border-t { padding-top: 10px !important; margin-top: 8px !important; }
+            #quick-view-modal .border-t p { font-size: 10px !important; margin-bottom: 6px !important; }
+
             #cart-drawer { width: 100% !important; max-width: 100% !important; padding: 20px 16px !important; }
             #cart-drawer h2 { font-size: 18px !important; }
             .checkout-field { font-size: 16px !important; padding: 12px !important; height: 48px; }
@@ -414,9 +400,69 @@
         body.dark-mode #modal-bought-together { border-color: #2a3a5c; }
 
         @media (max-width: 768px) {
-            #chatbot-panel { bottom: 90px; left: 12px; right: 12px; width: auto; height: 68vh; max-height: 68vh; }
-            #chatbot-btn { width: 52px; height: 52px; font-size: 22px; bottom: 90px; left: 16px; }
-            #pwa-install-banner { bottom: 160px; right: 12px; max-width: 200px; font-size: 11px; padding: 10px 12px; }
+            /* CHATBOT MÓVIL COMPACTO */
+            #chatbot-panel {
+                bottom: 80px;
+                left: 10px;
+                right: 10px;
+                width: auto;
+                height: 58vh;
+                max-height: 58vh;
+                border-radius: 12px;
+            }
+            #chatbot-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+                bottom: 78px;
+                left: 14px;
+            }
+            #chatbot-panel .chat-header {
+                padding: 9px 12px;
+                font-size: 12px;
+                gap: 6px;
+            }
+            #chatbot-panel .chat-header i { font-size: 13px; }
+            #chatbot-panel .chat-header button { font-size: 18px; }
+            #chatbot-messages {
+                padding: 10px;
+                gap: 7px;
+            }
+            .chat-msg {
+                font-size: 11.5px;
+                padding: 7px 11px;
+                border-radius: 12px;
+                max-width: 85%;
+                line-height: 1.35;
+            }
+            .chat-msg.product-suggestion {
+                padding: 6px;
+                gap: 7px;
+                max-width: 95%;
+            }
+            .chat-msg.product-suggestion img {
+                width: 32px;
+                height: 32px;
+                border-radius: 6px;
+            }
+            .chat-msg.product-suggestion .name { font-size: 10.5px; }
+            .chat-msg.product-suggestion .price { font-size: 10px; }
+            #chatbot-input-area {
+                padding: 7px;
+                gap: 5px;
+            }
+            #chatbot-input {
+                padding: 8px 12px;
+                font-size: 12px;
+                border-radius: 16px;
+            }
+            #chatbot-send {
+                width: 34px;
+                height: 34px;
+                font-size: 13px;
+            }
+
+            #pwa-install-banner { bottom: 150px; right: 12px; max-width: 200px; font-size: 11px; padding: 10px 12px; }
             #orders-modal { padding: 0 !important; }
             .orders-content { max-height: 100vh; border-radius: 0; height: 100vh; }
             .featured-cat-card { padding: 14px 10px; min-height: 110px; }
